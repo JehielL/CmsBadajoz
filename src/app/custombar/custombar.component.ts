@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+@Component({
+  selector: 'app-custombar',
+  standalone: true,
+  imports: [RouterLink],
+  templateUrl: './custombar.component.html',
+  styleUrl: './custombar.component.css'
+})
+export class CustombarComponent {
+
+}

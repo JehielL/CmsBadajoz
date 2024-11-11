@@ -1,0 +1,89 @@
+
+/* Cuadrícula de categorías */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Crea una cuadrícula con columnas que se adaptan */
+    gap: 50px; /* Espacio entre las celdas */
+    padding: 10px;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Límite máximo de ancho para que no se estire demasiado */
+    text-decoration: none;
+}
+
+/* Categoría individual */
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+    margin: 10px;
+    width: 150px; /* Define un ancho fijo */
+    height: 150px; /* Define una altura fija para un cuadrado perfecto */
+    padding: 20px;
+    border: 3px solid rgba(253, 253, 253, 0.986);
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-left: 25px;
+    margin-top: 70px;
+    text-decoration: none !important;
+}
+
+/* Efecto hover */
+.category:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 8px rgba(255, 255, 255, 0.671);
+}
+.text-center{
+  text-decoration: none !important;
+}
+/* Estilo de los iconos y texto dentro de cada categoría */
+.category p, .category .icon, .category .svg-inline--fa {
+    color: #FFFFFF;
+    margin-top: 10px; 
+    font-weight: 700; 
+    color: #FFFFFF; 
+    text-decoration: none !important;
+}
+
+.category .icon {
+    font-size: 40px; /* Tamaño adecuado para los iconos */
+}
+
+.category a {
+  text-decoration: none !important;
+    color: inherit;
+}
+
+/* Estilos personalizados para los nombres */
+.custom-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-text-stroke: 2px #ffffff;
+    margin-left: 40px;
+}
+
+
+/* Elimina el subrayado de todos los enlaces dentro de .category */
+.category a {
+  text-decoration: none !important; /* Asegura que no haya subrayado */
+  color: inherit !important; /* Asegura que herede el color */
+}
+
+/* Elimina el subrayado dentro de .category */
+.category p, .category .icon, .category .svg-inline--fa {
+  text-decoration: none !important; /* Asegura que el texto no esté subrayado */
+  color: #FFFFFF !important; /* Color blanco para el texto */
+  font-weight: 700; /* Hacer el texto más grueso */
+}
+
+/* Para los títulos */
+.custom-name, .custom-othername {
+  font-weight: bold;
+  text-decoration: none !important; /* Asegura que no haya subrayado */
+}

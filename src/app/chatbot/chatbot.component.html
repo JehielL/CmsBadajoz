@@ -1,0 +1,36 @@
+<div id="chat-bot">
+    <div class="card-container">
+      <div class="card-header">
+        <div class="img-avatar">
+          <a target="_blank" href="https://www.instagram.com/lavictoriarobothub/">
+            <img src="https://i.ibb.co/1rjPsRQ/futurito.png" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #010101;">
+          </a>
+        </div>
+        <h2 class="text-chat">
+          Futurito <span class="status-indicator"></span>
+        </h2>
+        <i id="reset-button" class="fa-solid fa-rotate" (click)="resetChat()"></i>
+        <i id="minimize-icon" class="fa-solid fa-minimize" (click)="closeChat()"></i>
+      </div>
+      <div class="card-body">
+        <div id="chat-container" class="chat-container">
+
+            @for (message of messages; track $index) {
+                <p [class.sent]="message.role === 'user'" [class.received]="message.role !== 'user'">
+                    <strong>{{ message.role === 'user' ? 'Yo' : 'Futurito' }}:</strong> {{ message.content }}
+                </p>
+            }
+            
+        </div>
+      </div>
+      <div class="message-input">
+        <input type="text" id="message-input" class="message-send" placeholder="Escribe un mensaje..." (keydown)="handleKeyDown($event)">
+        <button (click)="sendMessage($event)" class="button-send">Enviar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <img id="robot-icon" src="https://i.ibb.co/1rjPsRQ/futurito.png" alt="Robot" (click)="toggleChat()" />
+  </div>
+  

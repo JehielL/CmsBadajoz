@@ -1,0 +1,20 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  .custom-navbar {
+    background-color: transparent !important;
+    box-shadow: none; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .custom-navbar .container svg {
+    color: rgb(6, 224, 46); 
+    size: 4em; 
+  }
+    

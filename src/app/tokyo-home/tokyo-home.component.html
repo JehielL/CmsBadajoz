@@ -1,0 +1,63 @@
+@if (activedLoader){
+	<div class="loader-container">
+	
+		<div class="loader">
+			<div style="--i:1" class="loader_item"></div>
+			<div style="--i:2" class="loader_item"></div>
+			<div style="--i:3" class="loader_item"></div>
+			<div style="--i:4" class="loader_item"></div>
+			<div style="--i:5" class="loader_item"></div>
+			<div style="--i:6" class="loader_item"></div>
+			<div style="--i:7" class="loader_item"></div>
+			<div style="--i:8" class="loader_item"></div>
+			<div style="--i:9" class="loader_item"></div>
+			<div style="--i:10" class="loader_item"></div>
+			<div style="--i:11" class="loader_item"></div>
+			<div style="--i:12" class="loader_item"></div>
+		</div>
+	
+	</div>
+	}@else{
+    <div data-aos="fade-right" class="container-fluid">
+      <!-- Logo -->
+      <div class="image-fluid text-center mt-3">
+          <img src="https://futuravive.com/wp-content/uploads/2024/05/cropped-icono-robot-futuravive-morado.png" style="max-width: 60px;" alt="">
+      </div>
+    
+      <!-- Título -->
+      <h1 class="display-4 fst-italic text-center mt-4">
+          <span class="custom-name" style="font-weight: 600;">TOKYO SMART CMS </span>
+          
+      </h1>
+    
+      <!-- Cuadrícula de categorías -->
+      <div class="text-center category-grid mt-3">
+          <a routerLink="/eventos" class="category">
+              <i class="bi bi-shop icon"></i>
+              <p>Eventos</p>
+          </a>
+          <a routerLink="/rutas" class="category">
+              <i class="bi bi-star icon"></i>
+              <p>Rutas</p>
+          </a>
+          <a routerLink="/puntos-interes" class="category">
+              <i class="bi bi-percent icon"></i>
+              <p class="text-center">Puntos de Interés</p>
+          </a>
+          <a routerLink="/ofertas" class="category">
+              <i class="bi bi-geo-alt icon"></i>
+              <p>Ofertas</p>
+          </a>
+          <a routerLink="/noticias" class="category">
+              <i class="bi bi-geo-alt icon"></i>
+              <p>Noticias</p>
+          </a>
+          <a routerLink="/multimedia" class="category">
+              <i class="bi bi-geo-alt icon"></i>
+              <p>Multimedia</p>
+          </a>
+      </div>
+    </div>
+  }
+
+
