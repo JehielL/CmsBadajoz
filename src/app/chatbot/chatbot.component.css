@@ -170,7 +170,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid #a13317;
+    border-bottom: 1px solid #530889;
 }
 
 .card-header .img-avatar {
@@ -206,7 +206,7 @@
 /* Estilos para el área de entrada del mensaje */
 .message-input {
     padding: 5px;
-    border-top: 1px solid #ea3103;
+    border-top: 1px solid #530889;
     display: flex;
     align-items: center;
 }
