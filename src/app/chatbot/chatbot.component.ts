@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewChecked, Component, OnInit } from '@angular/core';
 import { ClienteData } from '../interfaces/cliente.model';
 
 @Component({
@@ -8,7 +8,7 @@ import { ClienteData } from '../interfaces/cliente.model';
   templateUrl: './chatbot.component.html',
   styleUrl: './chatbot.component.css'
 })
-export class ChatbotComponent implements OnInit {
+export class ChatbotComponent implements OnInit, AfterViewChecked {
   messages: { role: string, content: string }[] = [];
   apiKey: string = 'E5s6NcdrMKyVfnExcPg8nGXbXuv2ZV';
   maxMessagesToShow: number = 10;
@@ -152,6 +152,17 @@ export class ChatbotComponent implements OnInit {
       this.sendMessage(event);
     }
   }
+
+  ngAfterViewChecked() {
+    this.scrollToBottom();
+  }
+  scrollToBottom() {
+    const chatContainer = document.getElementById('chat-container');
+    if (chatContainer) {
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+  }
+
 
   toggleChat() {
     const chatBot = document.getElementById('chat-bot');

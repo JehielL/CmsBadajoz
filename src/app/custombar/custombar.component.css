@@ -1,73 +1,74 @@
 section {
-    --col-orange: #530889;
-    --col-dark: #ffffff;
-    --col-darkGray: #52555a;
-    --col-gray: #aeaeae;
-  
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--col-dark);
-    border-radius: 30px;
-    margin-top: 25px;
-    margin-left: 560px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 8px rgba(32, 31, 31, 0.671);
-    z-index: 6000;
+  --col-orange: #530889;
+  --col-dark: #ffffff;
+  --col-darkGray: #52555a;
+  --col-gray: #aeaeae;
 
-    position: fixed; /* Fija la posición */
-    top: 620px; /* Ajusta la distancia desde el top */
-    left: 8%; /* Centra el elemento horizontalmente */
-    transform: translateX(-50%); /* Asegura que esté centrado perfectamente */
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--col-dark);
+  border-radius: 30px;
+  margin-top: 25px;
+  box-shadow: 0 5px 8px rgba(32, 31, 31, 0.671);
+  z-index: 6000;
+
+  /* Centrando la barra */
+  position: fixed;
+  bottom: 20px; /* Mantiene la barra a 20px desde el fondo de la pantalla */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajuste perfecto de centrado */
 }
 
-  .label {
-    padding: 8px 18px;
-    transition: all 200ms;
-    display: inline-block;
-    
-  }
-  
-  .label input[type="radio"] {
-    display: none;
-  }
-  .label > svg {
-    transition: all 200ms;
-    fill: var(--col-gray);
-    width: 14px;
-  }
-  .label:hover:not(:has(input:checked)) > svg {
-    fill: #4b0456;
-    cursor: pointer;
-    
-  }
-  .label::before {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    border-radius: 5px;
-    position: relative;
-    left: 50%;
-    top: 20px;
-    background: var(--col-orange);
-    transition: all 200ms;
-  }
-  .label > svg {
-    transition: 300ms;
-    fill: var(--col-darkGray);
-    margin-top: 0;
-  }
-  .label:has(input:checked) > svg {
-    fill: var(--col-orange);
-    scale: 1.2;
-    margin-top: -5px;
-  }
-  
-  .label:has(input:checked)::before {
-    width: 100%;
-    left: 0;
-    top: 25px;
-  }
-  
+.label {
+  padding: 8px 18px;
+  transition: all 200ms;
+  display: inline-block;
+}
+
+.label input[type="radio"] {
+  display: none;
+}
+
+.label > svg {
+  transition: all 200ms;
+  fill: var(--col-gray);
+  width: 14px;
+}
+
+.label:hover:not(:has(input:checked)) > svg {
+  fill: #4b0456;
+  cursor: pointer;
+}
+
+.label::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 20px;
+  background: var(--col-orange);
+  transition: all 200ms;
+}
+
+.label > svg {
+  transition: 300ms;
+  fill: var(--col-darkGray);
+  margin-top: 0;
+}
+
+.label:has(input:checked) > svg {
+  fill: var(--col-orange);
+  scale: 1.2;
+  margin-top: -5px;
+}
+
+.label:has(input:checked)::before {
+  width: 100%;
+  left: 0;
+  top: 25px;
+}

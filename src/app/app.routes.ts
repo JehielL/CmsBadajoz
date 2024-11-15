@@ -7,11 +7,13 @@ import { OfertasComponent } from './ofertas/ofertas.component';
 import { PuntosinteresComponent } from './puntosinteres/puntosinteres.component';
 import { RutasComponent } from './rutas/rutas.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
+import { DashboarduserComponent } from './dashboarduser/dashboarduser.component';
+import { HomeSinLogComponent } from './home-sin-log/home-sin-log.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: TokyoHomeComponent
+        component: HomeSinLogComponent
     },
 
     {
@@ -45,5 +47,13 @@ export const routes: Routes = [
     {
         path: 'favoritos',
         component: FavoritosComponent
+    },
+    {
+        path: 'configuracion',
+        component: DashboarduserComponent
+    },
+    {
+        path: 'homelogout',
+        component: HomeSinLogComponent
     }
 ];

@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { ChatbotComponent } from "./chatbot/chatbot.component";
 import { CustombarComponent } from "./custombar/custombar.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, NavbarComponent, ChatbotComponent, CustombarComponent],
+  imports: [RouterOutlet, CommonModule, NavbarComponent, ChatbotComponent, CustombarComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

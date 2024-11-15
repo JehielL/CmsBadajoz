@@ -1,0 +1,112 @@
+@if (activedLoader){
+<div class="loader-container">
+
+    <div class="loader">
+        <div style="--i:1" class="loader_item"></div>
+        <div style="--i:2" class="loader_item"></div>
+        <div style="--i:3" class="loader_item"></div>
+        <div style="--i:4" class="loader_item"></div>
+        <div style="--i:5" class="loader_item"></div>
+        <div style="--i:6" class="loader_item"></div>
+        <div style="--i:7" class="loader_item"></div>
+        <div style="--i:8" class="loader_item"></div>
+        <div style="--i:9" class="loader_item"></div>
+        <div style="--i:10" class="loader_item"></div>
+        <div style="--i:11" class="loader_item"></div>
+        <div style="--i:12" class="loader_item"></div>
+    </div>
+
+</div>
+}@else{
+<div class="container-fluid text-center">
+    <div data-aos="fade-right" class="container-fluid">
+        <!-- Logo -->
+        <div class="image-fluid text-center mt-3">
+            <img src="https://futuravive.com/wp-content/uploads/2024/05/cropped-icono-robot-futuravive-morado.png"
+                style="max-width: 60px;" alt="">
+        </div>
+
+        <!-- Título -->
+        <h1 class="display-4 fst-italic text-center mt-4">
+            <span class="custom-name" style="font-weight: 600;">TOKYO SMART CMS </span>
+
+        </h1>
+
+        <!-- Cuadrícula de categorías -->
+        <div class="text-center category-grid mt-5 ">
+            <!-- Botón para abrir el modal -->
+            <button (click)="openModal()">
+                <img src="data:image/png;base64,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"
+                    alt="login-rounded-right--v1">
+                <p class="text-center">INICIAR SESION</p>
+            </button>
+
+            <!-- Modal -->
+
+            @if (isModalVisible) {
+                <div class="modal">
+                    
+
+                      <form class="form modal-content" [formGroup]="loginForm" (ngSubmit)="save()">
+                        <span class="close" (click)="closeModal()">X</span>
+
+                        <div class="form-title"><span>Iniciar Sesion</span></div>
+                        <div class="input-container">
+                        
+                  
+                        <section class="bg-stars">
+                          <span class="star"></span>
+                          <span class="star"></span>
+                          <span class="star"></span>
+                          <span class="star"></span>
+                        </section>
+                        <div class="coolinput">
+                            <div> <label for="input" class="text input-mail">Email address</label></div>
+                            <input type="text" name="email" class="input" id="email" placeholder="name@example.com"
+                              formControlName="email">
+                  
+                  
+                          </div>
+                        <span> </span>
+                      </div>
+                      <div class="password input-container">
+                        <div><label for="input" class="password">contraseña</label></div>
+                        <input type="password" name="password" formControlName="password" class="input input-pwd " placeholder="Contraseña">
+                        @if (errorMessage) {<div class="error-message">{{ errorMessage }}</div>}
+            
+                        <div><label for="input" class="text">haz olvidado tu <a style="color:black;" class="contr"
+                              href="#">contraseña?</a></label></div>
+                      </div>
+                    
+                        <button class="submit" type="submit" >
+                          <span class="sign-text">Iniciar Sesion</span>
+                        </button>
+                  
+                      </form>
+                    
+                  </div>
+                  
+                }
+
+
+
+            <button routerLink="">
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAALZklEQVR4nO2dfbCXRRXHVxQQZkyg/ktAMK0mRdQs9CagZlpKmKGGBMlMiaRpTs3QpFJqvPgC9jJjOqYWVJpaMyo6KUk1ZWVCkY1ZGr4EIhZwxQLl8vJpztxzZ5a9+zzP7vN7fs/z3N/9fWfuzJ179+w5++zz7Nlz9pyzxrTRRhtttNFGiwI4EBgPnAdcDfwI+D3wNLAO2Ars1J+t+jf53++07dVKK30cWPV4+hyAA4DjgHnASuBNisMuYDWwGPgwMLjq8dYSwAB9QMuA/1IehNcPgFNFBtPfAYzSt3U91WM9sEhkMv0NwOHAHUBX4MNaBzwI3Ah8DpgIHAmMAYYDA/VnuP5N/jdJ2wrNQ9pHCEQXfQ94l2l1AGOBu4HdGQ/lX8BdwEzgkAL5HwLMAr4f8FXu1k3BGNNq0Lf3cuB/KQ9gm+oQ0SX7lSSXbB6+BWxOkWsH8PWW2QAAHwGeSxnwM/rWDqlQxiEqg8iShH/Iy2L6+PZV3qw9CQNcqw9hf1MTAPsBU4AnE2Teq1/UINOXAByaMqhXgPNNzQFMV1l9EMN0tOkLAD4KdCYYZUuBg0wfAfA24GaV3YV4BU43dYYuQb6trOiQY00fBd3K/3nPuGSsnzZ1BPAlXWNd3CNvWhP5TgX+DbwGfLzJX8u9nvHJmK8wdQLwjYQlam6DO5/TxSmY0c5e5zdktO3QPnM7GYFLEpaw60yNvgwX24GzcvZ3LHCrpYfkDbw4pf0+SGknXt8eSN/fBY7JKeMUtU9cXFEHnbHXo+w6cvQ1GXgUP54sYEKSbCHhOSmHvB06Vht7K9MpuptyFbgIOC6yn3cDK0jHrQVMiOiyNIiv7IhI2cd5JqWr9N2X2hmdnmWqI9Kdck2Gg3Gj6qehBUzIQcBC7TPNsThfjNrIL8VdvraUZqeIleox+nbF6Az9KtakPJjHgTNDrPjQCXE8CGcBq1L4r475WlSn7PIYjwNNs6HGnYu5kdtUcST68Evgg5HyRE2IQzsB+HWCLK/Lg47o61JPHzeaZgI4zaPE74mgn5dgq2wAPpFTptwTYvUxLWEpE1m/HNHPfR76U/PIFMJssGen8lyI0adOu+sT3sQfAsMakGsfNNDPCODH+LEo5EgAOBj4p0P796Y4I1XZ2dgV6g4BbvAM8i3gogLk2gcF9DdXlbuLxYH0x3sO4L7aqFy+kz53J7E0YpmiCFvFB7djUwD0iFh0iIug5Utd9O4O9NAiZOthIMeuNl4J8dqKXvDojE2xtkrZE6L9jlf/mI29If4yXbpedWiXFyXYEZ5PMPM8A3iPZzcVbThWNSHWpLj21ushW2JghmeJP6wIoSQ6xMbqQKPvTx6dUcgyVdaEaP8neXTKmiwbQzcyf3bobm9UmJEeYTK3p8C17oOSkJyGhKloQpTHxZ7xzA+gkxBWG10NWfAaxGbjmawIP+C9HndIMetnRROifGR7bmNn1tKlEZnPOnQL8wowwBO7NCuA7hGHZn0jdkaNJmS454z9wQC6Cx2al3OFrWp8lKvMhkTSCKZGM6/hhCivT3rGNzmDZijwhkNzSh7mErQWpZA8DrtV0YxrPCHK7xcOy0cDaCQK08ZdeTy6bhT6xAAL1cXxpvUmZIJnnKknj/JFOO23RXmCdavnxtqm+nI0QNnGSlMCKHlClKd4pYMO0Cx97OqfcBMA+FrMJ6brpGsEnmFad0Km5NCvrgq4KobhrxzimZH77Q1lhYhSzYQc4HHXT4vcba2KCb8Rq9pGakqAZiHZuMGUBCqYEOV7k8P6zoDkJBtvBoUjqf/GxrqA9dF1wp1kWn9CJjmsXw3Qsy86NNl+PXEcxhg/6kS00RkTJNCHJ2Sgx0V/eAaNG11zbp6DqNRzYc1ysvGIKRFUNCHK+zGH/fTIeIQr8/hsPpvRfkmVIZVUOyELI1/ei5z2y0KYPOEQpUb1AT9z2p/fjyZkusP+/oz2JzvtfxPC5K8O0fsy2rvnHlFhPH18Qk502D8VEOlo4y8hTNydQKr/3rMff6fpPxMy0mG/ISDi08YLIUwkDNLGiIz27k6jabkgNZyQYQ77zoz273Da/yeEiXtCmBpT5DmMKm3LW4MJka2vja6A2DYbbzVjQqLaFw32XWJfKJl31APOOyFuEv3bi2zfpLSI9fpzRsm8o5YgeTYx7XuIXopU6lHtWwl0BxAS+oVqHZbg9j1EUvzLxpEZ7d1Qlwmmn4De2941Ge2PyrPt/W2kYXhfbCBEq4DeLvWfNMMwlAo4Ma4TNwN3geknoHeY1LUZ7efkcZ3Y2aqCmyKdiz83/QT0di7OaIZzMdb9LsXI3EjvvlWcJQc0EMQtNzU2g+bhmFPGHqKjYw6olEaCIGwUHsNbN3gOqF7K4ZY6KrQsq3uEOzLyCHeJaXEA34w8wh3tOcIdnDfIYVZAjp6NjWW7UMqEBjm8FhOEDsx22j8ew3B+ZBjQYE8C/cdMi4LutGobWwJcTMsbCQP6kEO8PuAAX2qHlBpGWhU8K8gtAYEg7jHFibE7iDciDcRjPOlrJ5gWA72jOvcGVCySQs35Q0kTFPUdOVIRSgknLROeMNIVATRSljZ4AxCaWrAtreZISiDyeaZFAFzgGV9HjnSE1BSGohN2VnjCSks9RWwGNLPW1QMPlJawo51JBYPYlDZfTvvdpo+D3uX9dmRVvU5IaVtQdNLnOTm2zRRRtaEqaFk/Yv1QHjdUV8PF/j15H2sCtsCyS/ujxzKNrtxWNdRl7nou/hCYFi3Fom3cVoRAh3lqQX0qgG6UJ4JlW946h1VAD5TcwgGdIQX6PV7w3YXduOA5I9kYWAXobE+pcYkSP9rUHHRnAUgZEBt7IkprbIo++4gQbpTH1bw0orqOC8lfPM3UFHQX5PQVn7k8kP47TS0+o0yudJjIMnZcA3V9RafMMTUD8HmPzggOIgc+4KkN85VmCDpYr2yw8XxEATPfpKCVhiq3U+heZnyVq2MmY5jnJp+/Ne3ATq131191bwT9FxKur6j0xgS6LXBfiT+R9ZKIfu536OVZnVx2bh2RQp+dcHsCmpTfUbKj0PVN9WBrTC154DJPH9eXFc8qJVBdfRJTwXNMyv0i6EM6sxmHXFaZWNeF7toZoyMrrbp644lSysRax5FbPa6EmELKgzTCxVdDvQeb9P6OiY2sw6r/Jumxq3vSZ0NkuSqGl54duWPYnHXsXTj0loEiSo2P1WvtsrBd67Qv0uPQE5R2hE7uIP19rP5vtrZ9TGmz8EDsjWwJpcZ3Vral15QuV0l35kmL1rDMhxLq+jYTK/OEv0qmmARLO32J7J8xVUKuaPAMckeMTvGcPN7icbsUiS3KY3xOGacmLLVfNHVAQkk/UfSXNrjun6OljdwI+zyQPu7USqmN6KPLEi7GvMbUCfql+JYbCcY+uCAn5wwx0iSoWb3O6/Rt77m+e4v+bY22uU5tjIargarR91PP+PaEulRKh1xmknD9hJTffr/po6DbHeK7S1deggtMnaG7L9/6v1srPjf8tZTsTvl2whK1uc4OUp+d4hqPtvt9Rln33eaB+t5meqpT20ZfuXZGCVevPl3Dq1cHaHGypzKuXi3HAm8GNEhMrmxIwrMamTG0QhmHqiHpBiS4XtvmOgoruL7bLaxpY4e6v6eU8dXo1yBuj9s8cVM2trfU9d2e0hLLEy5mtLFRaxRe2HCURm/dNltlSLscDJVxWZH8awu1KW5PuDjFhxc1+2iJljiarH6kJF/WOG0zR2ke9iTLJGGnfjWp2VAtCY37WuDJwKoCL6ssqfUl+wV0PT9Fg5KTbnBrBrapO2Vy7vDOVgewv16XPU89sRIMURR26R2Fi/U4uuWTUwsH3U5G0QnnauTLci1usDbFl7VW2yxTmmnaR+vtlNpoo4022mjDdOP/WJYFPwHJI1wAAAAASUVORK5CYII="
+                    alt="power-off-button--v1">
+                <p class="text-center">CERRAR SESION</p>
+            </button>
+
+            <button routerLink="">
+
+                <img src="data:image/png;base64,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"
+                    alt="controller">
+                <p class="text-center">DEMO</p>
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+}

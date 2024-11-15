@@ -165,6 +165,12 @@
     top: -10px;
     left: -10px;
 }
+#chat-container {
+    overflow-y: auto;
+    max-height: 400px; /* Ajusta la altura máxima a tus necesidades */
+    display: flex;
+  }
+  
 
 .card-header {
     display: flex;
