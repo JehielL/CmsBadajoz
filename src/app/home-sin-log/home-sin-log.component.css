@@ -153,7 +153,6 @@ button {
   width: 400px; /* Ajusta el ancho según lo necesites */
   height: auto; /* Permite que el alto se ajuste al contenido */
   background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido */
-  padding: 20px; /* Espaciado interno para que el contenido no quede pegado al borde */
   border-radius: 8px; /* Bordes redondeados */
 }
 
@@ -185,9 +184,9 @@ button {
   padding: 2.2rem;
   background: linear-gradient(
       14deg,
-      rgba(2, 0, 36, 0.8) 0%,
-      rgba(24, 24, 65, 0.7) 66%,
-      rgb(20, 76, 99) 100%
+      rgba(68, 10, 68, 0.8) 0%,
+      rgba(0, 0, 0, 0.7) 66%,
+      rgb(0, 0, 0) 100%
     ),
     radial-gradient(
       circle,
@@ -196,7 +195,7 @@ button {
       rgba(14, 29, 28, 0.9) 100%
     );
   border: 2px solid #fff;
-  box-shadow: rgba(0, 212, 255) 0px 0px 50px -15px;
+  box-shadow: rgb(172, 14, 154) 0px 0px 50px -15px;
   overflow: hidden;
   z-index: +1;
   border-radius: 8px;
@@ -228,7 +227,7 @@ button {
   position: relative;
   display: block;
   padding: 8px;
-  background: linear-gradient(90deg, #243949 0%, #517fa4 100%);
+  background: linear-gradient(90deg, #243949 0%, #530889 100%);
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.25rem;

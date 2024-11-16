@@ -38,10 +38,14 @@
   
       <!-- Información de usuario -->
       <div class="dropdown">
-        <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
-          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-          <strong>Usuario</strong>
-        </a>
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          
+      
+          <li><button class="dropdown-item" type="button" (click)="logout()">Cerrar Sesión</button></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -107,6 +111,7 @@
         </li>
         <li><a class="nav-link text-white" (click)="showSection('visitas')">Visitas</a></li>
         <li><a class="nav-link text-white" (click)="showSection('adminUsuario')">Administración de Usuario</a></li>
+        
       </ul>
     </div>
   </div>
@@ -128,7 +133,47 @@
         @if (currentSection === 'eventos') {<div class="text-center custom-name text-white">
             <h2>Eventos</h2>
             <p>Sube y administra fotos aquí.</p>
-
+            <div class="row custom-row">
+              <h2 class="pb-2 custom-title mt-5">Crear nuevo plato</h2>
+            <div class="horizontal-bars"></div>
+              <div class="col-lg-8 custom-col">
+                <h1 class="my-5 text-center">Introducir datos</h1>
+                <form [formGroup]="eventsForm" (ngSubmit)="save()">
+                  <input type="hidden" formControlName="id">
+                
+                  <!-- Titulo de evento -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="titulo" formControlName="titulo" required minlength="3">
+                    <label for="titulo">Título de evento</label>
+                    
+                  </div>
+                
+                  <!-- Contenido del evento -->
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="contenido" formControlName="contenido" rows="5" required></textarea>
+                    <label for="contenido">Contenido</label>
+                    
+                  </div>
+                
+                  <!-- Fecha de evento -->
+                
+                
+                  <!-- Cargar imagen -->
+                  <div class="input-group">
+                    <input type="file" class="form-control" id="photo" formControlName="photo" (change)="onFileChange($event)">
+                    <button class="w-100 btn btn-lg mb-5 mt-5" type="submit">Guardar</button>
+                  </div>
+                
+                  <!-- Botón de guardar -->
+                  <div>
+                    <button class="w-100 btn btn-lg mb-5 mt-5" type="submit" [disabled]="eventsForm.invalid">Guardar</button>
+                  </div>
+                </form>
+                
+              </div>
+          
+             
+            </div>
             @for (imgs of eventosImages; track $index) {
                 
                     <div class="example-box"  >

@@ -9,6 +9,8 @@ import { RutasComponent } from './rutas/rutas.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { DashboarduserComponent } from './dashboarduser/dashboarduser.component';
 import { HomeSinLogComponent } from './home-sin-log/home-sin-log.component';
+import { userLoggedInGuard } from './services/user-logged-in.guard';
+import { userRoleGuard } from './services/user-role.guard';
 
 export const routes: Routes = [
     {
@@ -21,8 +23,10 @@ export const routes: Routes = [
         component: TokyoHomeComponent
     },
     {
-        path: 'eventos',
-        component: EventosComponent
+        path: 'eventos/find-by-user/:id',
+        component: EventosComponent,
+        canActivate: [userRoleGuard]
+        
     },
     {
         path: 'multimedia',
@@ -50,7 +54,9 @@ export const routes: Routes = [
     },
     {
         path: 'configuracion',
-        component: DashboarduserComponent
+        component: DashboarduserComponent,
+        canActivate: [userLoggedInGuard]
+
     },
     {
         path: 'homelogout',

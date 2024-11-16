@@ -57,12 +57,7 @@ export class AuthenticationService {
     const decodedToken = jwtDecode(token) as DecodedToken;
     return decodedToken.sub;
   }
-  getIsRestaurant() {
-    const token = localStorage.getItem('jwt_token');
-    if(!token) return false;
-    const decodedToken = jwtDecode(token) as DecodedToken;
-    return decodedToken.role === 'RESTAURANT';
-  }
+
 
   setUserAvatar(avatar: string) {
     this.avatarUrl.next(avatar);
