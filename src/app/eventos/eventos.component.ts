@@ -29,6 +29,8 @@ export class EventosComponent implements OnInit {
   isUpdate: boolean = false;
   users: User[] = [];
   eventos: Evento[] = [];
+  activedLoader = true;
+
 
 
 
@@ -50,7 +52,6 @@ export class EventosComponent implements OnInit {
 
 
 
-  activedLoader = true;
   ngOnInit(): void {
     AOS.init({
       duration: 1500, 

@@ -5,6 +5,6 @@ export interface DecodedToken {
     exp: number;
     role:  string;
     email: string;
-    name: string;
+    firstName: string;
     
 }

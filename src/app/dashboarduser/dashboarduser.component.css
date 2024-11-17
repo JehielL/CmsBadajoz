@@ -1,11 +1,11 @@
 .a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
 }
 
 .nav-link{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
 }
@@ -14,6 +14,15 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.form-control {
+  color: #000 !important; /* Asegúrate de que el texto sea negro */
+}
+
+.form-control::placeholder {
+  color: #6c757d; /* Un color gris moderado para el placeholder */
+}
+
 
 .menu-open {
     transform: translateX(0);
@@ -36,4 +45,50 @@
     color: transparent;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-text-stroke: 1px #ffffff;
+  }
+
+  #contenido {
+    height: 180px; /* Ajusta el valor según lo que necesites */
+  }
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas se acomoden en varias filas si es necesario */
+    gap: 10px; /* Espacio entre las cajas */
+  }
+  
+  .example-box {
+    display: flex;
+    flex-direction: column; /* Organiza la imagen y el título en una columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    margin-top: 10px;
+    width: 120px; /* Ancho fijo para cada caja */
+    height: 150px; /* Asegura que todas las cajas tengan la misma altura */
+    justify-content: space-between; /* Alinea la imagen y el título de manera uniforme */
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Asegura que los elementos dentro de la caja estén centrados */
+  }
+  
+  .image-container img {
+    margin-bottom: 5px; /* Espacio entre la imagen y el título */
+  }
+  
+  .text-light {
+    font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+  }
+  
+  .custom-title{
+    font-size: 30px; /* Ajusta el tamaño de la fuente según sea necesario */
+  }
+
+  .custom-col{
+    border: white 1px solid;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 10px;
   }

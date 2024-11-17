@@ -11,6 +11,7 @@ export class AuthenticationService {
   userEmail = new BehaviorSubject<string>(this.getUserEmail());
   isAdmin = new BehaviorSubject<boolean>(this.getIsAdmin());
   userId = new BehaviorSubject<string | null>(this.getUserId());
+  firstName = new BehaviorSubject<string>('');
   
   avatarUrl = new BehaviorSubject<string>('');
 
@@ -18,12 +19,17 @@ export class AuthenticationService {
 
   saveToken(token: string) {
     localStorage.setItem('jwt_token', token);
+    console.log('Token guardado:', token);  // Verifica si el token es válido
     this.isLoggedin.next(true);
     this.userEmail.next(this.getUserEmail());
     this.isAdmin.next(this.getIsAdmin());
     this.userId.next(this.getUserId());
-    
+    const userName = this.getUserName();
+    console.log('Nombre del usuario:', userName);  // Verifica si el nombre se obtiene correctamente
+    this.firstName.next(userName);  // Asegúrate de que 'firstName' se actualiza correctamente
   }
+  
+  
 
   existsToken() {
     return localStorage.getItem('jwt_token') !== null;
@@ -62,5 +68,15 @@ export class AuthenticationService {
   setUserAvatar(avatar: string) {
     this.avatarUrl.next(avatar);
   }
+
+  getUserName() {
+    const token = localStorage.getItem('jwt_token');
+    if (!token) return '';
+    const decodedToken = jwtDecode(token) as DecodedToken;
+    console.log('Decoded token:', decodedToken);  // Verifica que el token contiene 'firstName'
+    return decodedToken.firstName || '';  // Asegúrate de que 'firstName' esté en el token
+  }
+  
+  
 
 }
