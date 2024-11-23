@@ -1,4 +1,14 @@
-<div class="container-fluid">
+@if (activedLoader) 
+{
+  <div class="center">
+    <div class="spinner">
+      <div class="spinner1"></div>
+    </div>
+  </div>
+  
+
+}@else {
+  <div class="container-fluid" data-aos="fade-left">
     <div class="row">
       <!-- Sidebar -->
       <!-- Contenedor del menú lateral -->
@@ -169,28 +179,30 @@
                   </div>
                 </form>
               </div>
-        
+             
               <!-- Sección de drag and drop en la otra columna -->
-              <div class="col-lg-4 custom-col">
+              <div class="col-lg-5 custom-col">
                 <h1 class="text-light custom-title">Tus eventos</h1>
                 <div class="d-flex flex-wrap justify-content-start">
                   @for (evento of eventos; track evento.id) {
                     <div class="example-box">
                       @if (evento.imgEvento.startsWith('http')) {
                         <div cdkDrag class="image-container">
-                          <img [src]="evento.imgEvento" alt="{{ evento.titulo }}" class="img-thumbnail" style="width: 100px; height: 100px;">
+                          <img [src]="evento.imgEvento" alt="{{ evento.titulo }}" class="img-thumbnail" style="width: 120px; height: 120px;">
                           <strong class="text-light">{{evento.titulo}}</strong>
                         </div>
                       } @else {
                         <div cdkDrag class="image-container">
-                          <img [src]="'http://localhost:8080/files/' + evento.imgEvento" alt="{{ evento.titulo }}" class="img-thumbnail" style="width: 100px; height: 100px;">
+                          <img [src]="'http://localhost:8080/files/' + evento.imgEvento" alt="{{ evento.titulo }}" class="img-thumbnail" style="width: 120px; height: 120px;">
                           <strong class="text-light">{{evento.titulo}}</strong>
                         </div>
                       }
                     </div>
                   }
+                 
                 </div>
               </div>
+              
               
               
             </div>
@@ -256,4 +268,7 @@
       </div>
     </div>
   </div>
+}
+
+
   

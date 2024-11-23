@@ -11,6 +11,9 @@ import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } fr
 })
 export class OfertasComponent implements OnInit {
   activedLoader = true;
+
+  
+
   ngOnInit(): void {
 
     AOS.init({

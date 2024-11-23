@@ -16,11 +16,11 @@
 }
 
 .form-control {
-  color: #000 !important; /* Asegúrate de que el texto sea negro */
+  color: #000 !important; 
 }
 
 .form-control::placeholder {
-  color: #6c757d; /* Un color gris moderado para el placeholder */
+  color: #6c757d; 
 }
 
 
@@ -48,42 +48,42 @@
   }
 
   #contenido {
-    height: 180px; /* Ajusta el valor según lo que necesites */
+    height: 180px; 
   }
   .d-flex {
     display: flex;
-    flex-wrap: wrap; /* Permite que las cajas se acomoden en varias filas si es necesario */
-    gap: 10px; /* Espacio entre las cajas */
+    flex-wrap: wrap; 
+    gap: 10px; 
   }
   
   .example-box {
     display: flex;
-    flex-direction: column; /* Organiza la imagen y el título en una columna */
-    align-items: center; /* Centra el contenido horizontalmente */
-    text-align: center; /* Centra el texto */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
     margin-top: 10px;
-    width: 120px; /* Ancho fijo para cada caja */
-    height: 150px; /* Asegura que todas las cajas tengan la misma altura */
-    justify-content: space-between; /* Alinea la imagen y el título de manera uniforme */
+    width: 120px; 
+    height: 150px; 
+    justify-content: space-between; 
   }
   
   .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Asegura que los elementos dentro de la caja estén centrados */
+    justify-content: center; 
   }
   
   .image-container img {
-    margin-bottom: 5px; /* Espacio entre la imagen y el título */
+    margin-bottom: 5px; 
   }
   
   .text-light {
-    font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-size: 14px; 
   }
   
   .custom-title{
-    font-size: 30px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-size: 30px; 
   }
 
   .custom-col{

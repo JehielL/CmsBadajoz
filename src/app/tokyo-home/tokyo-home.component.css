@@ -3,11 +3,13 @@
 .category-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Crea una cuadrícula con columnas que se adaptan */
-    gap: 50px; /* Espacio entre las celdas */
+    gap: 50px; 
     padding: 10px;
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    max-width: 1200px; /* Límite máximo de ancho para que no se estire demasiado */
+    width: 100%; 
+    max-width: 1200px; 
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Categoría individual */
@@ -15,10 +17,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centra el contenido verticalmente */
+    justify-content: center; 
     margin: 10px;
-    width: 150px; /* Define un ancho fijo */
-    height: 150px; /* Define una altura fija para un cuadrado perfecto */
+    width: 150px;
+    height: 150px; 
     padding: 20px;
     border: 3px solid rgba(253, 253, 253, 0.986);
     border-radius: 20px;
@@ -69,21 +71,18 @@
 }
 
 
-/* Elimina el subrayado de todos los enlaces dentro de .category */
 .category a {
-  text-decoration: none !important; /* Asegura que no haya subrayado */
-  color: inherit !important; /* Asegura que herede el color */
+  text-decoration: none !important; 
+  color: inherit !important; 
 }
 
-/* Elimina el subrayado dentro de .category */
 .category p, .category .icon, .category .svg-inline--fa {
-  text-decoration: none !important; /* Asegura que el texto no esté subrayado */
-  color: #FFFFFF !important; /* Color blanco para el texto */
-  font-weight: 700; /* Hacer el texto más grueso */
+  text-decoration: none !important; 
+  color: #FFFFFF !important; 
+  font-weight: 700; 
 }
 
-/* Para los títulos */
 .custom-name, .custom-othername {
   font-weight: bold;
-  text-decoration: none !important; /* Asegura que no haya subrayado */
+  text-decoration: none !important; 
 }

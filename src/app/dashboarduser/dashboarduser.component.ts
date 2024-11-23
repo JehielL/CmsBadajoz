@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, DragDropModule } from '@angular/cdk/drag-drop';
 import { AuthenticationService } from '../services/authentication.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -31,6 +31,8 @@ export class DashboarduserComponent implements OnInit {
   activedLoader = true;
   firstName: string = '';
   userEmail: string = '';
+  
+  
 
   // Formulario para crear o actualizar evento
   eventsForm = new FormGroup({
@@ -76,6 +78,10 @@ export class DashboarduserComponent implements OnInit {
       offset: 200,
       once: true,
     });
+    setTimeout(() => {
+      this.activedLoader = false;
+    }, 1100); 
+    window.scrollTo(0, 0); 
 
 
 
@@ -97,6 +103,7 @@ export class DashboarduserComponent implements OnInit {
     }
     
   }
+  
 
   // Método para cargar eventos
   private cargarEventos(url: string): void {
@@ -199,9 +206,31 @@ export class DashboarduserComponent implements OnInit {
   private navigateToList() {
     this.router.navigate(['/tokyo-home']);
   }
+  
 
   // Método trackBy para mejorar el rendimiento de la lista
   trackByEvento(index: number, evento: Evento): number {
     return evento.id;
   }
+  onDrop(event: CdkDragDrop<Evento[]>): void {
+    const eventoId = event.item.data.id;
+    this.httpClient.delete(`http://localhost:8080/eventos/${eventoId}`).subscribe({
+      next: () => {
+        console.log('Evento eliminado:', eventoId);
+        this.eventos = this.eventos?.filter(evento => evento.id !== eventoId);
+      },
+      error: (error) => {
+        console.error('Error al eliminar el evento:', error.message || error);
+      }
+    });
+  }
+
+
+  eliminarEventoBackend(id: number): void {
+    this.httpClient.delete(`http://localhost:8080/eventos/${id}`).subscribe({
+      next: () => console.log(`Evento con ID ${id} eliminado del backend.`),
+      error: (err) => console.error(`Error al eliminar el evento:`, err)
+    });
+  }
 }
+  

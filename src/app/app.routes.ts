@@ -11,6 +11,7 @@ import { DashboarduserComponent } from './dashboarduser/dashboarduser.component'
 import { HomeSinLogComponent } from './home-sin-log/home-sin-log.component';
 import { userLoggedInGuard } from './services/user-logged-in.guard';
 import { userRoleGuard } from './services/user-role.guard';
+import { EventosbadajozComponent } from './eventosbadajoz/eventosbadajoz.component';
 
 export const routes: Routes = [
     {
@@ -61,5 +62,9 @@ export const routes: Routes = [
     {
         path: 'homelogout',
         component: HomeSinLogComponent
+    },
+    {
+        path: 'eventosbadajoz',
+        component: EventosbadajozComponent
     }
 ];

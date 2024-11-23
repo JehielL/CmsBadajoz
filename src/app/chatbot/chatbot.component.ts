@@ -26,7 +26,7 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
   isRegistrationComplete: boolean = false; 
   hasStartedChatbot: boolean = false; 
   lastQuestionAsked: string = ''; 
-  displayedMessages: Set<string> = new Set(); // Para almacenar los mensajes ya mostrados
+  displayedMessages: Set<string> = new Set(); 
 
   ngOnInit() {
     this.loadHistory();
@@ -117,6 +117,9 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
 
     (document.getElementById('message-input') as HTMLInputElement).value = '';
   }
+  startChatbotInteraction() {
+    throw new Error('Method not implemented.');
+  }
 
   async sendMessageToChatbot(userMessage: string) {
     try {
@@ -162,7 +165,6 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       chatContainer.scrollTop = chatContainer.scrollHeight;
     }
   }
-
 
   toggleChat() {
     const chatBot = document.getElementById('chat-bot');
@@ -270,24 +272,15 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
         throw new Error('Error al enviar los datos al servidor');
       }
 
-    } catch (error) {
-      console.error('Error al enviar los datos:', error);
-      const errorMessage = 'Hubo un error al registrar tu información. Inténtalo de nuevo más tarde.';
-      if (!this.displayedMessages.has(errorMessage)) {
-        this.messages.push({ role: 'system', content: errorMessage });
-        this.displayedMessages.add(errorMessage); // Marca el mensaje de error como mostrado
+      // Mostrar mensaje de éxito después de guardar los datos
+      const successMessage = '¡Datos guardados exitosamente! Gracias por registrar tu información.';
+      if (!this.displayedMessages.has(successMessage)) {
+        this.messages.push({ role: 'system', content: successMessage });
+        this.displayedMessages.add(successMessage); // Marca el mensaje de éxito como mostrado
       }
-    }
-  }
 
-  async startChatbotInteraction() {
-    if (!this.hasStartedChatbot) {
-      this.hasStartedChatbot = true;
-      const botMessage = '¡Hola! Ahora, ¿en qué puedo ayudarte?';
-      if (!this.displayedMessages.has(botMessage)) {
-        this.messages.push({ role: 'system', content: botMessage });
-        this.displayedMessages.add(botMessage); // Marca el mensaje del bot como mostrado
-      }
+    } catch (error) {
+      console.error('Error al registrar los datos:', error);
     }
   }
 }
