@@ -1,33 +1,47 @@
 @if (activedLoader){
-    <div class="center">
-        <div class="spinner">
-          <div class="spinner1"></div>
-        </div>
-      </div>
-      
+<div class="center">
+  <div class="spinner">
+    <div class="spinner1"></div>
+  </div>
+</div>
+
 }@else{
-  <h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
-    <span class="custom-name" style="font-weight: 600;">PUNTOS DE INTERES</span>
+<h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
+  <span class="custom-name text-white" style="font-weight: 600;">PUNTOS DE INTERES</span>
 </h1>
 <ngb-carousel data-aos="fade-left">
-@for (evento of pois; track evento) {
-          
-            
-            
-            <ng-template ngbSlide>
-                <div class="picsum-img-wrapper">
-                  <img [src]="evento.image" alt="" class="carousel-img" />
-                  
-                </div>
-                <div class="carousel-caption">
-                  <h2 class="text-white">{{evento.name}}</h2>
-                  <!-- Renderizar HTML desde JSON -->
-                  <p class="text-white" [innerHTML]="evento.description"></p>
-                </div>
-              </ng-template>
-               
-              
-              
-        }
-   </ngb-carousel>
+  @for (evento of pois; track evento) {
+
+
+
+  <ng-template ngbSlide>
+    <div class="row">
+      <div class="col-md-6 mb-3 mb-md-0 custom-img">
+        <img [src]="evento.image">
+      </div>
+      <div class="col-md-6">
+        <h1 class="h2 text-light">{{evento.name}}</h1>
+        <div class="mb-3">
+          <p class="btn btn-outline-light me-2">Localidad: {{evento.addressLocality}}</p>
+          <p class="btn btn-outline-light me-2">Calle: {{evento.streetAddress}}</p>
+          <p href="tel:123456789" class="btn btn-outline-light me-2">Telefono📞: {{evento.telephone}}</p>
+          <p class="btn btn-outline-light me-2">Rating🌟: {{evento.ratingValue}}</p>
+
+
+        </div>
+
+        <div class="fw-bold container-fluid">
+          <p class="text-white" [innerHTML]="evento.description"></p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </ng-template>
+
+
+
+  }
+</ngb-carousel>
 }

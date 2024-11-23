@@ -29,27 +29,34 @@
     ) {}
 
     ngOnInit(): void {
-      console.log("Componente Multimedia iniciado");
-    
-      
-    
+      console.log("Componente Rutas iniciado");
+  
       setTimeout(() => {
         this.activedLoader = false;
-        console.log("Loader desactivado");
       }, 1100);
-    
+  
+      AOS.init({
+        duration: 1500,
+        offset: 200,
+        once: true,
+      });
+  
       window.scrollTo(0, 0);
-    
-      const url = '/assets/badajoz.json';
+  
+      // Realizar la solicitud a la API sin necesidad de id
+      const url = '/assets/badajoz.json';  // URL de la API
+  
       console.log('Realizando solicitud a la URL:', url);
-    
+  
       this.httpClient.get<Multimedia[]>(url).subscribe({
-        next: (eventos) => {
-          console.log('Eventos recibidos:', eventos);
-          this.pois = eventos;
+        next: pois => {
+          console.log('Rutas recibidas:', pois);
+          this.pois = pois;
         },
-        error: (err) => {
+        error: err => {
           console.error('Error al obtener los eventos:', err);
+          console.error('Estado HTTP:', err.status);
+          console.error('Mensaje de error:', err.message);
         }
       });
     }
