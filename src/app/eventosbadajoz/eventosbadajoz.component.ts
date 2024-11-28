@@ -4,7 +4,7 @@ import { NgbCarousel, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { EventosBadajoz } from '../interfaces/eventosbadajoz.model';
 import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as AOS from 'aos'; 
+import * as AOS from 'aos';
 
 
 

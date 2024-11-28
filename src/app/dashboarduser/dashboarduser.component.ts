@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Evento } from '../interfaces/eventos.model';
 import { User } from '../interfaces/user.model';
-import * as AOS from 'aos'; 
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-dashboarduser',
