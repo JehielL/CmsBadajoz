@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-custombar',
@@ -9,5 +11,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './custombar.component.css'
 })
 export class CustombarComponent {
+
+  constructor(private location: Location){
+
+  }
+
+  retroceder(): void {
+    this.location.back();
+  }
 
 }

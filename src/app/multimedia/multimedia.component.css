@@ -132,8 +132,8 @@ background-position: right center;
 position: relative;
 overflow: hidden;
 transition: transform 0.3s ease;
-margin-bottom: 20px; /* Reducir el margen inferior */
-margin-top: 30px; /* Reducir el margen superior */
+margin-bottom: 20px;
+margin-top: 30px;
 }
 
 .card-cover:hover {
@@ -157,15 +157,15 @@ filter: brightness(40%) contrast(110%);
 .container-fluid.custom {
 position: relative;
 z-index: 1;
-margin-top: 25px; /* Reducir el margen superior */
-margin-bottom: 25px; /* Reducir el margen inferior */
+margin-top: 25px;
+margin-bottom: 25px;
 padding: 10px;
 }
 
 /* Estilos para las filas y celdas de la tabla */
 th, td {
-padding-left: 0.75rem; /* Reducir el espaciado a la izquierda */
-padding-right: 0.75rem; /* Reducir el espaciado a la derecha */
+padding-left: 0.75rem;
+padding-right: 0.75rem; 
 }
 
 /* Estilos para los botones */
@@ -177,7 +177,7 @@ justify-content: flex-start;
 
 .buttons button {
 font-size: 0.8rem;
-margin-right: 0.5rem; /* Reducir el espacio entre los botones */
+margin-right: 0.5rem;
 }
 
 /* Estilos para el título personalizado */
@@ -185,7 +185,7 @@ margin-right: 0.5rem; /* Reducir el espacio entre los botones */
 font-size: 30px;
 color: rgb(0, 0, 0);
 text-align: center;
-margin: 15px 0; /* Reducir el margen vertical */
+margin: 15px 0; 
 font-family: 'Noto Sans', sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -196,12 +196,12 @@ font-style: normal;
 width: 100%;
 height: 3px; 
 background-color: black; 
-margin-bottom: 0.5rem; /* Reducir el margen inferior */
+margin-bottom: 0.5rem; 
 }
 
 /* Estilos para los títulos de las tarjetas */
 #custom-cards h2 {
-margin-top: 0.5rem; /* Reducir el margen superior */
+margin-top: 0.5rem; 
 }
 
 /* Media query para dispositivos con un ancho máximo de 768px */
@@ -222,8 +222,8 @@ margin-top: 0.5rem; /* Reducir el margen superior */
 
 /* Ajustes para los botones en dispositivos móviles */
 .buttons button {
-  margin-right: 0; /* Eliminar el margen derecho para ajustar los botones al borde */
-  margin-bottom: 10px; /* Agregar un espacio entre los botones */
+  margin-right: 0; 
+  margin-bottom: 10px; 
 }
 }
 @keyframes registerAnimation {
@@ -233,9 +233,9 @@ margin-top: 0.5rem; /* Reducir el margen superior */
 }
 
 .custom-img {
-  width: 35%; /* Ocupa todo el ancho del contenedor */
-  height: 500px; /* Fija la altura deseada */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+  width: 35%; 
+  height: 500px; 
+  overflow: hidden; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,8 +244,8 @@ margin-top: 0.5rem; /* Reducir el margen superior */
 }
 
 .custom-img img {
-  width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-  height: 100%; /* Asegura que la imagen se ajuste a la altura del contenedor */
+  width: 100%; 
+  height: 100%; 
   object-fit: cover; 
   border-radius: 30px;
 }

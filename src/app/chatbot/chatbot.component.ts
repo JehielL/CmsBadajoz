@@ -19,6 +19,7 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
     motivoVisita: '',
     fechaRegistro: new Date().toISOString()
   };
+  isLoading = false;
 
   currentStep: number = 0; 
   isCollectingData: boolean = true;
@@ -80,21 +81,21 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
     event.preventDefault();
     const messageInput = (document.getElementById('message-input') as HTMLInputElement).value;
     if (!messageInput) return;
-
+  
     // Evitar agregar el mismo mensaje repetido
     if (this.messages.length > 0 && this.messages[this.messages.length - 1].content === messageInput) {
       return;
     }
-
+  
     if (!this.displayedMessages.has(messageInput)) {
       this.messages.push({ role: 'user', content: messageInput });
       this.displayedMessages.add(messageInput); // Marca el mensaje como mostrado
     }
-
+  
     if (this.isCollectingData) {
       this.saveChatData(messageInput);
       this.currentStep++;
-
+  
       if (this.isChatComplete()) {
         this.isCollectingData = false;
         this.isRegistrationComplete = true;
@@ -106,21 +107,20 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
           this.displayedMessages.add(confirmationMessage); // Marca el mensaje de confirmación como mostrado
           this.hasStartedChatbot = true;
         }
-
+  
         await this.startChatbotInteraction();
       } else {
         this.askQuestion();
       }
     } else {
+      // Activa el loader antes de enviar el mensaje al chatbot
+      this.isLoading = true;
       await this.sendMessageToChatbot(messageInput);
     }
-
+  
     (document.getElementById('message-input') as HTMLInputElement).value = '';
   }
-  startChatbotInteraction() {
-    throw new Error('Method not implemented.');
-  }
-
+  
   async sendMessageToChatbot(userMessage: string) {
     try {
       const response = await fetch('https://futurachatbot.com/app2/chat', {
@@ -133,12 +133,12 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
         body: JSON.stringify({ message: userMessage }),
         credentials: 'include'
       });
-
-      if (!response.ok) throw new Error('Error en la respuesta de la API');
   
+      if (!response.ok) throw new Error('Error en la respuesta de la API');
+    
       const data = await response.json();
       const chatbotMessages = data.history.slice(1); // Excluye el primer mensaje de la respuesta
-
+  
       chatbotMessages.forEach((messageData: { role: string, content: string }) => {
         if (!this.displayedMessages.has(messageData.content)) {
           this.messages.push({ role: messageData.role, content: messageData.content });
@@ -147,9 +147,15 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       });
     } catch (error) {
       console.error('Error al enviar el mensaje al chatbot:', error);
+    } finally {
+      // Desactiva el loader después de recibir la respuesta
+      setTimeout(() => { this.isLoading = false; }, 2000);
     }
   }
-
+  
+  startChatbotInteraction() {
+    throw new Error('Method not implemented.');
+  }
   handleKeyDown(event: KeyboardEvent) {
     if (event.key === 'Enter') {
       this.sendMessage(event);

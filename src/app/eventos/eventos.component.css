@@ -150,3 +150,12 @@ ngb-carousel .carousel-control-next:hover {
   border-radius: 30px;   /* Bordes redondeados para la imagen */
   margin-left: 15%;
 }
+
+@media screen and (max-width: 768px) {
+  .custom-img {
+    width: 80%; 
+    height: 300px; 
+    margin-left: 40px;
+  }
+  
+}
