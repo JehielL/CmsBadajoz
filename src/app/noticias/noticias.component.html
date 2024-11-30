@@ -1,57 +1,37 @@
 @if (activedLoader){
-	<div class="center">
-        <div class="spinner">
-          <div class="spinner1"></div>
-        </div>
-      </div>
-	}@else{
-		
-		
-		@if (images) {
+<div class="center">
+	<div class="spinner">
+		<div class="spinner1"></div>
+	</div>
+</div>
+}@else{
 
-			<h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
-				<span class="custom-name" style="font-weight: 600;">NOTICIAS </span>
-				
-			</h1>
-			<ngb-carousel data-aos="fade-left">
-				<ng-template ngbSlide>
-				  <div class="picsum-img-wrapper text-center">
-					<img [src]="images[0]" alt="Random first slide" />
-				  </div>
-				  <div class="carousel-caption">
-					<h3>10 seconds between slides...</h3>
-					<p>This carousel uses customized default values.</p>
-				  </div>
-				</ng-template>
-				<ng-template ngbSlide>
-				  <div class="picsum-img-wrapper text-center">
-					<img [src]="images[1]" alt="Random second slide" />
-				  </div>
-				  <div class="carousel-caption">
-					<h3>No mouse events...</h3>
-					<p>This carousel doesn't pause or resume on mouse events</p>
-				  </div>
-				</ng-template>
-				<ng-template ngbSlide>
-				  <div class="picsum-img-wrapper text-center">
-					<img [src]="images[2]" alt="Random third slide" />
-				  </div>
-				  <div class="carousel-caption">
-					<h3>No keyboard...</h3>
-					<p>This carousel uses customized default values.</p>
-				  </div>
-				</ng-template>
-				<ng-template ngbSlide>
-				  <div class="picsum-img-wrapper text-center">
-					<img [src]="images[3]" alt="Random fourth slide" />
-				  </div>
-				  <div class="carousel-caption">
-					<h3>And no wrap after last slide.</h3>
-					<p>This carousel uses customized default values.</p>
-				  </div>
-				</ng-template>
-			  </ngb-carousel>
-			  
-		}
+<h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
+	<span class="custom-name text-white" style="font-weight: 600;">NOTICIAS</span>
+</h1>
+<ngb-carousel data-aos="fade-left">
+	@for (noticia of noticias.reverse(); track noticia) {
+	<ng-template ngbSlide>
+		<div class="row">
+			<div class="col-md-6 mb-3 mb-md-0 custom-img">
+				<img [src]="noticia.image">
+			</div>
+			<div class="col-md-6">
+				<h1 class="h2 text-light">{{noticia.name}}</h1>
+				<div class="mb-3">
+					<p class="btn btn-outline-light me-2">Comunidad: {{noticia.addressRegion}}</p>
+					<p class="btn btn-outline-light me-2">Localidad: {{noticia.addressLocality}}</p>
+					<p class="btn btn-outline-light me-2">Rating🌟: {{noticia.extras}}</p>
+					<p href="tel:123456789" class="btn btn-outline-light me-2">Idioma📞: {{noticia.availableLanguage}}
+					</p>
+				</div>
+				<div class="fw-bold container-fluid">
+					<p class="text-white" [innerHTML]="noticia.description"></p>
+				</div>
+			</div>
+		</div>
+	</ng-template>
+
 	}
-
+</ngb-carousel>
+}

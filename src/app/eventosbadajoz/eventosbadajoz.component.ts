@@ -5,13 +5,15 @@ import { EventosBadajoz } from '../interfaces/eventosbadajoz.model';
 import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as AOS from 'aos';
+import { DatePipe } from '@angular/common';
+
 
 
 
 @Component({
   selector: 'app-eventosbadajoz',
   standalone: true,
-  imports: [NgbCarouselModule, HttpClientModule],
+  imports: [NgbCarouselModule, HttpClientModule, DatePipe],
   templateUrl: './eventosbadajoz.component.html',
   styleUrl: './eventosbadajoz.component.css'
 })
@@ -32,28 +34,30 @@ export class EventosbadajozComponent implements OnInit {
 
     ngOnInit(): void {
       console.log("Componente Rutas iniciado");
-  
+    
       setTimeout(() => {
         this.activedLoader = false;
       }, 1100);
-  
+    
       AOS.init({
         duration: 1500,
         offset: 200,
         once: true,
       });
-  
+    
       window.scrollTo(0, 0);
-  
+    
       // Realizar la solicitud a la API sin necesidad de id
-      const url = '/assets/eventos.json';  // URL de la API
-  
+      const url = '/assets/response_evento.json';  // URL de la API
+    
       console.log('Realizando solicitud a la URL:', url);
-  
+    
       this.httpClient.get<EventosBadajoz[]>(url).subscribe({
         next: eventos => {
           console.log('Rutas recibidas:', eventos);
-          this.eventos = eventos;
+          // Ordenar eventos por fecha en orden descendente
+          this.eventos = eventos.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+          console.log('Eventos en el frontend:', this.eventos);
         },
         error: err => {
           console.error('Error al obtener los eventos:', err);

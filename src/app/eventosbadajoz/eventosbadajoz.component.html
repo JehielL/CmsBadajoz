@@ -16,7 +16,7 @@
       <ng-template ngbSlide>
         <div class="row">
           <div class="col-md-6 mb-3 mb-md-0 custom-img">
-            <img src="evento.image">
+            <img [src]="evento.image">
           </div>
           <div class="col-md-6">
             <h1 class="h2 text-light">{{evento.name}}</h1>
@@ -24,7 +24,9 @@
               <p class="btn btn-outline-light me-2">Comunidad: {{evento.addressRegion}}</p>
               <p class="btn btn-outline-light me-2">Localidad: {{evento.addressLocality}}</p>
               <p href="tel:123456789" class="btn btn-outline-light me-2">Idioma: {{evento.availableLanguage}}</p>
-              <p class="btn btn-outline-light me-2">Fecha de evento🌟: {{evento.endDate}}</p>
+              <p class="btn btn-outline-light me-2">Comienzo de Evento🌟: {{ evento.startDate | date:'dd/MM/yyyy, h:mm a' }}</p>
+<p class="btn btn-outline-light me-2">Finalización de Evento🌟: {{ evento.endDate | date:'dd/MM/yyyy, h:mm a' }}</p>
+
             </div>
             <div class="fw-bold container-fluid">
               <p class="text-white" [innerHTML]="evento.description"></p>

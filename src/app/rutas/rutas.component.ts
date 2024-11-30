@@ -44,7 +44,7 @@ export class RutasComponent implements OnInit {
     window.scrollTo(0, 0);
 
     // Realizar la solicitud a la API sin necesidad de id
-    const url = '/assets/rutas.json';  // URL de la API
+    const url = '/assets/response_ruta.json';  // URL de la API
 
     console.log('Realizando solicitud a la URL:', url);
 

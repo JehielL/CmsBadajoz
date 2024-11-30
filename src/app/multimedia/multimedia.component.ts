@@ -44,7 +44,7 @@
       window.scrollTo(0, 0);
   
       // Realizar la solicitud a la API sin necesidad de id
-      const url = '/assets/badajoz.json';  // URL de la API
+      const url = '/assets/response_poi.json';  // URL de la API
   
       console.log('Realizando solicitud a la URL:', url);
   

@@ -19,14 +19,14 @@ export class AuthenticationService {
 
   saveToken(token: string) {
     localStorage.setItem('jwt_token', token);
-    console.log('Token guardado:', token);  // Verifica si el token es válido
+    console.log('Token guardado:', token);  
     this.isLoggedin.next(true);
     this.userEmail.next(this.getUserEmail());
     this.isAdmin.next(this.getIsAdmin());
     this.userId.next(this.getUserId());
     const userName = this.getUserName();
-    console.log('Nombre del usuario:', userName);  // Verifica si el nombre se obtiene correctamente
-    this.firstName.next(userName);  // Asegúrate de que 'firstName' se actualiza correctamente
+    console.log('Nombre del usuario:', userName); 
+    this.firstName.next(userName);  
   }
   
   

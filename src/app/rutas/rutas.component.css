@@ -78,3 +78,11 @@ ngb-carousel {
   object-fit: cover; 
   border-radius: 30px;
 }
+@media screen and (max-width: 768px) {
+  .custom-img {
+    width: 80%; 
+    height: 300px; 
+    margin-left: 40px;
+  }
+  
+}
