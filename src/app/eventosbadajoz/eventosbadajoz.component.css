@@ -1,26 +1,126 @@
+/* Estilo global del carrusel */
+ngb-carousel {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Contenedor del carrusel */
+.ngb-carousel .carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  position: relative;
+}
+
+/* Estilo del contenedor de la imagen */
+.picsum-img-wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 90%;
+  height: 600px;  /* Tamaño fijo para las imágenes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+.picsum-img-wrapper img {
+  width: 90%;           /* Asegura que las imágenes se ajusten al ancho del contenedor */
+  height: 90%;         /* Establece una altura fija */
+  object-fit: cover;     /* Mantiene la proporción, recorta la imagen si es necesario */
+  border-radius: 30px;
+  margin-left: 15%;
+}
+
+/* Efecto hover en las imágenes del carrusel */
+.ngb-carousel .carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo del texto de la imagen */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estilo del título en la leyenda */
+.carousel-caption h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 .125rem .25rem rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo de los enlaces dentro del carrusel */
+.ngb-carousel a {
+  display: block;
+  text-decoration: none;
+}
+
 .custom-img {
-    width: 35%; /* Ocupa todo el ancho del contenedor */
-    height: 500px; /* Fija la altura deseada */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin-left: 50px;
+  width: 35%; /* Ocupa todo el ancho del contenedor */
+  height: 500px; /* Fija la altura deseada */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-left: 50px;
+}
+
+.custom-img img {
+  width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  height: 100%; /* Asegura que la imagen se ajuste a la altura del contenedor */
+  object-fit: cover; 
+  border-radius: 30px;
+}
+.custom-container{
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-img {
+    width: 80%; 
+    height: 300px; 
+    margin-left: 40px;
   }
-  
-  .custom-img img {
-    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: 100%; /* Asegura que la imagen se ajuste a la altura del contenedor */
-    object-fit: cover; 
-    border-radius: 30px;
+  .custom-container {
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 70px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .custom-img {
-      width: 80%; 
-      height: 300px; 
-      margin-left: 40px;
-    }
-    
+
+  .ngb-carousel .carousel-control-prev,
+  .ngb-carousel .carousel-control-next {
+    position: absolute;
+    top: 30%; /* Subimos las flechas a la mitad de la imagen */
+    transform: translateY(-50%);
+    width: auto;
   }
+
+  .ngb-carousel .carousel-control-prev {
+    left: 5px; /* Ubica la flecha a la izquierda */
+  }
+
+  .ngb-carousel .carousel-control-next {
+    right: 5px; 
+  }
+}
+
+
+.fixed-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 10; 
+  text-align: center;
+}
+
+

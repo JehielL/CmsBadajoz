@@ -6,11 +6,11 @@
       </div>
       
 }@else{
-    <h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
+    <h1  class="display-4 fst-italic text-center mt-1">
         <span class="custom-name" style="font-weight: 600;">EVENTOS </span>
     </h1>
     
-    <ngb-carousel data-aos="fade-left">
+    <ngb-carousel >
         @for (evento of eventos.reverse(); track evento.id) {
             <ng-template ngbSlide>
                 <div class="picsum-img-wrapper text-center">

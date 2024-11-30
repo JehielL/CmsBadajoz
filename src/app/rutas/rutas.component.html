@@ -6,15 +6,15 @@
 		</div>
 	  </div>
   } @else {
-	<h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
+	<h1 class="display-4 fst-italic text-center fixed-title">
 	  <span class="custom-name text-white" style="font-weight: 600;">RUTAS</span>
 	</h1>
   
 	<!-- Solo un ngb-carousel para todas las rutas -->
-	<ngb-carousel data-aos="fade-left">
+	<ngb-carousel >
 	  @for (ruta of rutas; track ruta) {
-		<ng-template ngbSlide>
-			<div class="row">
+		<ng-template ngbSlide >
+			<div class="row custom-container container-fluid">
 			  <div class="col-md-6 mb-3 mb-md-0 custom-img">
 				<img [src]="ruta.image">
 			  </div>
@@ -26,7 +26,7 @@
 				  <p href="tel:123456789" class="btn btn-outline-light me-2">Idioma📞: {{ruta.availableLanguage}}</p>
 				  <p class="btn btn-outline-light me-2">Rating🌟: {{ruta.ratingValue}}</p>
 				</div>
-				<div class="fw-bold container-fluid">
+				<div class="fw-bold ">
 				  <p class="text-white" [innerHTML]="ruta.description"></p>
 				</div>
 			  </div>

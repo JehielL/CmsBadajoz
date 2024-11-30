@@ -19,7 +19,7 @@ ngb-carousel {
   border-radius: 30px;
   overflow: hidden;
   width: 90%;
-  height: 600px;
+  height: 600px;  /* Tamaño fijo para las imágenes */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,9 +27,9 @@ ngb-carousel {
 
 /* Estilo para las imágenes dentro del carrusel */
 .picsum-img-wrapper img {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
+  width: 90%;          
+  height: 90%;         
+  object-fit: cover;    
   border-radius: 30px;
   margin-left: 15%;
 }
@@ -61,10 +61,11 @@ ngb-carousel {
   display: block;
   text-decoration: none;
 }
+
 .custom-img {
   width: 35%; 
   height: 500px; 
-  overflow: hidden; 
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,6 +79,9 @@ ngb-carousel {
   object-fit: cover; 
   border-radius: 30px;
 }
+.custom-container{
+  margin-top: 100px;
+}
 
 @media screen and (max-width: 768px) {
   .custom-img {
@@ -85,5 +89,38 @@ ngb-carousel {
     height: 300px; 
     margin-left: 40px;
   }
-  
+  .custom-container {
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+  }
+
+  .ngb-carousel .carousel-control-prev,
+  .ngb-carousel .carousel-control-next {
+    position: absolute;
+    top: 30%; /* Subimos las flechas a la mitad de la imagen */
+    transform: translateY(-50%);
+    width: auto;
+  }
+
+  .ngb-carousel .carousel-control-prev {
+    left: 5px; /* Ubica la flecha a la izquierda */
+  }
+
+  .ngb-carousel .carousel-control-next {
+    right: 5px; 
+  }
 }
+
+
+.fixed-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 10; 
+  text-align: center;
+}
+
+

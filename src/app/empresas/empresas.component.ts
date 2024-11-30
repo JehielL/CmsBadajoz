@@ -42,14 +42,13 @@ export class EmpresasComponent implements OnInit{
   
     window.scrollTo(0, 0);
   
-    // Realizar la solicitud a la API sin necesidad de id
-    const url = '/assets/response_evento.json';  // URL de la API
+   
+    const url = '/assets/response_empresas.json';  
   
     console.log('Realizando solicitud a la URL:', url);
   
     this.httpClient.get<Empresa[]>(url).subscribe({
       next: empresas => {
-        console.log('Rutas recibidas:', empresas);
         // Ordenar eventos por fecha en orden descendente
         this.empresas = empresas;
         console.log('Eventos en el frontend:', this.empresas);

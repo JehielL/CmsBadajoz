@@ -21,7 +21,7 @@
 }
 
 .fa-minimize:hover {
-    color: #530889;
+    color: #008F4D;
     transform: scale(0.9);
     transition: transform 0.5s ease, color 0.5s ease;
     cursor: pointer;
@@ -36,7 +36,7 @@
 }
 
 .fa-rotate:hover {
-    color: #530889;
+    color: #008F4D;
     transform: scale(0.9);
     transition: transform 0.5s ease, color 0.5s ease;
     cursor: pointer;
@@ -176,7 +176,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid #530889;
+    border-bottom: 1px solid #008F4D;
 }
 
 .card-header .img-avatar {
@@ -212,7 +212,7 @@
 /* Estilos para el área de entrada del mensaje */
 .message-input {
     padding: 5px;
-    border-top: 1px solid #530889;
+    border-top: 1px solid #008F4D;
     display: flex;
     align-items: center;
 }
@@ -230,7 +230,7 @@
 
 /* Estilo del botón de enviar */
 .message-input .button-send {
-    background: linear-gradient(to right, #b30092, #009bb3);
+    background: linear-gradient(to right, #000000, #008F4D);
   border: none;
   transition: background-position 0.3s ease, transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   background-size: 200% auto;
@@ -273,7 +273,7 @@
     }
 }
 .sent {
-    background-color: #f5aef2; /* Color de fondo para mensajes enviados */
+    background-color: #aef5ba; /* Color de fondo para mensajes enviados */
     text-align: right; /* Alineación a la derecha */
     padding: 10px; /* Espaciado interno para el mensaje */
     border-radius: 10px;
@@ -285,7 +285,7 @@
 }
 
 .received {
-    background-color: #b482c1; 
+    background-color: #9cd1a6; 
     text-align: left;
     padding: 10px;
     border-radius: 10px;
@@ -297,8 +297,8 @@
 
 #wifi-loader {
     --background: #62abff;
-    --front-color: #530889;
-    --front-color-in: #530889;
+    --front-color: #008F4D;
+    --front-color-in: #008F4D;
     --back-color: #c3c8de;
     --text-color: #414856;
     width: 64px;

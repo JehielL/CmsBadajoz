@@ -1,5 +1,5 @@
 section {
-  --col-orange: #530889;
+  --col-orange: #E3001B;
   --col-dark: #ffffff;
   --col-darkGray: #52555a;
   --col-gray: #aeaeae;
@@ -38,7 +38,7 @@ section {
 }
 
 .label:hover:not(:has(input:checked)) > svg {
-  fill: #4b0456;
+  fill: #E3001B;
   cursor: pointer;
 }
 

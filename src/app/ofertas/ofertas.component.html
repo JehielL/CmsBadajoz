@@ -6,15 +6,15 @@
 		</div>
 	  </div>
   } @else {
-	<h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
+	<h1  class="display-4 fst-italic text-center fixed-title">
 	  <span class="custom-name text-white" style="font-weight: 600;">OFERTAS</span>
 	</h1>
   
 	<!-- Solo un ngb-carousel para todas las rutas -->
-	<ngb-carousel data-aos="fade-left">
+	<ngb-carousel >
 	  @for (oferta of ofertas; track oferta) {
 		<ng-template ngbSlide>
-			<div class="row">
+			<div class="row custom-container container-fluid" >
 			  <div class="col-md-6 mb-3 mb-md-0 custom-img image-fluid">
 <img  [src]="oferta.image" alt="{{ oferta.name }}">
 			  </div>

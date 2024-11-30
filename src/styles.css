@@ -5,8 +5,9 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     height: 100%;
-    background: linear-gradient(to right, #530889, #1d2222);
-    background-size: 400% 400%; /* Aumenta el área del gradiente para que se desplace */
+    background: linear-gradient(to right, #008F4D, #1d2222), 
+    linear-gradient(to left, yellow, #E3001B);
+background-size: 400% 400%; /* Aumenta el área del gradiente para que se desplace */
     animation: gradientAnimation 10s ease infinite; /* Aplicar la animación */
 }
 
@@ -31,20 +32,20 @@ html, body {
   align-items: center;
   height: 100vh; /* Ocupa toda la altura de la pantalla */
   width: 100vw; /* Ocupa toda la anchura de la pantalla */
-  background-color: #00000067; /* Fondo opcional para resaltar el spinner */
+  background-color: #ffffff00; /* Fondo opcional para resaltar el spinner */
   margin: 0;
 }
 
 /* Estilo del spinner */
 .spinner {
-  background-image: linear-gradient(#530889, rgb(0, 225, 255));
+  background-image: linear-gradient(#ffffff00, #E3001B);
   width: 100px;
   height: 100px;
   animation: spinning82341 1.7s linear infinite;
   text-align: center;
   border-radius: 50px;
   filter: blur(1px);
-  box-shadow: 0px -5px 20px 0px #530889, 0px 5px 20px 0px rgb(0, 225, 255);
+  box-shadow: 0px -5px 20px 0px #E3001B, 0px 5px 20px 0px rgb(3, 4, 4);
 }
 
 .spinner1 {

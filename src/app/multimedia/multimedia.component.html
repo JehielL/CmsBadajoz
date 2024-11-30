@@ -6,16 +6,16 @@
 </div>
 
 }@else{
-<h1 data-aos="fade-left" class="display-4 fst-italic text-center mt-1">
+<h1  class="display-4 fst-italic text-center fixed-title ">
   <span class="custom-name text-white" style="font-weight: 600;">PUNTOS DE INTERES</span>
 </h1>
-<ngb-carousel data-aos="fade-left">
+<ngb-carousel >
   @for (evento of pois; track evento) {
 
 
 
   <ng-template ngbSlide>
-    <div class="row">
+    <div class="row container-fluid custom-container">
       <div class="col-md-6 mb-3 mb-md-0 custom-img">
         <img [src]="evento.image">
       </div>
