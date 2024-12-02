@@ -19,8 +19,6 @@ export class OfertasComponent implements OnInit {
 
 
   constructor(
-    private activatedRoute: ActivatedRoute,
-    private router: Router,
     private httpClient: HttpClient,
     authService: AuthenticationService
   ) {}

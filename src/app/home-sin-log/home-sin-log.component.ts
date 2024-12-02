@@ -11,7 +11,7 @@ import * as AOS from 'aos';
 @Component({
   selector: 'app-home-sin-log',
   standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule],
+  imports: [ReactiveFormsModule, HttpClientModule, RouterLink],
   templateUrl: './home-sin-log.component.html',
   styleUrls: ['./home-sin-log.component.css'], // Asegúrate de usar "styleUrls" en plural
 })
@@ -68,7 +68,7 @@ export class HomeSinLogComponent implements OnInit {
       password: this.loginForm.get('password')?.value ?? '',
     };
 
-    this.httpClient.post<Token>('http://localhost:8080/users/login', login).subscribe({
+    this.httpClient.post<Token>('http://213.165.74.6:9090/users/login', login).subscribe({
       next: (response) => {
         console.log(response.token);
         this.authService.saveToken(response.token);

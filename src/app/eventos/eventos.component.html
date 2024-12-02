@@ -17,7 +17,7 @@
                     @if (evento.imgEvento.startsWith('http')) {
                         <img [src]="evento.imgEvento" alt="{{ evento.titulo }}" />
                     } @else {
-                        <img [src]="'http://localhost:8080/files/' + evento.imgEvento" alt="{{ evento.titulo }}" />
+                        <img [src]="'http://213.165.74.6:9090/files/' + evento.imgEvento" alt="{{ evento.titulo }}" />
                     }
                 </div>
                 <div class="carousel-caption">
