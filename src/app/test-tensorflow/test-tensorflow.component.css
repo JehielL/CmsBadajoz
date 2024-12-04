@@ -1,14 +1,117 @@
-/* test-tensorflow.component.css */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Spinner Styles */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border: 3px solid rgba(1, 97, 12, 0.641);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 105%;
+  height: 105%;
+  border: 2px solid transparent;
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+}
+
+.loader span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite;
+}
+
+.loader span::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #055111;
+  top: -6px;
+  right: -8px;
+  box-shadow: 0 0 20px 5px #087b19;
+}
+
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  video {
-    width: 640px;
-    height: 480px;
-    border: 2px solid #ccc;
-    margin-top: 20px;
+
+  100% {
+    transform: rotate(360deg);
   }
-  
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+/* Button Styles */
+.button-container {
+  position: absolute;
+  top: calc(50% + 150px); 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #008F4D;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #000000;
+  border: 2px solid #008F4D;
+  box-shadow: 5px 5px 0px #008F4D;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}

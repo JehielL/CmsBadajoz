@@ -18,6 +18,7 @@ export class EmpresasComponent implements OnInit{
   
   empresas: Empresa[] = [];
   activedLoader = true;
+  currentEmpresa: Empresa | undefined;
 
   constructor(
     private httpClient: HttpClient,
@@ -50,8 +51,11 @@ export class EmpresasComponent implements OnInit{
     this.httpClient.get<Empresa[]>(url).subscribe({
       next: empresas => {
         // Ordenar eventos por fecha en orden descendente
-        this.empresas = empresas;
         console.log('Eventos en el frontend:', this.empresas);
+        this.empresas = empresas;
+
+        this.loadEmpresa(0);
+        
       },
       error: err => {
         console.error('Error al obtener las empresas:', err);
@@ -62,8 +66,21 @@ export class EmpresasComponent implements OnInit{
   }
   
   
+  generateMapUrl(latitude: number, longitude: number): string {
+    return `https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.01},${latitude - 0.01},${longitude + 0.01},${latitude + 0.01}&layer=mapnik&marker=${latitude},${longitude}`;
+  }
 
-
+  loadEmpresa(index: number): void {
+    if (this.empresas[index]) {
+      this.currentEmpresa = this.empresas[index];
+    }
+  }
+  
+  
+  onCarouselSlideChanged(event: any): void {
+    const index = event.current;
+    this.loadEmpresa(index);  // Cargar la ruta correspondiente al índice de la diapositiva
+  }
   
 
 }

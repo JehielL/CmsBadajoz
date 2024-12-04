@@ -1,3 +1,5 @@
+import { SafeUrl } from "@angular/platform-browser";
+
 export interface Ruta {
     identifier: number;
     name: string;
@@ -28,6 +30,8 @@ export interface Ruta {
       changed?: string[];
       [key: string]: any;
     };
+    imageSafeUrl?: SafeUrl;  // Añadir esta línea
+
     [key: string]: any;
   }
   

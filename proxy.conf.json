@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://turismoapps.dip-badajoz.es",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

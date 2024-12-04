@@ -2,7 +2,7 @@
 ngb-carousel {
   max-width: 100%;
   margin: 0 auto;
-  display: block; /* Asegura que el carrusel sea un bloque */
+  display: block; 
 }
 
 /* Contenedor del carrusel */
@@ -10,28 +10,28 @@ ngb-carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px; /* Ajusta la altura si es necesario */
-  position: relative; /* Asegura que el contenido esté posicionado correctamente */
+  height: 400px; 
+  position: relative; 
 }
 
 /* Contenedor de la imagen con bordes redondeados y overflow */
 .picsum-img-wrapper {
   border-radius: 30px;
-  overflow: hidden; /* Asegura que la imagen no sobresalga */
+  overflow: hidden; 
   transition: transform 0.3s ease-in-out;
-  width: 100%; /* Asegura que el contenedor tenga el mismo tamaño que la imagen */
-  height: 100%; /* Ajusta la altura del contenedor */
+  width: 100%;
+  height: 100%; 
 }
 
 /* Estilo de las imágenes dentro del carrusel */
 .ngb-carousel .carousel-item img {
-  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
-  height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
-  object-fit: cover; /* Hace que la imagen cubra el área sin deformarse */
-  border-radius: 30px; /* Bordes redondeados para un estilo suave */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 30px;
   transition: transform 0.3s ease-in-out;
-  display: block; /* Asegura que las imágenes se comporten como bloques */
-  margin: 0 auto; /* Centra la imagen dentro del carrusel */
+  display: block; 
+  margin: 0 auto; 
 }
 
 /* Efecto hover en las imágenes del carrusel */

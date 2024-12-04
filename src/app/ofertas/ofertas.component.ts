@@ -1,10 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, Sanitizer, ViewChild } from '@angular/core';
 import * as AOS from 'aos'; 
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from '../services/authentication.service';
 import { Oferta } from '../interfaces/oferta.model';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-ofertas',
@@ -16,11 +17,14 @@ import { Oferta } from '../interfaces/oferta.model';
 export class OfertasComponent implements OnInit {
   activedLoader = true;
   ofertas: Oferta[] = [];
+  currentOferta: Oferta | undefined;
+  authService: AuthenticationService | undefined;
 
 
   constructor(
     private httpClient: HttpClient,
-    authService: AuthenticationService
+    authService: AuthenticationService,
+    private sanitizar: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -47,6 +51,7 @@ export class OfertasComponent implements OnInit {
       next: ofertas => {
         console.log('Rutas recibidas:', ofertas);
         this.ofertas = ofertas;
+        this.loadOferta(0);
       },
       error: err => {
         console.error('Error al obtener los eventos:', err);
@@ -55,9 +60,12 @@ export class OfertasComponent implements OnInit {
       }
     });
   }
-
+  loadOferta(index: number): void {
+    if (this.ofertas[index]) {
+      this.currentOferta = this.ofertas[index];
+    }
+  }
   carruselIntervalo = 2000;
-  images = [6, 3, 46, 95, 92, 43, 38].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
   paused = false;
   unpauseOnArrow = false;
@@ -88,5 +96,8 @@ export class OfertasComponent implements OnInit {
       this.togglePaused();
     }
   }
-
+  onCarouselSlideChanged(event: any): void {
+    const index = event.current;
+    this.loadOferta(index);  // Cargar la ruta correspondiente al índice de la diapositiva
+  }
 }

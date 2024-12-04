@@ -16,6 +16,8 @@ import { AuthenticationService } from '../services/authentication.service';
 export class NoticiasComponent implements OnInit {
 
   noticias: Noticia[] = [];
+  currentNoticia: Noticia | undefined;
+
 
   activedLoader = true;
 
@@ -45,6 +47,7 @@ export class NoticiasComponent implements OnInit {
         
         console.log('Noticias recibidas:', noticias);
         this.noticias = noticias;
+        this.loadNoticia(0);
       }, error: err => {
         console.error('Error al obtener las noticias:', err);
         console.error('Estado HTTP:', err.status);
@@ -84,6 +87,16 @@ export class NoticiasComponent implements OnInit {
     if (this.pauseOnIndicator && !slideEvent.paused && slideEvent.source === NgbSlideEventSource.INDICATOR) {
       this.togglePaused();
     }
+  }
+
+  loadNoticia(index: number): void {
+    if (this.noticias[index]) {
+      this.currentNoticia = this.noticias[index];
+    }
+  }
+  onCarouselSlideChanged(event: any): void {
+    const index = event.current;
+    this.loadNoticia(index);  // Cargar la ruta correspondiente al índice de la diapositiva
   }
 
 }

@@ -1,30 +1,32 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import * as AOS from 'aos'; 
+import * as AOS from 'aos';
 import { NgbCarouselModule, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { Ruta } from '../interfaces/ruta.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from '../services/authentication.service';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-rutas',
   standalone: true,
   imports: [NgbCarouselModule, HttpClientModule],
   templateUrl: './rutas.component.html',
-  styleUrl: './rutas.component.css'
+  styleUrls: ['./rutas.component.css']
 })
 export class RutasComponent implements OnInit {
   activedLoader = true;
-  rutas: Ruta[] = [];
+  rutas: Ruta[] = [];  // Almacena todas las rutas que recibes del JSON
+  currentRuta: Ruta | undefined;  // La ruta que se está mostrando actualmente en el carrusel
   authService: AuthenticationService | undefined;
 
   @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
-
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private httpClient: HttpClient,
+    private sanitizer: DomSanitizer,
     authService: AuthenticationService
   ) {}
 
@@ -43,7 +45,7 @@ export class RutasComponent implements OnInit {
 
     window.scrollTo(0, 0);
 
-    // Realizar la solicitud a la API sin necesidad de id
+    // Realizar la solicitud a la API usando el proxy
     const url = '/assets/response_ruta.json';  // URL de la API
 
     console.log('Realizando solicitud a la URL:', url);
@@ -52,6 +54,7 @@ export class RutasComponent implements OnInit {
       next: rutas => {
         console.log('Rutas recibidas:', rutas);
         this.rutas = rutas;
+        this.loadRuta(0);
       },
       error: err => {
         console.error('Error al obtener los eventos:', err);
@@ -61,8 +64,15 @@ export class RutasComponent implements OnInit {
     });
   }
 
+  // Método para cargar una ruta específica por su índice
+  loadRuta(index: number): void {
+    if (this.rutas[index]) {
+      this.currentRuta = this.rutas[index];
+    }
+  }
+
   trackByRuta(index: number, ruta: Ruta): number {
-    return ruta['id'];
+    return ruta.identifier;
   }
 
   isPaused = false;
@@ -74,5 +84,11 @@ export class RutasComponent implements OnInit {
       this.carousel.pause();
     }
     this.isPaused = !this.isPaused;
+  }
+
+  // Escuchar el cambio de diapositiva para cargar la ruta correspondiente
+  onCarouselSlideChanged(event: any): void {
+    const index = event.current;
+    this.loadRuta(index);  // Cargar la ruta correspondiente al índice de la diapositiva
   }
 }

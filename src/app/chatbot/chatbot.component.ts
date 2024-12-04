@@ -81,6 +81,8 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
 
     // Activa el loader antes de enviar el mensaje al chatbot
     this.isLoading = true;
+    this.messages.push({ role: 'futurito', content: 'Pensando...' });
+
     await this.sendMessageToChatbot(messageInput);
 
     (document.getElementById('message-input') as HTMLInputElement).value = '';
@@ -104,6 +106,8 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       const data = await response.json();
       const chatbotMessages = data.history.slice(1); // Excluye el primer mensaje de la respuesta
 
+      // Reemplaza el mensaje "Pensando..." con el mensaje real
+      this.messages.pop();
       chatbotMessages.forEach((messageData: { role: string, content: string }) => {
         if (!this.displayedMessages.has(messageData.content)) {
           this.messages.push({ role: messageData.role, content: messageData.content });
@@ -172,4 +176,3 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
     }
   }
 }
-

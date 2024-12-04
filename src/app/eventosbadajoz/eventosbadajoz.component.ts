@@ -6,6 +6,7 @@ import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as AOS from 'aos';
 import { DatePipe } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 
@@ -20,62 +21,72 @@ import { DatePipe } from '@angular/common';
 export class EventosbadajozComponent implements OnInit {
 
   activedLoader = true;
-    eventos: EventosBadajoz[] = []; // Datos obtenidos de la API
-    authService: AuthenticationService | undefined;
+  eventos: EventosBadajoz[] = [];
+  currentEvento: EventosBadajoz | undefined;
+  authService: AuthenticationService | undefined;
 
-    @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
+  @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 
-    constructor(
-      private activatedRoute: ActivatedRoute,
-      private router: Router,
-      private httpClient: HttpClient,
-      authService: AuthenticationService
-    ) {}
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private httpClient: HttpClient,
+    private sanitizer: DomSanitizer,
+    authService: AuthenticationService
+  ) { }
 
-    ngOnInit(): void {
-      console.log("Componente Rutas iniciado");
-    
-      setTimeout(() => {
-        this.activedLoader = false;
-      }, 1100);
-    
-      AOS.init({
-        duration: 1500,
-        offset: 200,
-        once: true,
-      });
-    
-      window.scrollTo(0, 0);
-    
-      // Realizar la solicitud a la API sin necesidad de id
-      const url = '/assets/response_evento.json';  // URL de la API
-    
-      console.log('Realizando solicitud a la URL:', url);
-    
-      this.httpClient.get<EventosBadajoz[]>(url).subscribe({
-        next: eventos => {
-          console.log('Rutas recibidas:', eventos);
-          // Ordenar eventos por fecha en orden descendente
-          this.eventos = eventos.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
-          console.log('Eventos en el frontend:', this.eventos);
-        },
-        error: err => {
-          console.error('Error al obtener los eventos:', err);
-          console.error('Estado HTTP:', err.status);
-          console.error('Mensaje de error:', err.message);
-        }
-      });
-    }
-    
+  ngOnInit(): void {
+    console.log("Componente Rutas iniciado");
 
-    isPaused = false;
+    setTimeout(() => {
+      this.activedLoader = false;
+    }, 1100);
 
-    togglePaused(): void {
-      if (this.isPaused) {
-        this.carousel.cycle();
-      } else {
-        this.carousel.pause();
+    AOS.init({
+      duration: 1500,
+      offset: 200,
+      once: true,
+    });
+
+    window.scrollTo(0, 0);
+
+    // Realizar la solicitud a la API sin necesidad de id
+    const url = '/assets/response_evento.json';  // URL de la API
+
+    console.log('Realizando solicitud a la URL:', url);
+
+    this.httpClient.get<EventosBadajoz[]>(url).subscribe({
+      next: eventos => {
+        console.log('Rutas recibidas:', eventos);
+        this.eventos = eventos.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+        this.loadRuta(0);
+      },
+      error: err => {
+        console.error('Error al obtener los eventos:', err);
+        console.error('Estado HTTP:', err.status);
+        console.error('Mensaje de error:', err.message);
       }
-      this.isPaused = !this.isPaused;
+    });
+  }
+
+
+  isPaused = false;
+  loadRuta(index: number): void {
+    if (this.eventos[index]) {
+      this.currentEvento = this.eventos[index];
     }
+  }
+  togglePaused(): void {
+    if (this.isPaused) {
+      this.carousel.cycle();
+    } else {
+      this.carousel.pause();
+    }
+    this.isPaused = !this.isPaused;
+  }
+
+  onCarouselSlideChanged(event: any): void {
+    const index = event.current;
+    this.loadRuta(index);  // Cargar la ruta correspondiente al índice de la diapositiva
+  }
 }

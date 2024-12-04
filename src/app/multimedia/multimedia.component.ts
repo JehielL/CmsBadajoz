@@ -18,6 +18,7 @@
     activedLoader = true;
     pois: Multimedia[] = []; // Datos obtenidos de la API
     authService: AuthenticationService | undefined;
+    currentPois: Multimedia | undefined; // El POI que se está mostrando actualmente en el carrusel
 
     @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 
@@ -52,6 +53,7 @@
         next: pois => {
           console.log('Rutas recibidas:', pois);
           this.pois = pois;
+          this.loadPoi(0);
         },
         error: err => {
           console.error('Error al obtener los eventos:', err);
@@ -64,6 +66,12 @@
 
     isPaused = false;
 
+    loadPoi(index: number): void {
+      if (this.pois[index]) {
+        this.currentPois = this.pois[index];
+      }
+    }
+
     togglePaused(): void {
       if (this.isPaused) {
         this.carousel.cycle();
@@ -71,5 +79,10 @@
         this.carousel.pause();
       }
       this.isPaused = !this.isPaused;
+    }
+
+    onCarouselSlideChanged(event: any): void {
+      const index = event.current;
+      this.loadPoi(index);  // Cargar la ruta correspondiente al índice de la diapositiva
     }
   }
