@@ -1,8 +1,6 @@
 {
   "/api": {
-    "target": "https://turismoapps.dip-badajoz.es",
-    "secure": false,
-    "changeOrigin": true,
-    "logLevel": "debug"
+    "target": "http://213.165.74.6:9090",
+    "secure": false
   }
 }

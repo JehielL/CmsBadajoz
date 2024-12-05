@@ -10,7 +10,7 @@
 	<span class="custom-name text-white" style="font-weight: 600;">NOTICIAS</span>
 </h1>
 <ngb-carousel (slide)="onCarouselSlideChanged($event)">
-	@for (noticia of noticias.reverse(); track noticia) {
+	@for (noticia of noticias; track noticia) {
 	<ng-template ngbSlide>
 		<div class="row custom-container container-fluid" >
 			<div class="col-md-6 mb-3 mb-md-0 custom-img">
