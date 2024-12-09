@@ -57,7 +57,7 @@ export class DashboarduserComponent implements OnInit {
     this.authService.isLoggedin.subscribe(isLoggedin => {
       this.isLoggedin = isLoggedin;
       if(this.isLoggedin) {
-        this.httpClient.get<User>('http://213.165.74.6:8443/users/' + this.userId)
+        this.httpClient.get<User>('https://213.165.74.6:8444/users/' + this.userId)
           .subscribe(user => {
             this.user = user;
             if (user) {
@@ -88,7 +88,7 @@ export class DashboarduserComponent implements OnInit {
     // Verificar si el `userId` está disponible desde el servicio
     if (this.userId) {
       // Si está disponible, usar el `userId` para cargar eventos
-      const eventosUrl = `http://213.165.74.6:8443/eventos/filter-by-user/${this.userId}`;
+      const eventosUrl = `https://213.165.74.6:8444/eventos/filter-by-user/${this.userId}`;
       this.cargarEventos(eventosUrl);
     } else {
       // Si no está disponible, intentar obtenerlo de la URL
@@ -181,7 +181,7 @@ export class DashboarduserComponent implements OnInit {
 
     // Si estamos actualizando el evento
     if (this.isUpdate) {
-      this.httpClient.put<Evento>('http://213.165.74.6:8443/eventos/' + this.evento?.id, formData)
+      this.httpClient.put<Evento>('https://213.165.74.6:8444/eventos/' + this.evento?.id, formData)
         .subscribe(
           response => {
             console.log('Event updated successfully:', response);
@@ -191,7 +191,7 @@ export class DashboarduserComponent implements OnInit {
         );
     } else {
       // Si estamos creando un nuevo evento
-      this.httpClient.post<Evento>('http://213.165.74.6:8443/eventos', formData)
+      this.httpClient.post<Evento>('https://213.165.74.6:8444/eventos', formData)
         .subscribe(
           response => {
             console.log('Event created successfully:', response);
@@ -214,7 +214,7 @@ export class DashboarduserComponent implements OnInit {
   }
   onDrop(event: CdkDragDrop<Evento[]>): void {
     const eventoId = event.item.data.id;
-    this.httpClient.delete(`http://213.165.74.6:8443/eventos/${eventoId}`).subscribe({
+    this.httpClient.delete(`https://213.165.74.6:8444/eventos/${eventoId}`).subscribe({
       next: () => {
         console.log('Evento eliminado:', eventoId);
         this.eventos = this.eventos?.filter(evento => evento.id !== eventoId);
@@ -227,7 +227,7 @@ export class DashboarduserComponent implements OnInit {
 
 
   eliminarEventoBackend(id: number): void {
-    this.httpClient.delete(`http://213.165.74.6:8443/eventos/${id}`).subscribe({
+    this.httpClient.delete(`https://213.165.74.6:8444/eventos/${id}`).subscribe({
       next: () => console.log(`Evento con ID ${id} eliminado del backend.`),
       error: (err) => console.error(`Error al eliminar el evento:`, err)
     });
