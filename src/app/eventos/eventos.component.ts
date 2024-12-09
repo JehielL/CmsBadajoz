@@ -71,7 +71,7 @@ export class EventosComponent implements OnInit {
       if (!id) return;
   
       // URL del endpoint para obtener los eventos del usuario
-      const url = `http://213.165.74.6:9090/eventos/filter-by-user/${id}`;
+      const url = `http://desarrollosfutura.com:8444/eventos/filter-by-user/${id}`;
   
       this.httpClient.get<Evento[]>(url).subscribe(
         eventos => {
@@ -84,7 +84,7 @@ export class EventosComponent implements OnInit {
         }
       );
   
-      const userUrl = `http://213.165.74.6:9090/user/${id}`;
+      const userUrl = `http://desarrollosfutura.com:8444/user/${id}`;
       this.httpClient.get<User[]>(userUrl).subscribe(users => {
         this.users = users;
         console.log('Usuarios recibidos:', this.users);

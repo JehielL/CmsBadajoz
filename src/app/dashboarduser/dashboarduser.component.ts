@@ -57,7 +57,7 @@ export class DashboarduserComponent implements OnInit {
     this.authService.isLoggedin.subscribe(isLoggedin => {
       this.isLoggedin = isLoggedin;
       if(this.isLoggedin) {
-        this.httpClient.get<User>('https://213.165.74.6:8444/users/' + this.userId)
+        this.httpClient.get<User>('https://desarrollosfutura.com:8444/users/' + this.userId)
           .subscribe(user => {
             this.user = user;
             if (user) {
@@ -88,7 +88,7 @@ export class DashboarduserComponent implements OnInit {
     // Verificar si el `userId` está disponible desde el servicio
     if (this.userId) {
       // Si está disponible, usar el `userId` para cargar eventos
-      const eventosUrl = `https://213.165.74.6:8444/eventos/filter-by-user/${this.userId}`;
+      const eventosUrl = `https://desarrollosfutura.com:8444/eventos/filter-by-user/${this.userId}`;
       this.cargarEventos(eventosUrl);
     } else {
       // Si no está disponible, intentar obtenerlo de la URL
