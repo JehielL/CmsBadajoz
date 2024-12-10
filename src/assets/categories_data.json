@@ -1,0 +1,1529 @@
+{
+    "active3d_code": {
+        "name": "Codificaci\u00f3n active 3D",
+        "terms": []
+    },
+    "active_3d_category": {
+        "name": "Categor\u00eda activo 3D",
+        "terms": [
+            {
+                "tid": "252",
+                "name": "Categoria Activo 3D 1",
+                "parent": 0
+            },
+            {
+                "tid": "253",
+                "name": "Categoria Activo 3D 2",
+                "parent": 0
+            }
+        ]
+    },
+    "audioguide_category": {
+        "name": "Categor\u00eda audiogu\u00eda",
+        "terms": [
+            {
+                "tid": "254",
+                "name": "Categor\u00eda audioguia 1",
+                "parent": 0
+            },
+            {
+                "tid": "255",
+                "name": "Categoria audioguia 2",
+                "parent": 0
+            }
+        ]
+    },
+    "canal": {
+        "name": "Canal",
+        "terms": [
+            {
+                "tid": "28",
+                "name": "Agenda",
+                "parent": 0
+            },
+            {
+                "tid": "78",
+                "name": "General",
+                "parent": 0
+            },
+            {
+                "tid": "75",
+                "name": "Ofertas",
+                "parent": 0
+            },
+            {
+                "tid": "29",
+                "name": "Campa\u00f1as Municipales y Promociones Tur\u00edsticas",
+                "parent": 0
+            },
+            {
+                "tid": "27",
+                "name": "Noticias",
+                "parent": 0
+            }
+        ]
+    },
+    "categoria_incidencia": {
+        "name": "Categoria incidencia",
+        "terms": [
+            {
+                "tid": "21",
+                "name": "Basuras y limpieza de calles",
+                "parent": 0
+            },
+            {
+                "tid": "18",
+                "name": "Agua y saneamiento",
+                "parent": 0
+            },
+            {
+                "tid": "19",
+                "name": "Alumbrado p\u00fablico",
+                "parent": 0
+            },
+            {
+                "tid": "23",
+                "name": "Otras",
+                "parent": 0
+            },
+            {
+                "tid": "20",
+                "name": "Arbolado, Parques y Jardines",
+                "parent": 0
+            },
+            {
+                "tid": "30",
+                "name": "Quejas y sugerencias",
+                "parent": 0
+            },
+            {
+                "tid": "26",
+                "name": "Se\u00f1alizaci\u00f3n Viaria Horizontal y Vertical",
+                "parent": 0
+            },
+            {
+                "tid": "22",
+                "name": "Mobiliario urbano",
+                "parent": 0
+            },
+            {
+                "tid": "25",
+                "name": "Plagas y animales",
+                "parent": 0
+            },
+            {
+                "tid": "24",
+                "name": "Pavimentaci\u00f3n",
+                "parent": 0
+            }
+        ]
+    },
+    "categoria_ruta": {
+        "name": "Categoria ruta",
+        "terms": [
+            {
+                "tid": "262",
+                "name": "A caballo",
+                "parent": 0
+            },
+            {
+                "tid": "201",
+                "name": "Ciclismo",
+                "parent": 0
+            },
+            {
+                "tid": "261",
+                "name": "En coche",
+                "parent": 0
+            },
+            {
+                "tid": "260",
+                "name": "Senderismo",
+                "parent": 0
+            },
+            {
+                "tid": "265",
+                "name": "Urbana",
+                "parent": 0
+            }
+        ]
+    },
+    "categoria_trivial": {
+        "name": "Categoria Trivial",
+        "terms": [
+            {
+                "tid": "195",
+                "name": "Personajes y tradiciones",
+                "parent": 0
+            },
+            {
+                "tid": "190",
+                "name": "Ciudades y pueblos",
+                "parent": 0
+            },
+            {
+                "tid": "192",
+                "name": "Hechos hist\u00f3ricos",
+                "parent": 0
+            },
+            {
+                "tid": "193",
+                "name": "Gastronom\u00eda",
+                "parent": 0
+            },
+            {
+                "tid": "191",
+                "name": "Patrimonio, arte y literatura",
+                "parent": 0
+            },
+            {
+                "tid": "194",
+                "name": "Naturaleza y paisaje",
+                "parent": 0
+            }
+        ]
+    },
+    "categorias_app_android": {
+        "name": "Categorias APP Android",
+        "terms": [
+            {
+                "tid": "215",
+                "name": "Hogar",
+                "parent": 0
+            },
+            {
+                "tid": "221",
+                "name": "Noticias y revistas",
+                "parent": 0
+            },
+            {
+                "tid": "213",
+                "name": "Comida y bebida",
+                "parent": 0
+            },
+            {
+                "tid": "200",
+                "name": "Arte y dise\u00f1o",
+                "parent": 0
+            },
+            {
+                "tid": "202",
+                "name": "Coches y veh\u00edculos",
+                "parent": 0
+            },
+            {
+                "tid": "206",
+                "name": "C\u00f3mics",
+                "parent": 0
+            },
+            {
+                "tid": "203",
+                "name": "Belleza",
+                "parent": 0
+            },
+            {
+                "tid": "216",
+                "name": "Bibliotecas y demos",
+                "parent": 0
+            },
+            {
+                "tid": "209",
+                "name": "Educaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "204",
+                "name": "Libros y obras de consulta",
+                "parent": 0
+            },
+            {
+                "tid": "205",
+                "name": "Negocios",
+                "parent": 0
+            },
+            {
+                "tid": "218",
+                "name": "Mapas y navegaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "232",
+                "name": "Tiempo",
+                "parent": 0
+            },
+            {
+                "tid": "207",
+                "name": "Comunicaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "226",
+                "name": "Compras",
+                "parent": 0
+            },
+            {
+                "tid": "228",
+                "name": "Deportes",
+                "parent": 0
+            },
+            {
+                "tid": "210",
+                "name": "Entretenimiento",
+                "parent": 0
+            },
+            {
+                "tid": "217",
+                "name": "Estilo de vida",
+                "parent": 0
+            },
+            {
+                "tid": "211",
+                "name": "Eventos",
+                "parent": 0
+            },
+            {
+                "tid": "229",
+                "name": "Herramientas",
+                "parent": 0
+            },
+            {
+                "tid": "212",
+                "name": "Finanzas",
+                "parent": 0
+            },
+            {
+                "tid": "208",
+                "name": "Ligar",
+                "parent": 0
+            },
+            {
+                "tid": "224",
+                "name": "Fotograf\u00eda",
+                "parent": 0
+            },
+            {
+                "tid": "227",
+                "name": "Sociedad",
+                "parent": 0
+            },
+            {
+                "tid": "214",
+                "name": "Salud y fitness",
+                "parent": 0
+            },
+            {
+                "tid": "222",
+                "name": "Ser padres",
+                "parent": 0
+            },
+            {
+                "tid": "231",
+                "name": "Reproductores y editores de v\u00eddeo",
+                "parent": 0
+            },
+            {
+                "tid": "219",
+                "name": "Medicina",
+                "parent": 0
+            },
+            {
+                "tid": "220",
+                "name": "M\u00fasica y audio",
+                "parent": 0
+            },
+            {
+                "tid": "223",
+                "name": "Personalizaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "225",
+                "name": "Productividad",
+                "parent": 0
+            },
+            {
+                "tid": "230",
+                "name": "Viajes y gu\u00edas",
+                "parent": 0
+            }
+        ]
+    },
+    "comarca": {
+        "name": "Comarca",
+        "terms": [
+            {
+                "tid": "1",
+                "name": "Diputaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "2",
+                "name": "Campi\u00f1a Sur",
+                "parent": 0
+            },
+            {
+                "tid": "3",
+                "name": "Cijara",
+                "parent": 0
+            },
+            {
+                "tid": "4",
+                "name": "La Serena",
+                "parent": 0
+            },
+            {
+                "tid": "5",
+                "name": "La Siberia",
+                "parent": 0
+            },
+            {
+                "tid": "6",
+                "name": "Llanos de Olivenza",
+                "parent": 0
+            },
+            {
+                "tid": "7",
+                "name": "Sierra Suroeste",
+                "parent": 0
+            },
+            {
+                "tid": "8",
+                "name": "Tentud\u00eda",
+                "parent": 0
+            },
+            {
+                "tid": "9",
+                "name": "Tierra de Badajoz",
+                "parent": 0
+            },
+            {
+                "tid": "10",
+                "name": "Tierra de Barros",
+                "parent": 0
+            },
+            {
+                "tid": "11",
+                "name": "Tierra de M\u00e9rida - Vegas Bajas",
+                "parent": 0
+            },
+            {
+                "tid": "12",
+                "name": "Vegas Altas",
+                "parent": 0
+            },
+            {
+                "tid": "13",
+                "name": "Zafra - R\u00edo Bodi\u00f3n",
+                "parent": 0
+            }
+        ]
+    },
+    "contacto_merida": {
+        "name": "Contacto merida",
+        "terms": [
+            {
+                "tid": "258",
+                "name": "Consulta",
+                "parent": 0
+            },
+            {
+                "tid": "256",
+                "name": "Incidencia",
+                "parent": 0
+            },
+            {
+                "tid": "259",
+                "name": "Otros",
+                "parent": 0
+            },
+            {
+                "tid": "257",
+                "name": "Sugerencia",
+                "parent": 0
+            }
+        ]
+    },
+    "eje_turistico": {
+        "name": "Eje turistico",
+        "terms": [
+            {
+                "tid": "183",
+                "name": "Gastronom\u00eda",
+                "parent": 0
+            },
+            {
+                "tid": "182",
+                "name": "Naturaleza",
+                "parent": 0
+            },
+            {
+                "tid": "184",
+                "name": "Patrimonio",
+                "parent": 0
+            }
+        ]
+    },
+    "empresa": {
+        "name": "Empresa",
+        "terms": [
+            {
+                "tid": "81",
+                "name": "Bodegas",
+                "parent": 0
+            },
+            {
+                "tid": "62",
+                "name": "Agencias de Viajes",
+                "parent": 0
+            },
+            {
+                "tid": "66",
+                "name": "Albergues tur\u00edsticos",
+                "parent": 0
+            },
+            {
+                "tid": "63",
+                "name": "Alojamientos de turismo rural",
+                "parent": 0
+            },
+            {
+                "tid": "64",
+                "name": "Apartamentos tur\u00edsticos",
+                "parent": 0
+            },
+            {
+                "tid": "69",
+                "name": "Bares",
+                "parent": 0
+            },
+            {
+                "tid": "68",
+                "name": "Cafeter\u00edas",
+                "parent": 0
+            },
+            {
+                "tid": "65",
+                "name": "Campings",
+                "parent": 0
+            },
+            {
+                "tid": "70",
+                "name": "Catering \/ Banquetes",
+                "parent": 0
+            },
+            {
+                "tid": "73",
+                "name": "Comercio tradicional",
+                "parent": 0
+            },
+            {
+                "tid": "72",
+                "name": "Empresas de actividades",
+                "parent": 0
+            },
+            {
+                "tid": "71",
+                "name": "Gu\u00edas tur\u00edsticos",
+                "parent": 0
+            },
+            {
+                "tid": "60",
+                "name": "Hostales",
+                "parent": 0
+            },
+            {
+                "tid": "59",
+                "name": "Hoteles",
+                "parent": 0
+            },
+            {
+                "tid": "61",
+                "name": "Pensiones",
+                "parent": 0
+            },
+            {
+                "tid": "67",
+                "name": "Restaurantes",
+                "parent": 0
+            },
+            {
+                "tid": "74",
+                "name": "Otros",
+                "parent": 0
+            }
+        ]
+    },
+    "experience_category": {
+        "name": "Categor\u00eda experiencia",
+        "terms": [
+            {
+                "tid": "233",
+                "name": "Actividades n\u00e1uticas",
+                "parent": 0
+            },
+            {
+                "tid": "234",
+                "name": "Apicultura",
+                "parent": 0
+            },
+            {
+                "tid": "235",
+                "name": "Astroturismo",
+                "parent": 0
+            },
+            {
+                "tid": "277",
+                "name": "Birding (avistamiento de aves)",
+                "parent": 0
+            },
+            {
+                "tid": "278",
+                "name": "Cultura y patrimonio",
+                "parent": 0
+            },
+            {
+                "tid": "279",
+                "name": "Enoturismo",
+                "parent": 0
+            },
+            {
+                "tid": "280",
+                "name": "Gastronom\u00eda",
+                "parent": 0
+            },
+            {
+                "tid": "281",
+                "name": "Naturaleza",
+                "parent": 0
+            },
+            {
+                "tid": "282",
+                "name": "Turismo activo",
+                "parent": 0
+            },
+            {
+                "tid": "283",
+                "name": "Visitas guiadas",
+                "parent": 0
+            }
+        ]
+    },
+    "pamphlet_category": {
+        "name": "Categor\u00eda folleto",
+        "terms": [
+            {
+                "tid": "236",
+                "name": "Categor\u00eda folleto 1",
+                "parent": 0
+            },
+            {
+                "tid": "237",
+                "name": "Categor\u00eda folleto 2",
+                "parent": 0
+            },
+            {
+                "tid": "238",
+                "name": "Categor\u00eda folleto 3",
+                "parent": 0
+            }
+        ]
+    },
+    "perfil_yinkana": {
+        "name": "Perfil Yinkana",
+        "terms": [
+            {
+                "tid": "189",
+                "name": "perfil test",
+                "parent": 0
+            }
+        ]
+    },
+    "photography_category": {
+        "name": "Categor\u00eda fotograf\u00eda",
+        "terms": [
+            {
+                "tid": "239",
+                "name": "Categor\u00eda fotograf\u00eda 1",
+                "parent": 0
+            },
+            {
+                "tid": "240",
+                "name": "Categor\u00eda fotograf\u00eda 2",
+                "parent": 0
+            },
+            {
+                "tid": "241",
+                "name": "Categor\u00eda fotograf\u00eda 3",
+                "parent": 0
+            }
+        ]
+    },
+    "puntos_de_interes": {
+        "name": "Puntos de inter\u00e9s",
+        "terms": [
+            {
+                "tid": "41",
+                "name": "Arte rupestre",
+                "parent": 0
+            },
+            {
+                "tid": "82",
+                "name": "Construcci\u00f3n militar",
+                "parent": 0
+            },
+            {
+                "tid": "276",
+                "name": "Oficina de turismo",
+                "parent": 0
+            },
+            {
+                "tid": "83",
+                "name": "Otros n\u00facleos de poblaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "85",
+                "name": "Parques y jardines",
+                "parent": 0
+            },
+            {
+                "tid": "86",
+                "name": "Punto de ruta",
+                "parent": 0
+            },
+            {
+                "tid": "84",
+                "name": "Zona comercial",
+                "parent": 0
+            },
+            {
+                "tid": "32",
+                "name": "Casa solariega",
+                "parent": 0
+            },
+            {
+                "tid": "42",
+                "name": "Castillos y fortalezas",
+                "parent": 0
+            },
+            {
+                "tid": "34",
+                "name": "Conjunto hist\u00f3rico",
+                "parent": 0
+            },
+            {
+                "tid": "33",
+                "name": "Construcci\u00f3n civil",
+                "parent": 0
+            },
+            {
+                "tid": "31",
+                "name": "Edificio religioso",
+                "parent": 0
+            },
+            {
+                "tid": "43",
+                "name": "Escudos",
+                "parent": 0
+            },
+            {
+                "tid": "44",
+                "name": "Espacio natural",
+                "parent": 0
+            },
+            {
+                "tid": "35",
+                "name": "Jard\u00edn hist\u00f3rico",
+                "parent": 0
+            },
+            {
+                "tid": "36",
+                "name": "Monumento",
+                "parent": 0
+            },
+            {
+                "tid": "40",
+                "name": "Museo",
+                "parent": 0
+            },
+            {
+                "tid": "37",
+                "name": "Paraje pintoresco",
+                "parent": 0
+            },
+            {
+                "tid": "38",
+                "name": "V\u00eda hist\u00f3rica",
+                "parent": 0
+            },
+            {
+                "tid": "39",
+                "name": "Zona arqueol\u00f3gica",
+                "parent": 0
+            },
+            {
+                "tid": "45",
+                "name": "Otros",
+                "parent": 0
+            }
+        ]
+    },
+    "servescuisine": {
+        "name": "Estilos de cocina",
+        "terms": [
+            {
+                "tid": "146",
+                "name": "Africana",
+                "parent": 145
+            },
+            {
+                "tid": "147",
+                "name": "Alemana",
+                "parent": 145
+            },
+            {
+                "tid": "165",
+                "name": "Alta cocina",
+                "parent": 164
+            },
+            {
+                "tid": "158",
+                "name": "Latinoamericana",
+                "parent": 145
+            },
+            {
+                "tid": "148",
+                "name": "Argentina",
+                "parent": 145
+            },
+            {
+                "tid": "176",
+                "name": "Arroces",
+                "parent": 175
+            },
+            {
+                "tid": "181",
+                "name": "Asador",
+                "parent": 175
+            },
+            {
+                "tid": "169",
+                "name": "De autor",
+                "parent": 164
+            },
+            {
+                "tid": "145",
+                "name": "De un pa\u00eds o zona geogr\u00e1fica",
+                "parent": 0
+            },
+            {
+                "tid": "168",
+                "name": "Chiringuito",
+                "parent": 164
+            },
+            {
+                "tid": "149",
+                "name": "Brasile\u00f1a",
+                "parent": 145
+            },
+            {
+                "tid": "164",
+                "name": "Por tipo de cocina",
+                "parent": 0
+            },
+            {
+                "tid": "175",
+                "name": "Por productos",
+                "parent": 0
+            },
+            {
+                "tid": "166",
+                "name": "Casera",
+                "parent": 164
+            },
+            {
+                "tid": "150",
+                "name": "China",
+                "parent": 145
+            },
+            {
+                "tid": "167",
+                "name": "Comida r\u00e1pida",
+                "parent": 164
+            },
+            {
+                "tid": "151",
+                "name": "Coreana",
+                "parent": 145
+            },
+            {
+                "tid": "170",
+                "name": "De temporada",
+                "parent": 164
+            },
+            {
+                "tid": "152",
+                "name": "Espa\u00f1ola",
+                "parent": 145
+            },
+            {
+                "tid": "178",
+                "name": "Pescados y mariscos",
+                "parent": 175
+            },
+            {
+                "tid": "153",
+                "name": "Francesa",
+                "parent": 145
+            },
+            {
+                "tid": "171",
+                "name": "Fusi\u00f3n",
+                "parent": 164
+            },
+            {
+                "tid": "154",
+                "name": "Griega",
+                "parent": 145
+            },
+            {
+                "tid": "155",
+                "name": "India",
+                "parent": 145
+            },
+            {
+                "tid": "156",
+                "name": "Italiana",
+                "parent": 145
+            },
+            {
+                "tid": "157",
+                "name": "Japonesa",
+                "parent": 145
+            },
+            {
+                "tid": "177",
+                "name": "Kebab",
+                "parent": 175
+            },
+            {
+                "tid": "172",
+                "name": "Macrobi\u00f3tica",
+                "parent": 164
+            },
+            {
+                "tid": "160",
+                "name": "Oriente Medio",
+                "parent": 145
+            },
+            {
+                "tid": "163",
+                "name": "Mediterr\u00e1nea",
+                "parent": 145
+            },
+            {
+                "tid": "159",
+                "name": "Mexicana",
+                "parent": 145
+            },
+            {
+                "tid": "161",
+                "name": "Peruana",
+                "parent": 145
+            },
+            {
+                "tid": "179",
+                "name": "Pizzer\u00eda",
+                "parent": 175
+            },
+            {
+                "tid": "162",
+                "name": "Tailandesa",
+                "parent": 145
+            },
+            {
+                "tid": "180",
+                "name": "Tapas, raciones, pinchos, bocadillos\u2026",
+                "parent": 175
+            },
+            {
+                "tid": "173",
+                "name": "Vegana",
+                "parent": 164
+            },
+            {
+                "tid": "174",
+                "name": "Vegetariana",
+                "parent": 164
+            }
+        ]
+    },
+    "servicios": {
+        "name": "Servicios",
+        "terms": [
+            {
+                "tid": "50",
+                "name": "Farmacia",
+                "parent": 0
+            },
+            {
+                "tid": "52",
+                "name": "Consulta m\u00e9dica",
+                "parent": 0
+            },
+            {
+                "tid": "51",
+                "name": "Taller de autom\u00f3vil",
+                "parent": 0
+            },
+            {
+                "tid": "79",
+                "name": "Cajero",
+                "parent": 0
+            },
+            {
+                "tid": "58",
+                "name": "Otros",
+                "parent": 0
+            },
+            {
+                "tid": "46",
+                "name": "Ayuntamiento",
+                "parent": 0
+            },
+            {
+                "tid": "54",
+                "name": "Educaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "56",
+                "name": "Bomberos",
+                "parent": 0
+            },
+            {
+                "tid": "49",
+                "name": "Centro de salud",
+                "parent": 0
+            },
+            {
+                "tid": "53",
+                "name": "Cultura",
+                "parent": 0
+            },
+            {
+                "tid": "48",
+                "name": "Estaci\u00f3n de servicio",
+                "parent": 0
+            },
+            {
+                "tid": "47",
+                "name": "Oficina de informaci\u00f3n tur\u00edstica",
+                "parent": 0
+            },
+            {
+                "tid": "55",
+                "name": "Instalaci\u00f3n deportiva",
+                "parent": 0
+            },
+            {
+                "tid": "57",
+                "name": "Polic\u00eda y\/o Guard\u00eda Civil",
+                "parent": 0
+            },
+            {
+                "tid": "80",
+                "name": "Supermercado",
+                "parent": 0
+            }
+        ]
+    },
+    "tags": {
+        "name": "Etiquetas",
+        "terms": []
+    },
+    "taxon_test": {
+        "name": "Tipo de evento",
+        "terms": [
+            {
+                "tid": "266",
+                "name": "Concierto",
+                "parent": 0
+            },
+            {
+                "tid": "271",
+                "name": "Cultura",
+                "parent": 0
+            },
+            {
+                "tid": "270",
+                "name": "Deporte",
+                "parent": 0
+            },
+            {
+                "tid": "268",
+                "name": "Exposici\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "273",
+                "name": "Fiesta tradicional",
+                "parent": 0
+            },
+            {
+                "tid": "274",
+                "name": "Inauguraci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "275",
+                "name": "Otros",
+                "parent": 0
+            },
+            {
+                "tid": "272",
+                "name": "Religioso",
+                "parent": 0
+            },
+            {
+                "tid": "269",
+                "name": "Taller",
+                "parent": 0
+            },
+            {
+                "tid": "267",
+                "name": "Teatro",
+                "parent": 0
+            }
+        ]
+    },
+    "tematica_yinkana": {
+        "name": "Tematica Yinkana",
+        "terms": [
+            {
+                "tid": "188",
+                "name": "tematica test",
+                "parent": 0
+            }
+        ]
+    },
+    "tipo_de_test": {
+        "name": "Tipo de test",
+        "terms": [
+            {
+                "tid": "196",
+                "name": "General",
+                "parent": 0
+            },
+            {
+                "tid": "185",
+                "name": "test",
+                "parent": 0
+            }
+        ]
+    },
+    "tipo_notificacion": {
+        "name": "Tipo notificaci\u00f3n",
+        "terms": [
+            {
+                "tid": "14",
+                "name": "Eventos y actividades",
+                "parent": 0
+            },
+            {
+                "tid": "15",
+                "name": "Ofertas comerciales",
+                "parent": 0
+            },
+            {
+                "tid": "16",
+                "name": "Ofertas de trabajo",
+                "parent": 0
+            },
+            {
+                "tid": "17",
+                "name": "Otros",
+                "parent": 0
+            }
+        ]
+    },
+    "tipo_yinkana": {
+        "name": "Tipo Yinkana",
+        "terms": [
+            {
+                "tid": "186",
+                "name": "Permanente",
+                "parent": 0
+            },
+            {
+                "tid": "187",
+                "name": "Temporal",
+                "parent": 0
+            }
+        ]
+    },
+    "touristtype": {
+        "name": "Tipo de Turismo",
+        "terms": [
+            {
+                "tid": "102",
+                "name": "Caza",
+                "parent": 96
+            },
+            {
+                "tid": "97",
+                "name": "Aventura",
+                "parent": 96
+            },
+            {
+                "tid": "96",
+                "name": "Tipos de Actividad",
+                "parent": 0
+            },
+            {
+                "tid": "92",
+                "name": "Negocios",
+                "parent": 87
+            },
+            {
+                "tid": "120",
+                "name": "Pesca",
+                "parent": 116
+            },
+            {
+                "tid": "126",
+                "name": "Tipo de motivaci\u00f3n",
+                "parent": 0
+            },
+            {
+                "tid": "139",
+                "name": "Tipo de producto",
+                "parent": 0
+            },
+            {
+                "tid": "116",
+                "name": "Tipo de Turismo",
+                "parent": 0
+            },
+            {
+                "tid": "118",
+                "name": "M\u00e9dico",
+                "parent": 116
+            },
+            {
+                "tid": "134",
+                "name": "Astron\u00f3mico",
+                "parent": 126
+            },
+            {
+                "tid": "90",
+                "name": "Mochilero",
+                "parent": 87
+            },
+            {
+                "tid": "123",
+                "name": "Sol y Playa",
+                "parent": 116
+            },
+            {
+                "tid": "140",
+                "name": "Cerveza",
+                "parent": 139
+            },
+            {
+                "tid": "98",
+                "name": "Bienestar",
+                "parent": 96
+            },
+            {
+                "tid": "133",
+                "name": "Ornitol\u00f3gico",
+                "parent": 126
+            },
+            {
+                "tid": "99",
+                "name": "Bodas y lunas de miel",
+                "parent": 96
+            },
+            {
+                "tid": "100",
+                "name": "Buceo",
+                "parent": 96
+            },
+            {
+                "tid": "137",
+                "name": "Tauromaquia",
+                "parent": 126
+            },
+            {
+                "tid": "122",
+                "name": "Senderismo",
+                "parent": 116
+            },
+            {
+                "tid": "101",
+                "name": "Casino",
+                "parent": 96
+            },
+            {
+                "tid": "95",
+                "name": "Solteros",
+                "parent": 87
+            },
+            {
+                "tid": "103",
+                "name": "Cicloturismo",
+                "parent": 96
+            },
+            {
+                "tid": "127",
+                "name": "Cine",
+                "parent": 126
+            },
+            {
+                "tid": "105",
+                "name": "Comunitario",
+                "parent": 96
+            },
+            {
+                "tid": "104",
+                "name": "Compras",
+                "parent": 96
+            },
+            {
+                "tid": "106",
+                "name": "Cruceros",
+                "parent": 96
+            },
+            {
+                "tid": "107",
+                "name": "Cultural",
+                "parent": 96
+            },
+            {
+                "tid": "109",
+                "name": "Deportes acu\u00e1ticos",
+                "parent": 96
+            },
+            {
+                "tid": "110",
+                "name": "Deportes de invierno",
+                "parent": 96
+            },
+            {
+                "tid": "108",
+                "name": "Deportivo",
+                "parent": 96
+            },
+            {
+                "tid": "135",
+                "name": "Ecoturismo",
+                "parent": 126
+            },
+            {
+                "tid": "141",
+                "name": "Enol\u00f3gico",
+                "parent": 139
+            },
+            {
+                "tid": "143",
+                "name": "Oleol\u00f3gico",
+                "parent": 139
+            },
+            {
+                "tid": "128",
+                "name": "Patrimonio",
+                "parent": 126
+            },
+            {
+                "tid": "112",
+                "name": "Eventos",
+                "parent": 96
+            },
+            {
+                "tid": "88",
+                "name": "Familiar",
+                "parent": 87
+            },
+            {
+                "tid": "113",
+                "name": "Fiesta",
+                "parent": 96
+            },
+            {
+                "tid": "142",
+                "name": "Gastron\u00f3mico",
+                "parent": 139
+            },
+            {
+                "tid": "114",
+                "name": "Fotogr\u00e1fico",
+                "parent": 96
+            },
+            {
+                "tid": "91",
+                "name": "Mujeres",
+                "parent": 87
+            },
+            {
+                "tid": "136",
+                "name": "Geol\u00f3gico",
+                "parent": 126
+            },
+            {
+                "tid": "132",
+                "name": "Memoria hist\u00f3rica",
+                "parent": 126
+            },
+            {
+                "tid": "115",
+                "name": "Idiom\u00e1tico",
+                "parent": 96
+            },
+            {
+                "tid": "129",
+                "name": "Industria",
+                "parent": 126
+            },
+            {
+                "tid": "124",
+                "name": "Turismo rural",
+                "parent": 116
+            },
+            {
+                "tid": "89",
+                "name": "LGTBI",
+                "parent": 87
+            },
+            {
+                "tid": "117",
+                "name": "Lujo",
+                "parent": 116
+            },
+            {
+                "tid": "119",
+                "name": "MICE",
+                "parent": 116
+            },
+            {
+                "tid": "138",
+                "name": "Naturaleza",
+                "parent": 126
+            },
+            {
+                "tid": "131",
+                "name": "Religioso",
+                "parent": 126
+            },
+            {
+                "tid": "93",
+                "name": "Rom\u00e1ntico",
+                "parent": 87
+            },
+            {
+                "tid": "121",
+                "name": "Safari",
+                "parent": 116
+            },
+            {
+                "tid": "125",
+                "name": "Vela",
+                "parent": 116
+            },
+            {
+                "tid": "94",
+                "name": "Senior",
+                "parent": 87
+            },
+            {
+                "tid": "111",
+                "name": "SHORT BREAK TOURISM",
+                "parent": 96
+            },
+            {
+                "tid": "130",
+                "name": "Urbano",
+                "parent": 126
+            },
+            {
+                "tid": "87",
+                "name": "Tipos de viajero",
+                "parent": 0
+            },
+            {
+                "tid": "144",
+                "name": "Whisky",
+                "parent": 139
+            }
+        ]
+    },
+    "url_tienda_android": {
+        "name": "URL tienda Android",
+        "terms": [
+            {
+                "tid": "76",
+                "name": "https:\/\/play.google.com\/store\/apps\/details?id=com.turismo.badajoz\u0026hl=es_419",
+                "parent": 0
+            }
+        ]
+    },
+    "url_tienda_ios": {
+        "name": "URL tienda Ios",
+        "terms": [
+            {
+                "tid": "77",
+                "name": "https:\/\/apps.apple.com\/gb\/app\/prov-de-badajoz-mi-destino\/id1496980057?l=es",
+                "parent": 0
+            },
+            {
+                "tid": "198",
+                "name": "test",
+                "parent": 0
+            }
+        ]
+    },
+    "video_category": {
+        "name": "Categor\u00eda v\u00eddeo",
+        "terms": [
+            {
+                "tid": "245",
+                "name": "Categor\u00eda v\u00eddeo 1",
+                "parent": 0
+            },
+            {
+                "tid": "246",
+                "name": "Categor\u00eda v\u00eddeo 2",
+                "parent": 0
+            },
+            {
+                "tid": "247",
+                "name": "Categor\u00eda v\u00eddeo 3",
+                "parent": 0
+            }
+        ]
+    },
+    "video_code": {
+        "name": "Codificaci\u00f3n v\u00eddeo",
+        "terms": []
+    },
+    "virtual_visit_category": {
+        "name": "Categor\u00eda visita virtual",
+        "terms": [
+            {
+                "tid": "242",
+                "name": "Categor\u00eda visita virtual 1",
+                "parent": 0
+            },
+            {
+                "tid": "243",
+                "name": "Categor\u00eda visita virtual 2",
+                "parent": 0
+            },
+            {
+                "tid": "244",
+                "name": "Categor\u00eda visita virtual 3",
+                "parent": 0
+            }
+        ]
+    }
+}

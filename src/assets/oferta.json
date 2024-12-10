@@ -1,0 +1,199 @@
+[
+    {
+      "path": [
+        {
+          "langcode": "es"
+        }
+      ],
+      "identifier": 555,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003EOferta FEBB 2019\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2019-02-13",
+      "video": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/Trailer_-_La_Ciudad_Encendida%28youtube.com%29_3_7.mp4",
+      "name": "Oferta FEBB 2019",
+      "audio": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/MeridaTurismoExtremadura_2_7.mp3",
+      "extras": {
+        "status": [true],
+        "changed": [
+          "2019-04-16T16:06:04+00:00"
+        ]
+      }
+    },
+    {
+      "path": [
+        {
+          "langcode": "es"
+        }
+      ],
+      "identifier": 558,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003EOferta de San Valentín\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2019-02-14",
+      "availabilityEnds": "2019-02-15",
+      "image": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/Edificio_ICE_04-1.jpg",
+      "name": "Oferta de San Valentín",
+      "extras": {
+        "status": [true],
+        "changed": [
+          "2019-04-16T16:05:19+00:00"
+        ]
+      }
+    },
+    {
+      "path": [
+        {
+          "alias": "/oferta/test-22feb",
+          "pid": 4652,
+          "langcode": "es"
+        }
+      ],
+      "identifier": 673,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003ETest 22FEB DES\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2019-02-22",
+      "availabilityEnds": "2019-03-21",
+      "image": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/FireExtinguisherABC_3.jpg",
+      "video": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/Trailer_-_La_Ciudad_Encendida%28youtube.com%29_3_2.mp4",
+      "name": "Test 22FEB",
+      "audio": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/MeridaTurismoExtremadura_2_2.mp3",
+      "extras": {
+        "status": [true],
+        "changed": [
+          "2024-05-14T08:10:35+00:00"
+        ]
+      }
+    },
+    {
+      "path": [
+        {
+          "langcode": "es"
+        }
+      ],
+      "identifier": 5369,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003EVen a comer o cenar con tu pareja al restaurante La Ermita y os invitamos a los postres y a una copa especial. Sólo el jueves 30 de enero!!!\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2020-01-30",
+      "availabilityEnds": "2020-01-30",
+      "image": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/menu-san-valentin_0.jpg",
+      "addressLocality": "Jerez de los Caballeros",
+      "addressLocality_id": 74,
+      "name": "Celebra San Valentín... en enero!!!",
+      "extras": {
+        "empresa_une_178503": [
+          "La Ermita"
+        ],
+        "empresa": [737],
+        "status": [true],
+        "changed": [
+          "2020-01-28T11:27:13+00:00"
+        ]
+      }
+    },
+    {
+      "path": [
+        {
+          "langcode": "es"
+        }
+      ],
+      "identifier": 5370,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003Ezdfljopzsdfsfop sdkfasdf pofjpoasfjkopasdfj opas\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2019-04-10",
+      "availabilityEnds": "2019-05-09",
+      "image": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-04/icono_qr.png",
+      "name": "Oferta para merida",
+      "extras": {
+        "status": [true],
+        "changed": [
+          "2019-04-10T08:42:30+00:00"
+        ]
+      }
+    },
+    {
+      "path": [
+        {
+          "langcode": "es"
+        }
+      ],
+      "identifier": 5472,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003EDel 2 al 5 de julio, ven a cenar con tu pareja al restaurante \"La Ermita\".\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2019-07-02",
+      "availabilityEnds": "2019-07-05",
+      "image": "https://turismoapps.dip-badajoz.es/sites/default/files/2019-07/reservas.png",
+      "addressLocality": "Jerez de los Caballeros",
+      "addressLocality_id": 74,
+      "name": "Cena para dos en el restaurante la Ermita",
+      "extras": {
+        "empresa_une_178503": [
+          "La Ermita"
+        ],
+        "empresa": [737],
+        "status": [true],
+        "changed": [
+          "2019-07-02T15:34:59+00:00"
+        ]
+      }
+    },
+    {
+      "path": [
+        {
+          "langcode": "es"
+        }
+      ],
+      "identifier": 8215,
+      "addressCountry": "ES",
+      "addressRegion": "Extremadura",
+      "addressProvince": "Badajoz",
+      "description": "\u003Cp\u003EZapatos en oferta. Visita nuestra tienda para ver más saldos.\u003C/p\u003E\r\n",
+      "availableLanguage": [
+        "es"
+      ],
+      "availabilityStarts": "2020-11-04",
+      "availabilityEnds": "2020-11-05",
+      "image": "https://turismoapps.dip-badajoz.es/sites/default/files/2020-11/images%20%281%29_0.jpg",
+      "addressLocality": "Olivenza",
+      "addressLocality_id": 99,
+      "name": "Zapatos en oferta",
+      "extras": {
+        "empresa_une_178503": [
+          "Zapateria O"
+        ],
+        "empresa": [8214],
+        "status": [true],
+        "changed": [
+          "2020-11-04T13:06:08+00:00"
+        ]
+      }
+    }
+  ]

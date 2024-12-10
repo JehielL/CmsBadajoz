@@ -1,0 +1,1016 @@
+[
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 501,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EDescripci\u00f3n planificada\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "en",
+            "es"
+        ],
+        "addressLocality": "Alburquerque",
+        "addressLocality_id": 10,
+        "name": "Noticia planificada",
+        "streetAddress": "Direccion planificada",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2022-09-02T07:48:52+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 681,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003ESegunda noticia Test Merida\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "name": "Segunda noticia Test Merida",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2019-03-05T10:13:55+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 5356,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EGuiado por el sue\u00f1o de un ni\u00f1o, unas veces real y otras imaginado, su Preg\u00f3n ha estado impregnado de su fe, sus recuerdos, su condici\u00f3n de maestro y de jerezano cofrade, con exaltaci\u00f3n de los momentos y las im\u00e1genes que explican la significaci\u00f3n de este acontecimiento \u00fanico en la vida de la ciudad templaria\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-04\/pregon.jpg",
+        "addressLocality": "Jerez de los Caballeros",
+        "addressLocality_id": 74,
+        "name": "Miguel Gil del R\u00edo pregona la Semana Santa Jerezana con versos emocionados, vivencias y sentimiento cofrade",
+        "extras": {
+            "comment": [
+                {
+                    "cid": 229,
+                    "uid": "392",
+                    "created": "1562667777",
+                    "changed": "1562667807",
+                    "status": "1",
+                    "langcode": "es",
+                    "title": "Jos\u00e9",
+                    "comment_body": "Estuvo genial el preg\u00f3n. Estupenda elecci\u00f3n del pregonero de este a\u00f1o.",
+                    "comment_body_format": "plain_text"
+                }
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2019-04-08T12:36:29+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 5357,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Ch2\u003EEl conjunto jerezano no se rinde en su lucha y en sus dos pr\u00f3ximas salidas, para enfrentarse a los dos primeros clasificados que buscan el ascenso, intentar\u00e1 recuperar el \u00e1nimo.\u003C\/h2\u003E\r\n\r\n\u003Cp\u003EEl Jerez Futsal perdi\u00f3 ante un Alcal\u00e1 sevillano que soport\u00f3 todas las acometidas con bravura y con acierto de su guardameta, que fue la figura del envite. Los templarios pierden fuelle en su carrera hacia las plazas de Copa del Rey, aunque permanecen en la sexta posici\u00f3n con 35 puntos.\u003C\/p\u003E\r\n\r\n\u003Cp\u003EPerdonaron m\u00e1s de la cuenta y sorprendentemente se quedaron sin marcar por primera vez esta temporada y justo despu\u00e9s de haberse proclamado campeones de la Copa de Extremadura. Cosas del destino y del deporte.\u003C\/p\u003E\r\n\r\n\u003Cp\u003ETuvieron numerosas ocasiones como para no salir derrotados pero no tuvieron tino ante un adversario encerrado en su campo. El Jerez no se rinde en su lucha y en sus dos pr\u00f3ximas salidas, para enfrentarse a los dos primeros clasificados que buscan el ascenso, intentar\u00e1 recuperar el \u00e1nimo y las buenas sensaciones de cara al tramo final.\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-04\/futsal.jpg",
+        "addressLocality": "Jerez de los Caballeros",
+        "addressLocality_id": 74,
+        "ratingValue": "4.0000",
+        "name": "El Jerez Futsal se queda sin marcar por primera vez esta temporada",
+        "extras": {
+            "comment": [
+                {
+                    "cid": 266,
+                    "uid": "1",
+                    "created": "1674663736",
+                    "changed": "1674663736",
+                    "status": "1",
+                    "langcode": "es",
+                    "title": "Una pena que no marcaran",
+                    "comment_body": "\u003Cp\u003ELa verdad es que se merec\u00edan ganar\u003C\/p\u003E\r\n",
+                    "comment_body_format": "basic_html"
+                }
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2019-07-02T09:47:07+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 5426,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EEl Vivero Provincial de la Diputaci\u00f3n de Badajoz, gestionado por el \u00c1rea de Desarrollo Sostenible, ha recibido hoy la visita de las alumnas que forman el proyecto \u201cLa Nava Avanzando\u201d, proyecto promovido por el Ayuntamiento de La Nava de Santiago que se desarrolla dentro del Programa Colaborativo Rural 2019, cofinanciado en un 80% por el FSE.\u003Cbr \/\u003E\r\n\u003Cbr \/\u003E\r\nDurante la visita, han podido conocer de manos de Jos\u00e9 Manuel Diestro, T\u00e9cnico del Vivero Provincial, c\u00f3mo es la gesti\u00f3n de un vivero de estas magnitudes desde el cual, Diputaci\u00f3n de Badajoz presta asistencia t\u00e9cnica para la mejora de la eficiencia y control de consumos de agua y energ\u00eda en los parques, jardines y zonas de vegetaci\u00f3n de las diferentes instalaciones municipales y desde el cual se garantiza un suministro variado de especies vegetales a los ayuntamientos menores de 20.000 habitantes.\u003Cbr \/\u003E\r\n\u003Cbr \/\u003E\r\nEl proyecto \u201cLa Nava Avanzando\u201d est\u00e1 formado por 10 alumnas-trabajadoras con contrato de formaci\u00f3n y aprendizaje a jornada completa, en el cual reciben formaci\u00f3n de calidad en competencias profesionales dentro de la Cualificaci\u00f3n Profesional en Actividades Auxiliares en Viveros, Jardines y Centros de Jardiner\u00eda.\u003Cbr \/\u003E\r\n\u003Cbr \/\u003E\r\nEntre los objetivos generales del proyecto est\u00e1n: favorecer la empleabilidad de las trabajadoras participantes o la creaci\u00f3n de bienes o servicios de inter\u00e9s social. Los objetivos espec\u00edficos marcados para el proyecto van encaminados a determinar el estado medioambiental y comprometerse con la mejora continua de los entornos de la localidad.\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-06\/20190614150553_i.jpg",
+        "name": "Las alumnas del proyecto \u0022La Nava Avanzando\u0022 visitan el Vivero Provincial de Diputaci\u00f3n de Badajoz",
+        "latitude": 38.8744531,
+        "longitude": -6.9652503,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-06\/2019-06-18_093323.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-06\/2019-06-18_093336.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-06\/2019-06-18_093347.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2019-06\/20190614150553_i_0.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2019-06-19T07:48:25+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 5646,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003E\u003Cspan\u003E\u003Cspan\u003E\u003Cspan\u003EM\u00e1s de 300 personas participar\u00e1n en el congreso internacional \u0027Hern\u00e1n Cortes en el siglo XXI\u0027 que conmemora el V Centenario de la llegada de Cort\u00e9s a M\u00e9xico y que tendr\u00e1 lugar los pr\u00f3ximos d\u00edas 4, 5 y 6 de abril en Medell\u00edn (Badajoz) y Trujillo (C\u00e1ceres).\u003C\/span\u003E\u003C\/span\u003E\u003C\/span\u003E\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u003Cspan\u003E\u003Cspan\u003E\u003Cspan\u003EEste encuentro, organizado por la Fundaci\u00f3n Academia Europea e Iberoamericana de Yuste y la Federaci\u00f3n Extremadura Hist\u00f3rica reunir\u00e1 a expertos y acad\u00e9micos de ambos lados del Atl\u00e1ntico con el fin de analizar la figura \u00abpoli\u00e9drica\u00bb del extreme\u00f1o Hern\u00e1n Cort\u00e9s.\u003C\/span\u003E\u003C\/span\u003E\u003C\/span\u003E\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u003Cspan\u003E\u003Cspan\u003E\u003Cspan\u003EAs\u00ed lo afirm\u00f3 el director acad\u00e9mico de la Fundaci\u00f3n Acad\u00e9mica Europea e Iberoamericana de Yuste, C\u00e9sar Chaparro G\u00f3mez, durante la presentaci\u00f3n del encuentro en rueda de prensa ayer, en M\u00e9rida, junto al presidente de la Federaci\u00f3n Extremadura Hist\u00f3rica, Jos\u00e9 Calero; el presidente de la Asociaci\u00f3n Hist\u00f3rica Metellinense, Tom\u00e1s Garc\u00eda y el alcalde de Medell\u00edn, Antonio Parral.\u003C\/span\u003E\u003C\/span\u003E\u003C\/span\u003E\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u003Cspan\u003E\u003Cspan\u003E\u003Cspan\u003EDe esta forma, Chaparro resalt\u00f3 que el objetivo de las jornadas es poner de relieve las acciones de extreme\u00f1os que son importantes desde un punto de vista hist\u00f3rico. \u00abNo s\u00f3lo centrado en la conquista sino tambi\u00e9n en la civilizaci\u00f3n, la cultura, la religi\u00f3n y aspectos importantes derivados de la misma\u00bb, concret\u00f3. Por su parte, el presidente de la Federaci\u00f3n Extremadura Hist\u00f3rica, Jos\u00e9 Calero, resalt\u00f3 que la finalidad del encuentro es conocer el trabajo y obra de Hern\u00e1n Cort\u00e9s, \u00abpero tambi\u00e9n la trascendencia de la misma en la actualidad y el papel de los conquistadores en el siglo XXI\u00bb, indic\u00f3.\u003C\/span\u003E\u003C\/span\u003E\u003C\/span\u003E\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-03\/maxresdefault.jpg",
+        "addressLocality": "Medell\u00edn",
+        "addressLocality_id": 84,
+        "name": "Congreso Internacional sobre Hern\u00e1n Cort\u00e9s en Medell\u00edn y Trujillo",
+        "streetAddress": "Plaza de Hern\u00e1n Cort\u00e9s",
+        "latitude": 38.9637655,
+        "longitude": -5.9578986,
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2020-03-04T10:19:40+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 5709,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EAVISO IMPORTANTE: POR MOTIVO DE PREVENCI\u00d3N ANTE EL AVANCE DEL CORONAVIRUS. LA OFICINA DE TURISMO DE VILLAFRANCA DE LOS BARROS, PERMANECER\u00c1 CERRADA AL P\u00daBLICO AL MENOS HASTA EL 31 DE MARZO 2020.\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-03\/logo%20cerrado%20al%20publico_0.jpg",
+        "addressLocality": "Villafranca de los Barros",
+        "addressLocality_id": 155,
+        "name": "CIERRE OFICINA TURIMO POR PREVENCI\u00d3N",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2020-03-13T15:18:12+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 7334,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EFrancisco Carlos Escobar y Miguel \u00c1ngel V\u00e1zquez, campeones del Primer Torneo de Verano de P\u00e1del.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u003Cstrong\u003EEn la categor\u00eda Infantil, la pareja vencedora fue la formada por Jos\u00e9 Manuel Cantador y Carlos M\u00e9ndez Dur\u00e1n. El concejal de Deportes, Ra\u00fal Gordillo y la dinamizadora deportiva, Inmaculada Pitel, entregaron anoche los premios en las pistas de la Villa romana, escenario de la competici\u00f3n\u003C\/strong\u003E\u003C\/p\u003E\r\n\r\n\u003Cp\u003EEn la tarde noche de ayer finalizaba el primer Torneo de Verano de P\u00e1del celebrado en Jerez de los Caballeros con una buena acogida y gran participaci\u00f3n de aficionados a este deporte. El citado Torneo, organizado por la Concejal\u00eda de Deportes en colaboraci\u00f3n con el Programa de Dinamizaci\u00f3n Deportiva de la Mancomunidad Sierra Suroeste, \u0026nbsp;ha tenido como escenario las pistas de la Villa romana.\u003C\/p\u003E\r\n\r\n\u003Cp\u003ELa duraci\u00f3n del Torneo, coordinado por Jos\u00e9 Antonio Gallardo Sayavera, ha sido de un mes y ha contado con la participaci\u00f3n de 26 parejas en categor\u00eda en Adultos y 6 parejas en categor\u00eda Infantil. El torneo se ha disputado en la modalidad mixta en ambas categor\u00edas.\u003C\/p\u003E\r\n\r\n\u003Cp\u003EEl concejal de Deportes, Ra\u00fal Gordillo, y la dinamizadora deportiva, Inmaculada Pitel, presidieron la entrega de premios. En la categor\u00eda Infantil: el 1\u00ba puesto fue para Jos\u00e9 Manuel Cantador y Carlos M\u00e9ndez Dur\u00e1n, el 2\u00ba para Rub\u00e9n S\u00e1nchez y Javier Mesa y el 3\u00ba para Luc\u00eda Mesa y Rub\u00e9n Bravo. El premio de Campe\u00f3n Fase de Consolaci\u00f3n correspondi\u00f3 a Jorge Garc\u00eda y Jos\u00e9 Santana Barroso. En la categor\u00eda Adultos: el 1\u00ba puesto fue para Francisco Carlos Escobar y Miguel \u00c1ngel V\u00e1zquez, el 2\u00ba para Manuel Valverde y Diego Baena y el 3\u00ba para Antonio Miguel Borrallo y Jos\u00e9 Modesto Garc\u00eda D\u00edaz.\u003C\/p\u003E\r\n\r\n\u003Cp\u003EDurante la temporada de invierno se seguir\u00e1 con la demanda de dicho deporte con la creaci\u00f3n de una Liga de Invierno a disputar en las citadas Pistas de la Villa romana.\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/2020-09-22_100905.jpg",
+        "addressLocality": "Jerez de los Caballeros",
+        "addressLocality_id": 74,
+        "name": "Campeones del Primer Torneo de Verano de P\u00e1del",
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/DSC_6667.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/DSC_6668.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/DSC_6670.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/DSC_6672.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/DSC_6675.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2020-09\/DSC_6677.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2020-09-22T08:19:24+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 10230,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003Eapertura de museo nuevo\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2021-10\/prueba4_2.PNG",
+        "addressLocality": "Badajoz",
+        "addressLocality_id": 19,
+        "video": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2021-10\/Video%20Prueba_2.mp4",
+        "name": "nueva noticia",
+        "streetAddress": "Plaza de Espa\u00f1a s\/n",
+        "latitude": 38.8784449,
+        "longitude": -6.970265,
+        "audio": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2021-10\/audio%20prueba_2.mp3",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2021-10-21T07:40:15+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "langcode": "es"
+            }
+        ],
+        "identifier": 10380,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EVuelve la m\u00e1s famosa de las carreras de atletismo de las Vegas Bajas. El d\u00eda 6 de diciembre a las 11:00. Est\u00e1\u0026nbsp;caracterizada por sus 12 km de recorrido y con el mayor desnivel de la zona. Ven y prueba tu estado de forma y disfruta al finalizar de la Ruta de la Tapa Matancera por los distintos bares de la localidad.\u003C\/p\u003E\r\n",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2021-11\/WhatsApp%20Image%202021-11-24%20at%202.39.01%20PM_0.jpeg",
+        "addressLocality": "Lob\u00f3n",
+        "addressLocality_id": 78,
+        "ratingValue": "5.0000",
+        "name": "VIII EDICI\u00d3N CARRERA POPULAR PRODUCTOS DE LOBON",
+        "streetAddress": "AV. EXTREMADURA, 12",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2021-11-29T11:45:50+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/bases-concurso-de-escaparates-2022-organizado-por-el-ayuntamiento-de-zafra",
+                "pid": 1327,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16408,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Col\u003E\u003Cli\u003E\u003Cspan\u003ECon el objeto de embellecer la Cuidad e impulsar la actividad comercial a trave\u0301s de la dinamizacio\u0301n de los escaparates de los establecimientos ubicados en las zonas comerciales del municipio durante el final de la Cuaresma y la Semana Santa.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EPodra\u0301n participar todos los establecimientos comerciales abiertos al pu\u0301blico del Municipio de Zafra.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEn el disen\u0303o de los escaparates, el establecimiento debera\u0301 exponer motivos alego\u0301ricos a la Semana Santa de Zafra combinados con arti\u0301culos de venta habitual.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELa inscripcio\u0301n sera\u0301 gratuita y se efectuara\u0301 a trave\u0301s del siguiente correo electro\u0301nico turismo@zafra.es\u003C\/span\u003E\u003Col\u003E\u003Cli\u003E\u003Cspan\u003EPlazo de inscripcio\u0301n \u003Cstrong\u003Edel 6 al 12 de abril\u003C\/strong\u003E.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELas solicitudes presentadas fuera de plazo no sera\u0301n admitidas.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EDatos para inscribirse:\u003C\/span\u003E\u003Col\u003E\u003Cli\u003E\u003Cspan\u003ENombre.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EComercio:\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EDireccio\u0301n:\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ETele\u0301fono:\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ECorreo electro\u0301nico:\u003C\/span\u003E\u003C\/li\u003E\u003C\/ol\u003E\u003C\/li\u003E\u003C\/ol\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELos establecimientos que participen estara\u0301n expuestos desde el di\u0301a 9 de abril y no podra\u0301n variarse hasta e1 17 de abril.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEl jurado estara\u0301 compuesto por cinco miembros, 2 de la Junta Local de Hermandades y Cofradi\u0301as de Zafra, 1 representante del CIT y dos representantes del Excmo. Ayuntamiento.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEl Fallo del jurado se conocera\u0301 el di\u0301a 29 de abril en la web oficial y en la pa\u0301gina oficial de Facebook del Excmo. Ayuntamiento de Zafra.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELos participantes del concurso renuncian expresamente al ejercicio de reclamacio\u0301n o recurso alguno contra las decisiones del jurado, sobre la concesio\u0301n de los premios o la interpretacio\u0301n de las bases.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELa participacio\u0301n en este \u003Cstrong\u003Econcurso\u003C\/strong\u003E implica la total aceptacio\u0301n de las bases, cuya interpretacio\u0301n corresponde al jurado.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEl premio sera\u0301 una campan\u0303a en RRSS para el establecimiento que resulte ganador.\u003C\/span\u003E\u003C\/li\u003E\u003C\/ol\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/npactividadessemanasanta2022-4.jpg",
+        "name": "Bases Concurso de Escaparates 2022 organizado por el Ayuntamiento de Zafra",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2023-12-13T17:47:48+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/bases-viii-concurso-de-fotografia-organizado-por-la-junta-local-de-hermandades-y-cofradias",
+                "pid": 1328,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16409,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Col\u003E\u003Cli\u003ETEMA: Bajo el tema \u0022Zafra, en Semana Santa\u0022, se convoca el VIII Concurso de Fotograf\u00eda organizado por la Junta Local de Hermandades y Cofrad\u00edas de Zafra. Podr\u00e1n presentarse todo tipo de trabajos relacionados con la Semana Santa de Zafra, que incluyan sus caracter\u00edsticas y peculiaridades.\u003C\/li\u003E\u003Cli\u003E\u003Cspan lang=\u0022EN-US\u0022\u003E\u003Cstrong\u003EOBRAS: \u003C\/strong\u003ECada autor podr\u00e1 presentar un \u003Cstrong\u003Em\u00e1ximo de 3 fotograf\u00edas, \u003C\/strong\u003Eque deber\u00e1n adecuarse al tema y contenidos del concurso - \u0022Zafra, en Semana Santa\u0022-. El comit\u00e9 organizador se reserva el derecho de admisi\u00f3n de las obras. No se aceptar\u00e1n trabajos que incluyan foto-montajes, tratamientos o alteraciones sobre el original mediante cualquier procedimiento t\u00e9cnico, a excepci\u00f3n de las m\u00ednimas correcciones referiidas a la luminosidad y el color. Tampoco se admitir\u00e1n fotograf\u00edas expuestas anteriormente en ediciones anteriores a este concurso o que hayan estado expuestas en otros concursos o exposiciones.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan lang=\u0022EN-US\u0022\u003E\u003Cstrong\u003EPARTICIPANTES: \u003C\/strong\u003EPodr\u00e1n participar las personas f\u00edsicas, residentes en Espa\u00f1a, sin importar nacionalidad. Para la participaci\u00f3n de menores es necesaria la autorizaci\u00f3n expresa de sus padres o tutores. La participaci\u00f3n en el concurso supone la total aceptaci\u00f3n de estas bases.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan lang=\u0022EN-US\u0022\u003E\u003Cstrong\u003EPRESENTACI\u00d3N DE LAS OBRAS: \u003C\/strong\u003ESe enviar\u00e1n en \u003Cstrong\u003Epapel fotogr\u00e1fico de calidad \u003C\/strong\u003Eno admiti\u00e9ndose obras realizadas en impresi\u00f3n normal.\u003C\/span\u003E\u003Cbr\u003E\u003Cspan lang=\u0022EN-US\u0022\u003EEl tama\u00f1o de las obras ser\u00e1 de \u003Cstrong\u003E30 cm en uno de sus lados \u003C\/strong\u003Ey \u003Cstrong\u003E25 cm \u003C\/strong\u003Een el otro. Deber\u00e1n presentarse montadas sobre fondo blanco de 5 cm de margen por cada lado \u003Cstrong\u003E(40 x 35 cm) \u003C\/strong\u003EEn el dorso del soporte, deber\u00e1 de figurar el rnombre y el tel\u00e9fono del autor.\u003C\/span\u003E\u003Cbr\u003E\u003Cspan lang=\u0022EN-US\u0022\u003ELas obras no pueden ir firmadas o con marcas de agua, para conservar el anonimato del autor.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003E\u003Cstrong\u003EPLAZOS: \u003C\/strong\u003EEl plazo de recepci\u00f3n de las fotograf\u00edas ser\u00e1 desde el d\u00eda 1 de junio de 2022 hasta el d\u00eda 30 de junio del mismo a\u00f1o. Podr\u00e1n ser entregadas a cualquier miembro de la Junta Local de Cofrad\u00eda de Zafra.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003E\u003Cstrong\u003EJURADO: \u003C\/strong\u003EEl jurado del concurso ser\u00e1 nombrado por el comit\u00e9 organizador y estar\u00e1 formado por representantes de \u00e9ste y aquellas personas designadas a tal efecto.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003E\u003Cstrong\u003EFALLO DEL JURADO: \u003C\/strong\u003EEl fallo del\u0026nbsp; jurado se conocer\u00e1 el d\u00eda 15 Julio en la pagina oficial de Facebook de la Junta Local de Cofrad\u00edas de Zafra.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003E\u003Cstrong\u003EENTREGA DE PREMIOS Y EXPOSICI\u00d3N DE LAS OBRAS: \u003C\/strong\u003ELa entrega de los premios se realizar\u00e1 en el mes de Enero, coincidiendo con la presentaci\u00f3n oficial del cartel anunciador de la Semana Santa 2023.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003E\u003Cstrong\u003EPREMIOS: \u003C\/strong\u003EEl jurado elegir\u00e1 las fotograf\u00edas premiadas y se conceder\u00e1n los siguientes premios:\u003C\/span\u003E\u003Col\u003E\u003Cli\u003E\u003Cspan\u003EPrimer premio: 300\u20ac + diploma\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ESegundo premio: 200\u20ac + diploma\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ETercer premio: 100\u20ac + diploma\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003EEl fallo del concurso ser\u00e1 inapelable. La organizaci\u00f3n queda facultada para resolver cualquier contingencia no prevista en las bases.\u003C\/li\u003E\u003C\/ol\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003E\u003Cstrong\u003EDERECHOS DE AUTOR: \u003C\/strong\u003EEl hecho de participar en el concurso conlleva la cesi\u00f3n en favor de la Junta Local de Cofrad\u00edas de Zafra, de los derechos de reproducci\u00f3n de las fotograf\u00edas.\u003C\/span\u003E\u003C\/li\u003E\u003C\/ol\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "name": "Bases VIII Concurso de Fotograf\u00eda organizado por la Junta Local de Hermandades y Cofrad\u00edas de Zafra",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2023-12-13T17:48:38+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/bases-concurso-de-fotografia-en-rrss-2022-organizado-por-el-ayuntamiento-de-zafra",
+                "pid": 1329,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16410,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Col\u003E\u003Cli\u003E\u003Cspan\u003ECon el objeto de dar visibilidad a nuestra Semana Santa en Redes Sociales se celebra un Concurso de fotografi\u0301as en Instagram.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EPodra\u0301n participar todos los que lo deseen durante los di\u0301as que dura la Semana Santa.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ESe podra\u0301n subir fotos de actividades y momentos de la Semana Santa, tanto de los religiosos como de los puramente turi\u0301sticos.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELas personas que participen debera\u0301n subir sus fotos a instagram, seguir a Turismo de Zafra turismozafra e incluir los hashtags: #ZafraSemanaSanta #turismozafra\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEl jurado estara\u0301 compuesto por tres miembros, presidido por la Concejali\u0301a de Cultura, o por quien delegue.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEl Fallo del jurado se conocera\u0301 el di\u0301a 29 de abril en la web oficial y en la pa\u0301gina oficial de Facebook del Ayuntamiento de Zafra.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELos participantes dcl concurso renuncian expresamente al ejercicio de reclamacio\u0301n o recurso alguno contra las decisiones del jurado, sobre la concesio\u0301n de los premios o la interpretacio\u0301n de las bases.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003ELa participacio\u0301n en este concurso implica la total aceptacio\u0301n de 1as bases, cuya interpretacio\u0301n corresponde al jurado.\u003C\/span\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cspan\u003EEl premio sera\u0301 una noche en la sala Dorada en el Parador de Zafra. Bajo disponibilidad del establecimiento.\u003C\/span\u003E\u003C\/li\u003E\u003C\/ol\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "name": "Bases Concurso de Fotograf\u00eda en RRSS 2022 organizado por el Ayuntamiento de Zafra",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2023-12-13T17:49:12+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/ruta-sabores-de-pasion",
+                "pid": 1330,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16411,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EDEL 8 AL 17 DE ABRIL 2022\u003C\/p\u003E\u003Cp\u003EESTABLECIMIENTOS PARTICIPANTES\u003C\/p\u003E\u003Cul\u003E\u003Cli\u003ELa Flaca, Plaza Grande 20\u003C\/li\u003E\u003Cli\u003EParador de Zafra, Plaza Coraz\u00f3n de Mar\u00eda, s\/n\u003C\/li\u003E\u003Cli\u003ELa Bodeguita del Medio, Avda. del Rosario, 2\u003C\/li\u003E\u003Cli\u003ELa Otra Bodeguita, Avda. L\u00f3pez Asme, 6\u003C\/li\u003E\u003Cli\u003ERestaurante Rogelio, Avda. de la Estaci\u00f3n, 9\u003C\/li\u003E\u003Cli\u003ETaper\u00eda Miliki, Avda. Antonio Chac\u00f3n, 12\u003C\/li\u003E\u003C\/ul\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/npactividadessemanasanta2022-2.jpg",
+        "name": "Ruta Sabores de Pasi\u00f3n",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2023-12-13T17:49:49+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/ruta-de-los-dulces-de-cuaresma",
+                "pid": 1331,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16412,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EESTABLECIMIENTOS PARTICIPANTES\u003C\/p\u003E\u003Cul\u003E\u003Cli\u003EPasteler\u00eda La Argentina, Calle Sevilla, 26\u003C\/li\u003E\u003Cli\u003EPasteler\u00eda la Argentina, Avda. Antonio Chac\u00f3n, 4\u003C\/li\u003E\u003Cli\u003ECafeter\u00eda La Chamba, Plaza Espa\u00f1a, s\/n\u003C\/li\u003E\u003Cli\u003ECafeter\u00eda La Chamba Plaza, Plaza Grande, 1\u003C\/li\u003E\u003Cli\u003ELa Cercana Pasteler\u00eda Artesanal, Ronda del Pilar, 16\u003C\/li\u003E\u003Cli\u003EMomentos Caf\u00e9 \u0026amp; Pasteler\u00eda, Arco de San Antonio, 7\u003C\/li\u003E\u003Cli\u003ECafeter\u00eda y Pasteler\u00eda Dulce Azahar, Santa Marina, 3B\u003C\/li\u003E\u003C\/ul\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/npactividadessemanasanta2022-3.jpg",
+        "name": "Ruta de los Dulces de Cuaresma",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:03:24+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/la-piscina-municipal-abrira-sus-puertas",
+                "pid": 1332,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16413,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EConscientes del servicio que este recurso ofrece tanto a los vecinos\/as de Medina de las Torres como a aquellos que nos visitan y siendo uno de nuestros enclaves m\u00e1s valorados y demandados , el Ayuntamiento de Medina de las Torres anuncia que la piscina municipal este verano, volver\u00e1 a abrir sus puertas. Y lo hace con una extraordinaria medida ya que los\/las\u0026nbsp; menores de 14 a\u00f1os tendr\u00e1n entrada GRATUITA durante todo el verano, por ello no ser\u00e1n incluidos en los abonos familiares.\u003C\/p\u003E\u003Cp\u003EAquellos menores con 14 a\u00f1os ya cumplidos, no estar\u00e1n\u0026nbsp; exentos del pago de la entrada\u003C\/p\u003E\u003Cp\u003EDesde hoy , mi\u00e9rcoles 22 de junio\u0026nbsp; cualquier persona interesada en obtener su abono para la TEMPORADA DE BA\u00d1O 2022, puede pasarse por las instalaciones\u0026nbsp; del Ayuntamiento.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/289772983_342914134660367_687917614797717602_n_0.jpg",
+        "name": "La piscina municipal, abrir\u00e1 sus puertas",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:03:35+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/i-semana-lgtbi-en-medina-de-las-torres",
+                "pid": 1333,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16414,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003ELa concejal\u00eda\u0026nbsp; de Cultura, Juventud, Festejos y Educaci\u00f3n\u0026nbsp; del Ayuntamiento de Medina de las Torres organiza las I Semana LGTBI\u003C\/p\u003E\u003Cp\u003ED\u00edas para la reivindicaci\u00f3n, para educar en la diversidad y remover conciencias\u0026nbsp; dando voz a colectivos que hist\u00f3ricamente han sido estigmatizados.\u003C\/p\u003E\u003Cp\u003E\u003Cem\u003EPorque el amor no necesita explicaci\u00f3n ni entiende de g\u00e9neros\u003C\/em\u003E\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/289431458_342330108052103_4609371012861646428_n_0.jpg",
+        "name": "I Semana LGTBI en Medina de las Torres",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:03:46+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/programacion-plenilunium-2022",
+                "pid": 1334,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 16415,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EEl pasado d\u00eda 30 de mayo fue convocada como todos los a\u00f1os, la reuni\u00f3n con miembros del grupo de participaci\u00f3n ciudadana con el objeto de fijar las actividades que formar\u00edan parte de la programaci\u00f3n de verano y establecer lazos de cooperaci\u00f3n para el buen desarrollo de las mismas.\u003C\/p\u003E\u003Cp\u003EEl concejal de Cultura, Juventud y Festejos, Isaac Rodr\u00edguez fue el encargado de presentar entre los\/las asistentes la XXIII edici\u00f3n del Programa Cultural Plenilunio una apuesta por la cultura, el ocio y el deporte con actividades para todas las edades con el que disfrutar\u00e1s del verano en Medina de las Torres.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/287307094_334974535454327_4868002360473968071_n.jpg",
+        "name": "Programaci\u00f3n Plenilunium 2022",
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2023-12\/287464334_334974498787664_6310828465089042806_n.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-26T09:45:20+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/castuera-celebra-el-23-de-marzo-la-v-edicion-del-dia-del-queso",
+                "pid": 4443,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50460,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022\u003EEsta actividad se encuadrada en el programa \u2018Castuera, capital mundial del ovino\u2019\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003ELa Plaza de Espa\u00f1a de Castuera y su entorno pr\u00f3ximo volver\u00e1n a ser el escenario el s\u00e1bado 23 de marzo de una nueva edici\u00f3n del \u00abD\u00eda del Queso\u00bb que organiza el Ayuntamiento en estrecha colaboraci\u00f3n con la Diputaci\u00f3n de Badajoz, la Escuela de Pastores de Extremadura y la Instituci\u00f3n Ferial Sal\u00f3n Ovino.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Para presentar este evento gastron\u00f3mico, el diputado provincial de Desarrollo Rural, Reto Demogr\u00e1fico y Turismo, Francisco Buenavista, ha manifestado que \u201cel D\u00eda del Queso de Castuera, que este a\u00f1o alcanza su quinta edici\u00f3n, se presenta como un d\u00eda de fiesta popular y el escaparate id\u00f3neo donde dar a conocer de manera did\u00e1ctica las novedades en cuanto a variedades, formatos de presentaci\u00f3n y aplicaciones culinarias del queso de La Serena\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Supone, adem\u00e1s, una gran oportunidad de comercializaci\u00f3n y promoci\u00f3n ya que el evento, con s\u00f3lo cuatro a\u00f1os de andadura, se ha convertido en un referente del turismo gastron\u00f3mico en el que se dan cita numerosas personas venidas tanto de diferentes puntos de Extremadura como de otras comunidades vecinas.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Buenavista ha recordado que a ra\u00edz de la creaci\u00f3n en 1991 de la Denominaci\u00f3n de Origen Queso de la Serena, surgi\u00f3 un sector muy potente en la localidad de industrias queseras, llegando a existir hasta 19 queser\u00edas, aunque en la actualidad son 11 las existentes.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Desde aquellas fechas hasta la actualidad mucho han cambiado las necesidades del sector productor quesero local y comarcal, habiendo desarrollado en este tiempo una serie de acciones como la celebraci\u00f3n de la cata concurso queso de La Serena en el marco de la Edici\u00f3n General del Sal\u00f3n Ovino, acciones formativas relacionadas sobre todo con la elaboraci\u00f3n y maduraci\u00f3n de quesos artesanos, el festival gastron\u00f3mico de Castuera, el evento denominado \u2018Castuera Sabe\u2019 como promoci\u00f3n de productos queseros, turroneros y charcuteros, la ruta del queso de Extremadura o la organizaci\u00f3n anual de un curso de elaboraci\u00f3n de queso artesano de oveja.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Este D\u00eda del Queso, apunta el diputado, \u201cpretende potenciar este producto para atraer un turismo que cada a\u00f1o busca eventos singulares relacionados con la gastronom\u00eda\u201d. Se plantea como un evento participativo del tejido asociativo local y comarcal para la puesta en valor del consumo beneficioso del queso, tanto en el \u00e1mbito personal como social. En definitiva, por ser un producto b\u00e1sico en la econom\u00eda local y comarcal y que se encuadra en el programa \u2018Castuera, capital mundial del ovino\u2019.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Buenavista ha a\u00f1adido que esta iniciativa es ya un referente del turismo gastron\u00f3mico del que la Diputaci\u00f3n no es ajena, pues lo apoya como escaparate del sector agraoalimentario y como denominaci\u00f3n de origen, \u201cayudando a generar una provincia m\u00e1s pr\u00f3spera\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EFrancisco Martos, alcalde de Castuera, destaca la colaboraci\u00f3n del tejido asociativo y de la poblaci\u00f3n en general, considerando que la actividad m\u00e1s demandada es la elaboraci\u00f3n de quesos por cualquiera que lo desee en un taller dirigido principalmente al colectivo infantil.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Por su parte, las concejalas de Cultura, Piedad Roso, y Turismo, Paula Esperilla, han desgranado el programa de esta quinta edici\u00f3n, que consta de talleres de elaboraci\u00f3n de quesos, suero y nazurr\u00f3n, junto con otros sobre reposter\u00eda y telares artesanales. A su vez, se ofrecer\u00e1 una degustaci\u00f3n y venta de quesos y tapas que pueden regarse con cervezas artesanales. Tambi\u00e9n se podr\u00e1n degustar helados y reposter\u00eda tradicional, junto con asado de cordero y la actividad de dinamizaci\u00f3n que consiste en un tren que parte de Badajoz en dos horarios de salida, 9:36 y 10:40 horas. El primero de ellos acoge animaci\u00f3n con el grupo \u2018Los Arrieros\u2019 y la escuela de teatro de la localidad. A su vez, un tren urbano recorrer\u00e1 diferentes rincones de Castuera, acerc\u00e1ndose al Museo del Turr\u00f3n y a diversas zonas hist\u00f3ricas de la ciudad.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E\u0026nbsp;Tambi\u00e9n se ha invitado a distintas queser\u00edas de Cabeza del Buey, Ciudad Real, Sevilla y Ja\u00e9n, para que muestren sus elaboraciones hechas con quesos de oveja y cabra.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240313115141_f5_0.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "Castuera celebra el 23 de marzo la V edici\u00f3n del \u2018D\u00eda del Queso\u2019",
+        "latitude": 38.72504257295,
+        "longitude": -5.5445350751241,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240313115141_f1.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240313115141_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240313115141_f3.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240313115141_f4.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240313115141_f5.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:02:41+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/campanario-vive-un-ano-mas-su-romeria-de-piedraescrita",
+                "pid": 4445,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50461,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022\u003ELa romer\u00eda de Piedraescrita, fiesta declarada de Inter\u00e9s Tur\u00edstico Regional, se celebra los Lunes de Pascua, siendo una de las m\u00e1s multitudinarias de cuantas se desarrollan en la comarca de La Serena. En esta edici\u00f3n se ha fijado para el pr\u00f3ximo 1 de abril.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EFrancisca Silva, diputada provincial, recuerda que se trata de un evento de car\u00e1cter religioso y l\u00fadico que \u201cse caracteriza por su popular desfile de carrozas y caballerizas en un desfile multicolor para pasar un d\u00eda de romer\u00eda y convivencia\u201d. Lugare\u00f1os y visitantes se concentran en el entorno de la Plaza de Espa\u00f1a para contemplar la exhibici\u00f3n de carrozas que un jurado puntuar\u00e1 para elegir la mejor de las que se presentan.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003ELas carrozas, realizadas por los habitantes de Campanario, se convierten en verdaderos monumentos andantes confeccionados con papel de seda, pegamento y estructuras.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EEl programa comienza a las 10 de la ma\u00f1ana con la concentraci\u00f3n de las carrozas en el parque de La Constituci\u00f3n. De ah\u00ed se dirigen a la Plaza de Espa\u00f1a y recorren el entorno urbano dos veces observadas por el p\u00fablico y un jurado que decide cu\u00e1l es la mejor. Los premios se reparten entre todas las carrozas presentadas, con dotaciones econ\u00f3micas que oscilan entre los 2.200 y 1.600 euros. Tras este desfile toman rumbo a la ermita de la Virgen y all\u00ed, tras una misa y procesi\u00f3n, conviven vecinos y visitantes en una jornada de comida en el campo. Para finalizar, una verbena ameniza la noche con orquesta y Dj,s.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003ESilva abunda en que se trata \u201cde una cita obligada para disfrutar de un d\u00eda de campo en un entorno primaveral, donde se degustan no solo los manjares y dulces t\u00edpicos de la Semana Santa sino tambi\u00e9n la rica gastronom\u00eda extreme\u00f1a como el queso de la Serena, empanadas de cecina o el famoso \u00abjornazo\u00bb, un postre t\u00edpico adornado con huevo duro\u201d.\u003Cbr\u003EComo curiosidad, indicar que la imagen de la Virgen de Piedraescrita es una talla del siglo XIII, y justo en el lugar en el que fue encontrada se construy\u00f3 la ermita del siglo XV del mismo nombre.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EEl alcalde de Campanario, Manuel Calder\u00f3n, sostiene que se trata de la fiesta por excelencia de Campanario que se vive meses antes con la confecci\u00f3n de las carrozas y los adornos que portan las caballer\u00edas y los burros. \u201cNo es una fiesta sin m\u00e1s\u201d, apunta, \u201cpues los for\u00e1neos que asisten a la misma reciben la buena acogida de la que hacen gala los campanerienses\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EPor su parte, los concejales Izar D\u00edaz y Magdalena Trenado destacan el valor hist\u00f3rico del evento, que se remonta siglos atr\u00e1s y tiene su origen en las ferias de ganado, as\u00ed como el capital humano que hay detr\u00e1s por el trabajo que desarrollan.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EEste a\u00f1o participan 12 carrozas con motivos infantiles y de otra \u00edndole en una exhibici\u00f3n que llena de luz y color las calles del pueblo y en la que participa pr\u00e1cticamente todo el pueblo.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EPara concluir, la diputada provincial ha mostrado el apoyo de la Diputaci\u00f3n de Badajoz a este tipo de eventos festivo-culturales que ayudan a la econom\u00eda local y a la promoci\u00f3n de las localidades donde se celebran.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240306121846_f5_0.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "Campanario vive un a\u00f1o m\u00e1s su romer\u00eda de Piedraescrita",
+        "latitude": 38.863395940376,
+        "longitude": -5.6170524028572,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240306121846_f1.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240306121846_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240306121846_f3.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240306121846_f4.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240306121846_f5.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:02:30+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/el-presidente-de-la-diputacion-de-badajoz-apoya-la-declaracion-de-interes-turistico",
+                "pid": 4448,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50463,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022\u003EEl presidente de la Diputaci\u00f3n de Badajoz, Miguel \u00c1ngel Gallardo, visit\u00f3 ayer s\u00e1bado la fiesta de \u2018Valdelacalzada en flor\u2019 y con su presencia quiso apoyar su declaraci\u00f3n como Fiesta de Inter\u00e9s Tur\u00edstico Regional. Tras 21 ediciones, el Ayuntamiento ya ha iniciado los tr\u00e1mites para conseguir el reconocimiento regional.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EGallardo estuvo acompa\u00f1ado de los diputados provinciales Ricardo Cabezas y Juan Mar\u00eda Delfa, del alcalde de Valdelacalzada, Fran Hormigo, y de miembros de la corporaci\u00f3n municipal.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EEl presidente provincial comenz\u00f3 visitando una de las calles del pueblo que se engalanan de flores artificiales por parte de los vecinos y vecinas con motivo de la festividad y, posteriormente, en la plaza asisti\u00f3 al festival folcl\u00f3rico. Tras visitar todos y cada uno de los puestos que se instalan en la plaza, hizo un recorrido por el Centro de Interpretaci\u00f3n de la Floraci\u00f3n \u2018Casa Flora\u2019 y acab\u00f3 firmando en el libro de visitas del Ayuntamiento.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EMiguel \u00c1ngel Gallardo apunt\u00f3 que esta fiesta, que pinta de colores blancos y rosas Valdelacalzada, es un \u201cs\u00edmbolo de uni\u00f3n de todo un pueblo. Una localidad, como dijo, relativamente joven que \u201cha sabido impulsar un modelo de vida digna a trav\u00e9s de la agroindustria\u201d. Y destac\u00f3 el hecho de que \u201cla fruta, en verano, lo ti\u00f1a todo de empleo\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EEn su intervenci\u00f3n, el presidente valor\u00f3 el empuje del alcalde, Fran Hormigo, por el impulso a esta fiesta, al tiempo que mostr\u00f3 el compromiso firme y decidido de la Diputaci\u00f3n de Badajoz para llenar de contenido el Museo del Colono, en caso de que la Junta de Extremadura no quiera financiar la dotaci\u00f3n con mobiliario de estas instalaciones. Un museo, como dijo, que servir\u00e1 de complemento id\u00f3neo para el Centro de Interpretaci\u00f3n \u2018Casa Flora\u2019.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EFran Hormigo, por su parte, quiso agradecer la disposici\u00f3n e implicaci\u00f3n de la Diputaci\u00f3n pues, como dijo, sin su apoyo ser\u00eda imposible ofrecer una programaci\u00f3n de actividades como la de este a\u00f1o. En definitiva, su agradecimiento fue extensivo a todos y a todas \u201clos que hacen que Valdelacalzada florezca en primavera\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003E21 a\u00f1os de fiesta\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EDesde hace 21 a\u00f1os Valdelacalzada ha sabido sacar partido tur\u00edstico a la explosi\u00f3n de color que se produce estos d\u00edas en los campos, por la espectacular floraci\u00f3n de los frutales, qie sin duda es la mejor bienvenida que se le puede dar, en nuestra provincia, a la primavera.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003ELas franjas de tonos rosados y blancos que nos dejan las explotaciones frutales de las Vegas Bajas, son un aut\u00e9ntico lujo para los sentidos.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022\u003EEn cuanto a la programaci\u00f3n, de \u2018Valdelacalzada en flor\u2019 (que se celebra del 25 de febrero al 17 de marzo) recoge actividades para todos: deportes, ruta a caballo y ciclotur\u00edstica, eventos gastron\u00f3micos, festival de folclore, mercado de artesan\u00eda, y unas jornadas sobre \u2018Valdelacalzada en Flor, su pasado, presente y futuro\u2019, entre otras. Hoy se cierran las actividades con una ruta senderista, para posteriormente invitar a todos los participantes, vecinos y visitantes a unas migas tradicionales.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240317094653_f1.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "El presidente de la Diputaci\u00f3n de Badajoz apoya la declaraci\u00f3n de Inter\u00e9s Tur\u00edstico Regional para \u2018Valdelacalzada en flor\u2019",
+        "latitude": 38.890139296237,
+        "longitude": -6.7010244161399,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240317094653_f1_0.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240317094653_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240317094653_f3.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:02:08+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/la-feria-transfronteriza-del-gurumelo-de-villanueva-del-fresno-alcanza-la-mayoria-de-edad",
+                "pid": 4462,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50470,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EHoy se ha presentado en la Diputaci\u00f3n de Badajoz la XVIII Feria Transfronteriza del Gurumelo que se celebrar\u00e1 los d\u00edas 22,23 y 24 de marzo en Villanueva del Fresno.\u003C\/p\u003E\u003Cp\u003ESeg\u00fan explic\u00f3 el alcalde y diputado provincial, Ram\u00f3n D\u00edaz Farias, esta feria est\u00e1 dise\u00f1ada no s\u00f3lo para profesionales, sino para compartirla en familia.\u003C\/p\u003E\u003Cp\u003ELas actividades han comenzado ya con una salida al campo por parte de alumnos del IES San Gin\u00e9s. Tambi\u00e9n participan en un concurso de cocina en vivo, y alumnos del CEIP Francisco Rodr\u00edguez Perera disfrutan de un taller para la puesta en valor de los productos locales y la identificaci\u00f3n de los mismos. El taller finaliza con la elaboraci\u00f3n, por parte de los estudiantes, de sus propias recetas.\u003C\/p\u003E\u003Cp\u003EHabr\u00e1 dos salidas al campo para la recogida de gurumelos, una el s\u00e1bado y la segunda el domingo. Ya hay inscritas unas 250 personas para cada una de estas excursiones.\u003C\/p\u003E\u003Cp\u003EPara los profesionales habr\u00e1 ponencias, mesa redonda y curso sobre el aprovechamiento micol\u00f3gico. La plaza de Espa\u00f1a acoger\u00e1 actividades l\u00fadicas, como talleres de cocina en vivo, exposici\u00f3n y clasificaci\u00f3n de setas, animaci\u00f3n de calle y la actuaci\u00f3n musical de Elsa Tortonda, ganadora de la \u00faltima edici\u00f3n de La Voz.\u003C\/p\u003E\u003Cp\u003EEn el entorno de la Plaza de Espa\u00f1a de Villanueva del Fresno, 17 restaurantes elaborar\u00e1n platos con el gurumelo como protagonista. Tambi\u00e9n habr\u00e1 puestos de venta directa. Adem\u00e1s, este a\u00f1o se suman como en ediciones anteriores un centenar de autocaravanas.\u003C\/p\u003E\u003Cp\u003ED\u00edaz Farias destac\u00f3 la gran ocupaci\u00f3n hotelera no s\u00f3lo en su localidad, sino en los pueblos m\u00e1s cercanos con lo que se revitaliza la econom\u00eda del entorno. Seg\u00fan datos de las inscripciones para las salidas a la recogida de gurumelo, se han apuntado gente de Extremadura, Andaluc\u00eda, Barcelona, Gij\u00f3n, Galicia, Tenerife o Madrid.\u003C\/p\u003E\u003Cp\u003EComo novedad, este a\u00f1o participar\u00e1n miembros de la Guardia Nacional Republicana Portuguesa, quienes colaborar\u00e1n con la Guardia Civil, Polic\u00eda Local y Protecci\u00f3n Civil.\u003C\/p\u003E\u003Cp\u003EEl alcalde ha anunciado la pr\u00f3xima creaci\u00f3n del Museo del Gurumelo gracias a las ayudas de la Diputaci\u00f3n de Badajoz y la Junta de Extremadura. Este centro ser\u00e1 inaugurado en la edici\u00f3n de la feria del pr\u00f3ximo a\u00f1o.\u003C\/p\u003E\u003Cp\u003ELa diputada provincial, Paqui Silva, destac\u00f3 que la Feria Transfronteriza del Gurumelo es un referente culinario, gastron\u00f3mico y tur\u00edstico. \u201cAdem\u00e1s, este a\u00f1o cumple su mayor\u00eda de edad, lo que significa su completa consolidaci\u00f3n\u201d. Calific\u00f3 la feria como un acontecimiento gastron\u00f3mico de primer orden.\u0026nbsp;\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240321132352_f5.jpg",
+        "addressLocality": "Badajoz",
+        "addressLocality_id": 19,
+        "name": "La Feria Transfronteriza del Gurumelo de Villanueva del Fresno alcanza la mayor\u00eda de edad",
+        "latitude": 38.377028350809,
+        "longitude": -7.16602755,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240321132352_f1.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240321132352_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240321132352_f3.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240321132352_f4.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240321132352_f5_0.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:01:46+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/el-presidente-de-la-diputacion-de-badajoz-asiste-la-inauguracion-de-la-23a-edicion-de",
+                "pid": 4468,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50473,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EEl presidente de la Diputaci\u00f3n de Badajoz, Miguel \u00c1ngel Gallardo, ha participado hoy en la inauguraci\u00f3n del 23\u00ba Sal\u00f3n del Vino y la Aceituna Iberovinac 2024, que se celebra en Almendralejo hasta el pr\u00f3ximo viernes 22 de marzo.\u003C\/p\u003E\u003Cp\u003EEn su intervenci\u00f3n, Gallardo ha querido destacar el gran trabajo que se desarrolla desde los sectores del vino, la aceituna y el cava, que hace que la localidad almendralejense se sit\u00fae \u201centre los referentes en el conjunto del pa\u00eds\u201d.\u003C\/p\u003E\u003Cp\u003EComo ha dicho, la Diputaci\u00f3n de Badajoz seguir\u00e1 manteniendo el patrocinio de Iberovinac, \u201cpara apoyar y acompa\u00f1ar, pero ten\u00e9is que ser vosotros, los empresarios, los que ten\u00e9is que dirigir hac\u00eda donde ir para cumplir los objetivos que tenemos todos de potenciar la marca Extremadura\u201d.\u003C\/p\u003E\u003Cp\u003EY es que para Miguel \u00c1ngel Gallardo, \u201clo fundamental es la autoestima, que es la que tiene que predominar para que veamos que no somos menos que los dem\u00e1s\u201d.\u003C\/p\u003E\u003Cp\u003EAprovechando la presencia de la Presidenta de la Junta de Extremadura, ha garantizado su \u201clealtad para trabajar en aquello que sea bueno para Extremadura\u201d y, en este sentido, ha pedido \u201cque seamos capaces de continuar el trabajo ya realizado\u201d por el anterior gobierno con el proyecto de regad\u00edo de Tierra de Barros.\u003C\/p\u003E\u003Cp\u003EIberovinac cuenta este a\u00f1o con m\u00e1s de 3.000 metros cuadrados de exposici\u00f3n y 62 empresas del sector del vino, la aceituna, el aceite y productos auxiliares.\u003C\/p\u003E\u003Cp\u003EEste a\u00f1o hay importantes novedades, como los premios a los mejores vinos, aceitunas y aceite, as\u00ed como una decena de catas y talleres repartidas en las tres jornadas.\u003C\/p\u003E\u003Cp\u003EAsisten importadores internacionales: habr\u00e1 dos profesionales procedentes de Reino Unido, otro de Pa\u00edses Bajos y otro llegado desde M\u00e9xico.\u003C\/p\u003E\u003Cp\u003E\u00c9sta es la parte m\u00e1s interesantes para las bodegas participantes, ya que les permite tener encuentros con estos compradores que despu\u00e9s tienen la opci\u00f3n de introducir los productos presentados en Iberovinac a otras partes del mundo.\u003C\/p\u003E\u003Cp\u003ETambi\u00e9n est\u00e1 confirmada la presencia de una veintena de compradores y distribuidores nacionales, especialmente llegados de zonas de Madrid y Andaluc\u00eda.\u003C\/p\u003E\u003Cp\u003EAsimismo, hay un stand de la DO Valdeorras, de la localidad gallega de A R\u00faa hermanada con Almendralejo.\u003C\/p\u003E\u003Cp\u003EDurante el recorrido por los distintos stands de Iberovinac 2024, el presidente ha estado acompa\u00f1ado de la vicepresidenta primera, Raquel del Puerto, y de los diputados provinciales Juan Mar\u00eda Delfa, Francisco Buenavista y Paqui Silva.\u0026nbsp;\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320202726_f2.jpeg",
+        "addressLocality": "Badajoz",
+        "addressLocality_id": 19,
+        "name": "El presidente de la Diputaci\u00f3n de Badajoz asiste a la inauguraci\u00f3n de la 23\u00aa edici\u00f3n de Iberovinac",
+        "latitude": 38.87494755037,
+        "longitude": -6.9694489,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320202726_f1.jpeg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320202726_f2_0.jpeg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320202726_f3.jpeg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320202726_f4.jpeg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320202726_f5.jpeg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:01:35+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/tropa-do-carallo-encabeza-el-cartel-del-xx-festival-guoman",
+                "pid": 4470,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50474,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EEl Colectivo Guoman, junto con el Ayuntamiento de Guare\u00f1a, han programado para todo el fin de semana del 22 y 23 de marzo un amplio programa de actividades gratuitas en la calle para celebrar la vig\u00e9sima edici\u00f3n del festival. Guoman 2024 se inaugurar\u00e1 este viernes 22, a partir de las 18:30 horas, con el pasacalles y espect\u00e1culo de animaci\u00f3n a cargo de la comparsa pacense Batal\u00e1. Tras la inauguraci\u00f3n, en la denominada zona N\u00f3veles, situada en la Plaza de la Parada, arrancar\u00e1, a las 19:45 horas la Gran Batalla de Gallos 2024, donde diecis\u00e9is raperos \u2018pelear\u00e1n\u2019 por ser el mejor batallador. A esa misma hora, en la zona Urbana de la calle Don Diego L\u00f3pez, tendr\u00e1 lugar una de las novedades de esta edici\u00f3n, el I Concurso de Mon\u00f3logos, un certamen coorganizado por el festival junto con La Bellota Eventos, donde se dar\u00e1n cita ocho c\u00f3micos que competir\u00e1n por ofrecer el mejor mon\u00f3logo. El concurso consta de tres premios, que ser\u00e1 los que otorgue el jurado, a lo que se sumar\u00e1 tambi\u00e9n el premio del p\u00fablico, que podr\u00e1 votar durante el transcurso del certamen.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;As\u00ed arrancar\u00e1 uno de los festivales m\u00e1s esperados del panorama musical extreme\u00f1o que Fran Mu\u00f1oz, representante del Colectivo Guoman, ha detallado esta ma\u00f1ana en su presentaci\u00f3n en la Diputaci\u00f3n de Badajoz, instituci\u00f3n patrocinadora junto a la Junta de Extremadura, el Cemart, la Red de Teatros de Extremadura y el Ayuntamiento de la localidad.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Para el alcalde de Guare\u00f1a y diputado provincial, Abel Gonz\u00e1lez, tras veinte a\u00f1os de existencia, \u201cel festival ha ido creciendo de manera exponencial, formando parte del calendario de eventos del municipio como una de sus se\u00f1as de identidad\u201d.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Gonz\u00e1lez destaca a su vez que aparte de la m\u00fasica y de su identidad cultural y social, el festival supone \u201cun gran impulso para la econom\u00eda local, ya que en torno a 2000 y 3000 personas consumen y compran en la hosteler\u00eda y las empresas del pueblo\u201d.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;El alcalde no ha querido olvidar al colectivo esencial que lo hace posible, como es el Colectivo Guoman, que de forma silenciosa realiza una gran labor y dinamismo social. Este a\u00f1o, adem\u00e1s, se va a incorporar una actividad de promoci\u00f3n tur\u00edstica, el proyecto \u2018Condado\u2019.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Recalca, Nazaret Acevedo, concejala de Participaci\u00f3n Juvenil, la importancia que este evento tiene para el turismo, con gran arraigo y confianza para los visitantes que acuden al mismo y desean vivir una experiencia diferente.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Programa del 23 de marzo\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Fran Mu\u00f1oz, por su parte, ha desgranado el resto de la programaci\u00f3n que pone \u201cpatas arriba\u201d el centro del municipio con un rico y variado conjunto de actividades. El s\u00e1bado 23 de marzo, durante toda la ma\u00f1ana, se celebrar\u00e1, como viene siendo habitual desde hace a\u00f1os, el Guoman Infantil, que este a\u00f1o dar\u00e1 comienzo a partir de las 10:30 horas con un pasacalle de las Escuelas Multideportivas de Guare\u00f1a en el que participar\u00e1n m\u00e1s de 250 peque\u00f1os y peque\u00f1as y que arrancar\u00e1 en el parque San Gin\u00e9s y terminar\u00e1 en la Plaza de San Gregorio. Tras el pasacalles, en torno a las 11:15 horas, se abrir\u00e1 la Plaza de San Gregorio para las tradicionales exhibiciones, tanto de las alumnas de la Escuela Municipal de Gimnasia R\u00edtmica como la de Patinaje. Ya a las 12:30 vuelve Festiocio, un espect\u00e1culo patrocinado por la empresa Inquiba, en el que se ofrecer\u00e1 una fiesta a los m\u00e1s peque\u00f1os con personajes Disney e incluso, un concurso de TikTok. Tambi\u00e9n se han programado varios talleres, entre ellos de arcilla m\u00e1gica, pintacaras, atrapasue\u00f1os, globoflexia y juegos tradicionales.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Por la tarde, la zona Urbana se abrir\u00e1 a las 17 horas con distintos talleres circenses compuestos por cariocas, malabares, zancos y pompas gigantes de jab\u00f3n. Tambi\u00e9n tendr\u00e1 lugar un taller y exhibici\u00f3n de danza urbana, otro de calixtenia y el espect\u00e1culo de circo, \u2018ClaCry\u2019. Tambi\u00e9n se abrir\u00e1 la Plaza de La Parada para acoger la decimocuarta edici\u00f3n del concurso de Grupos N\u00f3veles en el que este a\u00f1o se han inscrito m\u00e1s de 30 grupos procedentes de varias provincias del pa\u00eds y en el que cinco de ellos, Rojo Cardinal, A tu Vera, Oldhands, TuraDH y Flinks, competir\u00e1n por el premio de 600 euros y la posibilidad de ser contratados y formar parte del cartel oficial del Guoman en su pr\u00f3xima edici\u00f3n.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Tras el cierre de todas las zonas, en torno a las 21:30 horas, dar\u00e1 comienzo el espect\u00e1culo de clausura del festival, donde, la compa\u00f1\u00eda Tup\u00e1 Percusi\u00f3n traer\u00e1 a Guare\u00f1a \u2018Druidas\u2019, un desfile que se compone de tres rituales donde se elevar\u00e1 la magia al cielo con distintos elementos m\u00edsticos de fuego. El espect\u00e1culo tendr\u00e1 lugar en la Plaza de Espa\u00f1a, aunque habr\u00e1 un recorrido previo por distintos puntos del festival.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Conciertos\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;Un a\u00f1o m\u00e1s, la Plaza de Espa\u00f1a de Guare\u00f1a se convertir\u00e1 durante el fin de semana en el punto neur\u00e1lgico del festival, donde estar\u00e1 situado el Escenario Guoman y en el que el viernes por la noche lo abrir\u00e1n \u2018La Jara\u2019, el grupo madrile\u00f1o que se proclam\u00f3 vencedor del concurso de grupos del a\u00f1o pasado. Tras ellos, llegar\u00e1n \u2018Nativa\u2019, banda valenciana que lanz\u00f3 el a\u00f1o pasado su \u00faltimo trabajo, titulado \u2018Aqu\u00ed y Ahora\u2019. Del cierre de la primera noche de festival se encargar\u00e1 la DJ sevillana \u2018Shega\u2019.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;El s\u00e1bado a mediod\u00eda, el escenario principal estar\u00e1 ocupado por un grupo que ya actu\u00f3 en el festival hace diez a\u00f1os. Se trata de \u2018Entrenotass\u2019, grupo pacense que, tras culminar un 2023 lleno de actuaciones, programa este a\u00f1o nuevos singles y nuevas fechas ya confirmadas. Tras ellos, el DJ \u2018Iv\u00e1n \u00c1lvarez\u2019 ofrecer\u00e1 una sesi\u00f3n musical durante la tarde. Ya por la noche, tendr\u00e1 lugar la actuaci\u00f3n de \u2018Soversi\u00f3n\u2019, banda lusa procedente de Elvas, que versiona los temas m\u00e1s cl\u00e1sicos del pop y el rock internacional. Tras ellos llegar\u00e1n a Guare\u00f1a \u2018Tropa do Carallo\u2019, grupo del que forma parte el cantante y l\u00edder de La Polla R\u00e9cords, Evaristo P\u00e1ramos, que presentar\u00e1n los temas de su primer disco titulado \u2018Que hostias and\u00e1is\u2019. Finalmente, el cierre de la noche y del festival lo pondr\u00e1 la joven DJ madrile\u00f1a, \u2018Maggie\u2019.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;El festival cuenta con dos zonas, la Artesan\u00eda y la de Asociaciones. La primera, situada en la calle Grande, contar\u00e1 con la participar\u00e1n de casi una treintena de artesanos y artesanas que durante la tarde del viernes y la jornada del s\u00e1bado expondr\u00e1n y vender\u00e1n sus productos de car\u00e1cter artesanal.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;La zona de Asociaciones se suma como parte del tejido asociativo de Guare\u00f1a y tambi\u00e9n procedente de otras localidades con la participaci\u00f3n, en esta ocasi\u00f3n de la Asociaci\u00f3n Cultural de Mujeres \u2018La Nacencia\u2019, AOEx Guare\u00f1a, Adiscagua, Adigu, Teranga Extremadura, Afangu, Tarteso en Comunidad, la Asociaci\u00f3n la Natividad de Nuestra Se\u00f1ora de Manchita, el colectivo Twenge y Agila Guare\u00f1a, la nueva asociaci\u00f3n juvenil creada recientemente en la localidad. La Biblioteca \u2018Eugenio Frutos\u2019 tampoco ha querido faltar este a\u00f1o a su participaci\u00f3n en el festival, ya que durante todo el s\u00e1bado mantendr\u00e1n abierto en la calle Cuatro Esquinas su mercadillo de libros solidario cuya recaudaci\u00f3n ir\u00e1 destinada esta edici\u00f3n a la Asociaci\u00f3n \u2018El Capit\u00e1n Marcelo\u2019.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;A su vez y un a\u00f1o m\u00e1s se habilitar\u00e1 la pista anexa al Pabell\u00f3n \u2018La Encina\u2019 como zona de acampada y de aparcamiento de autocaravanas. Finalmente, desde la organizaci\u00f3n del festival, se agradece especialmente a los m\u00e1s de sesenta negocios y establecimientos comerciales que han decidido apostar y colaborar este a\u00f1o por el festival.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320122146_f1_0.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "\u2018Tropa do Carallo\u2019 encabeza el cartel del XX Festival Guoman",
+        "latitude": 38.859226252889,
+        "longitude": -6.1032534939824,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320122146_f1.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320122146_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320122146_f3.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320122146_f4.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320122146_f5.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-25T13:00:21+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/el-ayuntamiento-de-la-albuera-organiza-el-ix-festival-de-la-naturaleza",
+                "pid": 4502,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50490,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EHoy se ha presentado la IX edici\u00f3n del Festival de la Naturaleza de La Albuera que se celebrar\u00e1 los d\u00edas 28, 29 y 30 de marzo, organizado por el ayuntamiento de la localidad y la de la Diputaci\u00f3n de Badajoz.\u003C\/p\u003E\u003Cp\u003ESeg\u00fan explic\u00f3 Soledad Reyes, de la empresa Begreen Marketing y Servicios Medioambientales, el festival est\u00e1 repleto de actividades relacionadas con la naturaleza: rutas ornitol\u00f3gicas, bot\u00e1nicas, visita guiada al Centro de de Interpretaci\u00f3n del del Complejo Lagunal, o actividades de pirag\u00fcismo.\u003C\/p\u003E\u003Cp\u003EToda esta programaci\u00f3n se realizar\u00e1 en Laguna Grande, rivera Limonetes-Nogales, Parque Periurbano \u2018El Chaparral\u201d y el Complejo Lagunar.\u003C\/p\u003E\u003Cp\u003EPero tambi\u00e9n El Palenque acoger\u00e1 actividades infantiles recreativas con hinchables, actividades de educaci\u00f3n ambiental, y talleres de cosm\u00e9tica natural y ung\u00fcentos para adultos.\u003C\/p\u003E\u003Cp\u003EParalelamente Promedio pondr\u00e1 un punto informativo sobre el reciclaje y dos exposiciones permanentes de fotograf\u00eda de la naturaleza y de especies invasoras, esta \u00faltima organizada por la Direcci\u00f3n General de Sostenibilidad.\u003C\/p\u003E\u003Cp\u003EAlgunas de estas actividades necesitan una inscripci\u00f3n previa que puede hacerse a trav\u00e9s del correo electr\u00f3nico festivaldelanaturaleza@begreenweb.es.\u003C\/p\u003E\u003Cp\u003EEl alcalde de La Albuera, Manuel Antonio D\u00edaz, record\u00f3 que de las 3.200 hect\u00e1reas que tiene el t\u00e9rmino municipal, casi el 60% es espacio protegido. En las rutas se podr\u00e1n contemplar las avutardas, flamencos, patos rojos, y orqu\u00eddeas. Estas rutas son aptas para todas las edades.\u003C\/p\u003E\u003Cp\u003EEl diputado de Desarrollo Rural, Reto Demogr\u00e1fico y Turismo, Francisco Buenavista, el festival no s\u00f3lo cumple con un objetivo fundamental que la concienciaci\u00f3n y sensibilizaci\u00f3n a la hora de proteger el ecosistema \u201csino que nos muestra tambi\u00e9n los recursos y alternativas de turismo natural que ofrece La Albuera y comarca, convirti\u00e9ndose en un encuentro con un patrimonio natural catalogado como lugar de importancia internacional\u201d.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320120038_f5.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "El Ayuntamiento de La Albuera organiza el IX Festival de la Naturaleza",
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320120038_f1.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320120038_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320120038_f3.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320120038_f4.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/20240320120038_f5_0.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-26T10:04:31+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/nuevo-cuaderno-de-viajes-de-badajoz",
+                "pid": 4504,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50491,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003ELa Concejal\u00eda de Turismo y Patrimonio Hist\u00f3rico difunde desde el pasado d\u00eda 22 de abril un \u2018cuaderno de viaje\u2019 ilustrado por el artista Gamero Gil. Este aspira a a crear una mejor experiencia para el turista y hacer \u00abque crezca el tiempo que permanece en la ciudad\u00bb. En sus p\u00e1ginas hay historia, ilustraciones, actividades infantiles y un \u2018pasaporte\u2019 que los portadores podr\u00e1n sellar en cada uno de los monumentos que visiten.\u003C\/p\u003E\u003Cp\u003EEl concejal de Turismo y Patrimonio Hist\u00f3rico, Rub\u00e9n Galea, anunci\u00f3 \u0026nbsp;la apertura de los monumentos de la ciudad entre el 22 de marzo y el 2 de abril en horario de ma\u00f1ana y tarde. Esta responde al gran n\u00famero de visitantes que tanto estos enclaves como las oficinas de Turismo est\u00e1n recibiendo en este \u00faltimo a\u00f1o, afirm\u00f3 el concejal. Por tanto, se podr\u00e1n visitar de 10.00 a 14.00 y de 17.00 a 19.00 horas todos los monumentos excepto la Galer\u00eda de Fusileros y el Fuerte de San Crist\u00f3bal, donde se est\u00e1n acometiendo obras.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-03\/74c1873d-772b-492d-96cf-8711272e6a34_16-9-aspect-ratio_default_1290344.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "Nuevo cuaderno de viajes de Badajoz ",
+        "latitude": 38.876020845475,
+        "longitude": -6.9716944418158,
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-03-26T11:13:57+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/alconchel-potencia-el-turismo-de-experiencia-con-su-feria-del-esparrago-y-la-tagarnina",
+                "pid": 4514,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50522,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ELos pr\u00f3ximos d\u00edas 5, 6 y 7 de abril Alconchel celebra la decimoprimera Feria del Esp\u00e1rrago y la Tagarnina. Candidata a Fiesta de Inter\u00e9s Tur\u00edstico Regional, este evento gastron\u00f3mico, indica Francisco Buenavista, diputado provincial, \u201cse ha convertido en un cl\u00e1sico de la primavera extreme\u00f1a\u201d. Con diez ediciones celebradas, esta de 2024 \u201cincide en los prop\u00f3sitos de desarrollo y promoci\u00f3n del territorio de Alconchel y su Comarca a trav\u00e9s de la recolecci\u00f3n, distribuci\u00f3n y elaboraci\u00f3n de estos dos productos tan arraigados en el municipio\u201d, a\u00f1ade.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; Esta XI edici\u00f3n es una apuesta para que los profesionales de la hosteler\u00eda conozcan los productos aut\u00f3ctonos y aprovechen en las cocinas estos recursos silvestres que ayudan a la sostenibilidad del medio ambiente y la salud. A su vez, sostiene el diputado, \u201capuesta por la ecoeficiencia a trav\u00e9s del consumo de los productos silvestres, productos locales y de Extremadura\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; Los productos Km 0 son tendencia desde hace alg\u00fan tiempo porque enlazan con una filosof\u00eda de vida donde priman los valores ecol\u00f3gicos y de respeto al medio ambiente. Tambi\u00e9n denominados productos de proximidad, basan su caracter\u00edstica principal en la escasa distancia que existe entre su lugar de producci\u00f3n o de recolecci\u00f3n y el punto de venta o de consumo final. La idea, por tanto, precisa Buenavista, \u201ces comprar y consumir art\u00edculos de alimentaci\u00f3n teniendo en cuenta el desarrollo sostenible, el cuidado del medio ambiente, el comercio justo y el compromiso \u00e9tico con los productores y artesanos de nuestro entorno\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; Adem\u00e1s, y como tem\u00e1tica de concienciaci\u00f3n que reduce la contaminaci\u00f3n, fortalece la econom\u00eda, ayuda a una alimentaci\u00f3n m\u00e1s saludable, fortalece los lazos entre productores y consumidores y logra pr\u00e1cticas agr\u00edcolas m\u00e1s sostenibles y respetuosas.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; \u201cEste es uno de los fundamentos que sustenta esta Feria, pues potencia el turismo de experiencia y los productos a trav\u00e9s de los profesionales cualificados en el sector hostelero y tur\u00edstico\u201d, considera el diputado provincial, a\u00f1adiendo que Alconchel lo ha logrado a trav\u00e9s de la realizaci\u00f3n de esta feria \u201cque potencia el municipio y da visibilidad a dos productos silvestres con m\u00faltiples recetas de cocina, tanto innovadoras como tradicionales con la consiguiente dinamizaci\u00f3n del sector de la hosteler\u00eda del municipio\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; Como no pod\u00eda ser de otro modo, la Diputaci\u00f3n de Badajoz est\u00e1 al lado de todos aquellas actividades que aportan su granito de arena para lograr un desarrollo sostenible, optimizando los recursos y minimizando el impacto sobre nuestro planeta.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; El alcalde de Alconchel, \u00d3scar D\u00edaz, reconoce que si no fuera por la Diputaci\u00f3n, \u201cpoco podr\u00edamos hacer en municipios peque\u00f1os para sacar adelante eventos como este\u201d considerado \u201cuna aut\u00e9ntica vivencia como emblema del turismo gastron\u00f3mico\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ED\u00edaz defiende que el esp\u00e1rrago y la tagarnina, recolectados directamente del campo, es el s\u00edmbolo de conexi\u00f3n con la tierra y los productos silvestres, \u201cpues apoyan la econom\u00eda local y se convierten en un estilo de vida\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; El alcalde ha destacado la participaci\u00f3n de profesionales para formaci\u00f3n de j\u00f3venes talentos, las demostraciones de cocina en vivo, la innovaci\u00f3n en recetas y el cuarto certamen gastron\u00f3mico de escuelas de cocina de Extremadura con la participaci\u00f3n de varios institutos de la provincia.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; Respecto a la comercializaci\u00f3n de ambos productos, \u00d3scar D\u00edaz ha desvelado que se envasan y exportan a pa\u00edses como Croacia y Francia, adem\u00e1s de a diversos puntos de Espa\u00f1a.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u0026nbsp; Por su parte, los coordinadores t\u00e9cnicos de la feria, Manuel Ruiz y Julia Mar\u00edn, han desgranado lo m\u00e1s destacado de un programa en el que participan cocineros y reposteros, con tapas innovadoras y otras m\u00e1s tradicionales regadas con cava y vinos, adem\u00e1s de la organizaci\u00f3n de cocina popular, salidas al campo para rutas de senderismo y aprender a recolectar ambos productos, actividades musicales, show cooking, el concurso \u2018chef junior\u2019, m\u00e1ster class de cocina o talleres de innovaci\u00f3n alimentaria.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-04\/20240402140400_f5.jpg",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "Alconchel potencia el turismo de experiencia con su Feria del Esp\u00e1rrago y la Tagarnina",
+        "latitude": 38.515767846893,
+        "longitude": -7.0703126826737,
+        "extras": {
+            "image_gallery": [
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-04\/20240402140400_f1.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-04\/20240402140400_f2.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-04\/20240402140400_f4.jpg",
+                "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-04\/20240402140400_f5_0.jpg"
+            ],
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-04-03T07:06:01+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/diputacion-de-badajoz-participa-en-el-encuentro-de-socios-del-proyecto-oleoturismo-en",
+                "pid": 4589,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50567,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ERepresentantes de las Diputaciones Provinciales de Ja\u00e9n, C\u00f3rdoba, Sevilla, Huelva, Ciudad Real, Tarragona, C\u00e1ceres y Badajoz, se reunieron el pasado martes en la capital cacere\u00f1a, junto con la Asociaci\u00f3n Espa\u00f1ola de Municipios del Olivo (AEMO), para seguir impulsando la red \u201cOleoturismo en Espa\u00f1a\u201d, con el objetivo \u00faltimo de promocionar estos territorios en torno a la riqueza que supone el olivar y la producci\u00f3n de aceite, de tal modo que pueda convertirse en un recurso tur\u00edstico tractor, con capacidad suficiente para generar una experiencia tur\u00edstica nacional.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEste proyecto, enmarcado en el Programa Experiencias Turismo Espa\u00f1a, en el marco del Plan de Recuperaci\u00f3n, Transformaci\u00f3n y Resiliencia, est\u00e1 dotado con 1,1 millones de euros, y persigue configurar una red tur\u00edstica en torno al oleoturismo, de tal modo que permita ofrecer a los turistas este tesoro cultural, natural y gastron\u00f3mico.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ELas nueve provincias que participan en el proyecto contribuyen a que, a d\u00eda de hoy, Espa\u00f1a produzca el 43 por ciento del aceite que se elabora en todo el mundo, fortaleza que debe convertirse en una oportunidad, para trabajar los eslabones de la cadena de valor tur\u00edstico en torno al potencial que ofrece el oleoturismo.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ELa Diputaci\u00f3n de Badajoz, a trav\u00e9s de la Coordinaci\u00f3n de Proyectos Europeos de Turismo del \u00c1rea de Desarrollo Rural, Reto Demogr\u00e1fico y Turismo, ha participado en esta jornada de trabajo, en la que se se ha analizado el Manual de Experiencias de Oleoturismo de Espa\u00f1a para decidir los requisitos y est\u00e1ndares de calidad necesarios para adherirse a esta red sobre la que se est\u00e1 trabajando de cara a configurar una experiencia tur\u00edstica sostenible y competitiva.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ELa provincia de Badajoz alcanza ya una superficie de olivar en torno a las 235 mil hect\u00e1reas, concentrando 88 almazaras de las 137 de Extremadura. Por tanto, se parte de una masa cr\u00edtica considerable para convertirse en un elemento con capacidad de atracci\u00f3n tur\u00edstica suficiente para configurar este producto tur\u00edstico.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEl proyecto \u201cOleoturismo en Espa\u00f1a\u201d est\u00e1 financiado a cargo del Plan de Recuperaci\u00f3n, Transformaci\u00f3n y Resiliencia, mediante fondos NextGenerationEU, articulados a trav\u00e9s de la Secretar\u00eda de Estado de Turismo del Ministerio de Industria y Turismo.\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-05\/Captura.PNG",
+        "addressLocality": "Badajoz",
+        "addressLocality_id": 19,
+        "name": "Diputaci\u00f3n de Badajoz participa en el encuentro de socios del proyecto \u0027Oleoturismo en Espa\u00f1a\u0027",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-05-09T07:46:46+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/comienza-la-xiv-feria-ganadera-y-agroturistica-de-la-siberia",
+                "pid": 4629,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50587,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EHoy comienza la XIV Feria Ganadera y Agrotur\u00edstica de La Siberia que se prolongar\u00e1 hasta el pr\u00f3ximo domingo en Herrera del Duque.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EPara el alcalde y diputado provincial Saturnino Alc\u00e1zar, \u201ces una feria muy consolidada y se ha convertido en un escaparate de Herrera del Duque y su comarca\u201d.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EResalt\u00f3 el especial protagonismo de la cooperativa local Castillo de Herrera y destac\u00f3, dentro de la programaci\u00f3n, la subasta de ganado merino que se celebrar\u00e1 el domingo con 81 cabezas, 60 hembras y 21 machos.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ETambi\u00e9n la Diputaci\u00f3n de Badajoz participar\u00e1 en la subasta con cuatro lotes de 10 hembras procedentes de la finca La Cocosa. Se respetan los precios del pasado a\u00f1o.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EPara Alc\u00e1zar, \u201cla feria y la subasta es una de las m\u00e1s importantes del Extremadura\u201d. Durante estos d\u00edas habr\u00e1 35 expositores de todos los sectores. Los visitantes podr\u00e1n disfrutar en la zona de ganadera de una exposici\u00f3n de merino y caballos.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EOtro de los actos resaltados por Saturnino Alc\u00e1zar es el espect\u00e1culo taurino de recortadores que tendr\u00e1 lugar el viernes en la plaza de toros.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ELaura Rubio, t\u00e9cnico de Patrimonio Natural, desglos\u00f3 el programa que est\u00e1 repleto de actividades para todas las edades: gymkana, charla sobre la gesti\u00f3n y eficiencia del agua en la dehesa, clases pr\u00e1cticas de introducci\u00f3n a la petanca, concurso de mascotas, talleres, torneo de tenis, paseos a caballo para ni\u00f1os, carrera de cintas, degustaci\u00f3n de migas, exhibici\u00f3n de esquila y actuaciones musicales.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EHay dos novedades en la feria, el taller de traje t\u00edpico regional y un taller infantil de orde\u00f1o.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EAdem\u00e1s, el \u00faltimo d\u00eda habr\u00e1 una degustaci\u00f3n de Cordero al Burduntzi a cargo de CORDEREX. La recaudaci\u00f3n ir\u00e1 destinada a la Asociaci\u00f3n Oncol\u00f3gica Extreme\u00f1a.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EParalelamente habr\u00e1 tiro con arco, exposici\u00f3n de motos de la asociaci\u00f3n \u2018Motos Deliada Club\u2019 y exposici\u00f3n fotogr\u00e1fica de caza y pesca y ludoteca infantil.\u0026nbsp;\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-05\/20240509133318_f5.jpg",
+        "addressLocality": "Badajoz",
+        "addressLocality_id": 19,
+        "name": "Comienza la XIV Feria Ganadera y Agrotur\u00edstica de La Siberia",
+        "latitude": 39.169762045833,
+        "longitude": -5.0628427100017,
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-05-10T06:26:25+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/la-albuera-vuelve-la-batalla",
+                "pid": 4642,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50594,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EHoy se ha presentado en la Diputaci\u00f3n de Badajo los actos organizados para rememorar La Batalla de la Albuera, hecho que sucedi\u00f3 el 16 de mayo de 1811 con el enfrentamiento contra las tropas invasoras napole\u00f3nicas.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEn la presentaci\u00f3n han intervenido el Juan Mar\u00eda Delfa, diputado de Desarrollo Rural, Reto Demogr\u00e1fico y Turismo; Manuel Antonio D\u00edaz, alcalde de La Albuera; y Juan Francisco D\u00edaz, concejal de Turismo.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEste \u00faltimo pormenoriz\u00f3 el programa que se ha elaborado para este a\u00f1o. Habr\u00e1 desfiles de todos los regimientos ataviados con uniformes de la \u00e9poca, desfiles y escaramuzas de regimientos infantiles, recreaci\u00f3n hist\u00f3rica de la batalla, tren tur\u00edstico, mercadillo de \u00e9poca, malabaristas, animaciones, gastronom\u00eda, visitas al centro de interpretaci\u00f3n, y m\u00fasica para todas las edades. Una de las novedades es la actuaci\u00f3n de baile de \u00e9poca a cargo de la \u2018Asociaci\u00f3n para la Memoria de la Batalla de Vimeiro\u2019, Portugal.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EManuel Antonio D\u00edaz record\u00f3 la batalla como una barbarie \u201cde la que no aprendemos con ejemplos como los conflictos de Ucrania y Gaza, lo que nos hace pensar que nada ha cambiado\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EHabr\u00e1 160 recreadores venidos de Espa\u00f1a, Portugal e, incluso, Alemania. Las tropas infantiles est\u00e1n compuestas por unos 100 ni\u00f1os. Cada a\u00f1o aumentan los visitantes para ver las recreaciones y el resto de actividades programadas. Y este a\u00f1o, ya se desplazar\u00e1n a La Albuera 18 autobuses de distintas localidades.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEl alcalde tambi\u00e9n anunci\u00f3 que la Asociaci\u00f3n de Padres de Personas con Autismo en Badajoz, APNABA, recibir\u00e1 este a\u00f1o el Premio Adalid.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EJuan Mar\u00eda Delfa dijo que ahora son d\u00edas festivos, de hecho est\u00e1 reconocida como Fiesta de Inter\u00e9s Tur\u00edstico Regional \u201cy donde hubo una batalla ahora se celebra la reconciliaci\u00f3n y la unidad\u201d.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EFelicit\u00f3 al Ayuntamiento de La Albuera y a todos los vecinos por su implicaci\u00f3n en esta fiesta y su compromiso para mantener viva la historia del pueblo.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003E\u201cEs un ejemplo para otras localidades de la provincia y este tipo de eventos, siempre apoyados por la Diputaci\u00f3n de Badajoz, atraen al turismo, benefician a sectores como el hostelero y produce as\u00ed un progreso econ\u00f3mico\u201d, a\u00f1adi\u00f3.\u0026nbsp;\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-05\/BatalladeLaAlbuera_0.PNG",
+        "addressLocality": "Diputaci\u00f3n de Badajoz",
+        "addressLocality_id": 169,
+        "name": "La Albuera vuelve a la batalla",
+        "latitude": 38.716258513066,
+        "longitude": -6.8239737486256,
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-05-13T07:59:12+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/alange-organiza-tres-festivales-con-distinta-tematica-para-el-verano",
+                "pid": 4656,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 50602,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EAlange se llenar\u00e1 de actividades durante el verano. Se trata de la VII edici\u00f3n del Festival de los Vencejos (31 de mayo y 2 de junio), el III Festival del Agua (del 8 de junio al 7 de julio) y La Jara Festival (7 y 8 de junio), dedicado a la m\u00fasica.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEn la rueda de prensa intervinieron el diputado de Desarrollo Rural, Reto Demogr\u00e1fico y Turismo, Juan Mar\u00eda Delfa; la alcaldesa de Alange, Julia Guti\u00e9rrez; y Alejandro Quevedo, de la Asociaci\u00f3n Cultural La Mimbre.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ELa alcaldesa dijo que Alange es conocido por su potencial tur\u00edstico relacionado con el agua \u201cy su destino tur\u00edstico sostenible\u201d.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEl VII Festival de los Vencejos responde a la importancia que tiene en la localidad este ave, ya que Alange es la \u00fanica en toda Espa\u00f1a en la que se pueden contemplar sus cinco variedades.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEn cuanto al III Festival del Agua, durar\u00e1 un mes y es una iniciativa que pretende contribuir al posicionamiento de Alange como destino de agua dulce, como destino de ba\u00f1os en playa de interior que ha vuelto a ser reconocida por tercer a\u00f1o consecutivo con la Bandera Azul.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EHabr\u00e1 numerosas actividades acu\u00e1ticas para todas las edades y en distintos parajes, adem\u00e1s de visita guiada al famoso balneario.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EPor \u00faltimo, se celebrar\u00e1 tambi\u00e9n el I La Jara Festival, una iniciativa que surgi\u00f3 de la asociaci\u00f3n cultura juvenil La Mimbre. Se celebrar\u00e1 los d\u00edas 7 y 8 de junio con actuaciones en directo de grupos nacionales emergentes y con estilos musicales diversos.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEl diputado Juan Mar\u00eda Delfa destac\u00f3 del Festival de los Vencejos \u201ccomo una acci\u00f3n de producto tur\u00edstico ornitol\u00f3gico y de sensibilizaci\u00f3n para la ciudadan\u00eda que ha permitido posicionar a la localidad como destino de inter\u00e9s para la observaci\u00f3n de las aves\u201d.\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003EEn cuanto al Festival del Agua, dio la enhorabuena a la alcaldesa por el galard\u00f3n de la Bandera Azul. \u201cLa localidad es famosa por sus aguas termales, pero cada vez m\u00e1s por su embalse utilizado para actividades acu\u00e1ticas como la pesca, la nataci\u00f3n, navegaci\u00f3n y otros deportes vinculados con el agua\u201d, a\u00f1adi\u00f3.\u0026nbsp;\u003C\/p\u003E\u003Cp class=\u0022text-align-justify\u0022 style=\u0022-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(33, 37, 41);font-family:OpenSansRegular;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\u0022\u003ETambi\u00e9n felicit\u00f3 a la asociaci\u00f3n La Mimbre por poner un festival de m\u00fasica en directo as\u00ed como promover y divulgar el patrimonio hist\u00f3rico y natural del municipio.\u0026nbsp;\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "image": "https:\/\/turismoapps.dip-badajoz.es\/sites\/default\/files\/2024-05\/RuedaPrensa.PNG",
+        "addressLocality": "Badajoz",
+        "addressLocality_id": 19,
+        "name": "Alange organiza tres festivales con distinta tem\u00e1tica para el verano",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-05-14T10:20:44+00:00"
+            ]
+        }
+    },
+    {
+        "path": [
+            {
+                "alias": "\/noticia\/marca-solidaria-todos-conatra-la-ela",
+                "pid": 5664,
+                "langcode": "es"
+            }
+        ],
+        "identifier": 51043,
+        "addressCountry": "ES",
+        "addressRegion": "Extremadura",
+        "addressProvince": "Badajoz",
+        "description": "\u003Cp\u003EPROGRAMACION Marcha Solidaria \u0022Todos contra la ELA\u0022 \ud83c\udf97\ufe0f\u003Cbr\u003E\u0026nbsp; \u0026nbsp;24 de noviembre\u003Cbr\u003E\ud83d\udccd Base A\u00e9rea de Talavera la Real\u003C\/p\u003E\u003Cp\u003E\ud83d\udcaa \u00a1Juntos hacemos la diferencia!\u003Cbr\u003E\ud83d\udd58 Programaci\u00f3n del Evento\u003C\/p\u003E\u003Cp\u003E\u23f0 09:00\u003Cbr\u003E\ud83d\udccd Recinto Ferial de Talavera\u003Cbr\u003E\ud83d\udc49 Recogida de dorsales y nuevas inscripciones \ud83d\udcdd\u003C\/p\u003E\u003Cp\u003E\u23f0 09:30\u003Cbr\u003E\ud83d\udeb6\u200d\u2640\ufe0f\ud83d\udeb6\u200d\u2642\ufe0f Inicio de la Marcha Voluntaria\u003Cbr\u003E\ud83d\udccd Desde Talavera hasta la Base A\u00e9rea\u003C\/p\u003E\u003Cp\u003E\u003Cbr\u003E\u2728 Recomendaciones de ELA Extremadura Asociaci\u00f3n \u0026nbsp;para el uso de autobuses:\u003Cbr\u003E\ud83d\ude97 Conductores organizados:\u003Cbr\u003E1\ufe0f\u20e3 \u0026nbsp;Traslada previamente a tus acompa\u00f1antes a la Base A\u00e9rea y aparca t\u00fa veh\u00edculo en Talavera.\u003Cbr\u003E2\ufe0f\u20e3 Usa el \ud83d\ude8c autobuses disponible para quienes no puedan llegar a la Base .\u003Cbr\u003EConseguiremos mayor fluidez y que todo salga perfecto.\u003C\/p\u003E\u003Cp\u003E\u23f0 11:00\u003Cbr\u003E\ud83c\udf96\ufe0f Acto de bienvenida en la Base A\u00e9rea de Talavera la Real y Ala 23 a los Participantes.\u003Cbr\u003E\ud83c\udf1f Inicio oficial de la Marcha Solidaria hacia Talavera.\u003C\/p\u003E\u003Cp\u003E\u23f0 13:00\u003Cbr\u003E\ud83c\udf8a Llegada de la Marcha a Talavera.\u003Cbr\u003E\ud83c\udfa4 Recepci\u00f3n y bienvenida por Jos\u00e9 Luis Vela Director de Deportes Cadena Ser Extremadura.\u003Cbr\u003E\ud83c\udf99\ufe0fActo Institucional Ela Extremadura.\u003Cbr\u003E\ud83c\udf74 Actividades Gastron\u00f3micas: 20 Cortadores de jam\u00f3n en acci\u00f3n.\u003C\/p\u003E\u003Cp\u003E\u23f0 13:15\u003Cbr\u003E\ud83c\udf7d\ufe0f Venta de platos de jam\u00f3n al corte - 5\u20ac\u003C\/p\u003E\u003Cp\u003E\u23f0 13:30\u003Cbr\u003E\ud83e\udd90 Venta de platos de langostinos - 5\u20ac\u003C\/p\u003E\u003Cp\u003E\u23f0 14:00\u003Cbr\u003E\ud83c\udf55 Venta de porciones de pizza + \ud83d\udca7 botell\u00edn de agua - 2\u20ac\u003C\/p\u003E\u003Cp\u003E\ud83c\udf79 Barra disponible hasta agotar existencias.\u003C\/p\u003E\u003Cp\u003E\ud83c\udf97\ufe0f \u00a1Te esperamos para apoyar esta gran causa! \ud83d\udc9c\u003Cbr\u003E\ud83c\udf08 \u00a1Ven con energ\u00eda, solidaridad y ganas de disfrutar! \ud83d\udc83\ud83d\udd7a\u003C\/p\u003E",
+        "availableLanguage": [
+            "es"
+        ],
+        "addressLocality": "Barba\u00f1o",
+        "addressLocality_id": 50660,
+        "name": "MARCA SOLIDARIA \u0022TODOS CONATRA LA ELA\u0022\ud83c\udf97\ufe0f",
+        "extras": {
+            "status": [
+                true
+            ],
+            "changed": [
+                "2024-11-20T10:07:55+00:00"
+            ]
+        }
+    }
+]
