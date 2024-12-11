@@ -6,117 +6,36 @@
   </div>
 }@else {
     <h1 class="display-4 fst-italic text-center mt-4" >
-        <span class="custom-name" style="font-weight: 600;">FAVORITOS </span>
+        <span class="custom-name" style="font-weight: 600;">FAVORITOS</span>
         
     </h1>
+
+
     <div class="card-container">
-       
-        
-        
-        <div class="card ">
-            <div class="card_form">
-              <span>(Topic)</span>
-            </div>
-            <div class="card_data">
-              <div style="display: flex" class="data">
-                <div class="text">
-                  <label class="text_m">Main Title</label>
-                  <div class="cube text_s">
-                    <label class="side front">Access the list (Topic)</label>
-                    <label class="side top">Username-id</label>
-                  </div>
-                </div>
-              </div>
-              <span title="Acceder a la lista (Temas)">Access</span>
-            </div>
-          </div>
-          
+      @for (evento of eventos; track evento.id) {
           <div class="card">
-            <div class="card_form">
-              <span>(Topic)</span>
-            </div>
-            <div class="card_data">
-              <div style="display: flex" class="data">
-                <div class="text">
-                  <label class="text_m">Main Title</label>
-                  <div class="cube text_s">
-                    <label class="side front">Access the list (Topic)</label>
-                    <label class="side top">Username-id</label>
-                  </div>
-                </div>
+              <div class="card_form">
+                  @if (evento.imgEvento.startsWith('http')) {
+                      <img [src]="evento.imgEvento" alt="{{ evento.titulo }}" class="">
+                  } @else {
+                      <img [src]="'https://desarrollosfutura.com:8444/files/' + evento.imgEvento" alt="{{ evento.titulo }}" class="">
+                  }
               </div>
-              <span title="Acceder a la lista (Temas)">Access</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_form">
-              <span>(Topic)</span>
-            </div>
-            <div class="card_data">
-              <div style="display: flex" class="data">
-                <div class="text">
-                  <label class="text_m">Main Title</label>
-                  <div class="cube text_s">
-                    <label class="side front">Access the list (Topic)</label>
-                    <label class="side top">Username-id</label>
+              <div class="card_data">
+                  <div style="display: flex" class="data">
+                      <div class="text">
+                          <label class="text_m">{{evento.titulo}}</label>
+                          <div class="cube text_s">
+                              <label class="side front">{{evento.contenido}}</label>
+                              <label class="side top">Username-id</label>
+                          </div>
+                      </div>
                   </div>
-                </div>
+                  <span title="Acceder a la lista (Temas)">Access</span>
               </div>
-              <span title="Acceder a la lista (Temas)">Access</span>
-            </div>
           </div>
-          <div class="card">
-            <div class="card_form">
-              <span>(Topic)</span>
-            </div>
-            <div class="card_data">
-              <div style="display: flex" class="data">
-                <div class="text">
-                  <label class="text_m">Main Title</label>
-                  <div class="cube text_s">
-                    <label class="side front">Access the list (Topic)</label>
-                    <label class="side top">Username-id</label>
-                  </div>
-                </div>
-              </div>
-              <span title="Acceder a la lista (Temas)">Access</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_form">
-              <span>(Topic)</span>
-            </div>
-            <div class="card_data">
-              <div style="display: flex" class="data">
-                <div class="text">
-                  <label class="text_m">Main Title</label>
-                  <div class="cube text_s">
-                    <label class="side front">Access the list (Topic)</label>
-                    <label class="side top">Username-id</label>
-                  </div>
-                </div>
-              </div>
-              <span title="Acceder a la lista (Temas)">Access</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_form">
-              <span>(Topic)</span>
-            </div>
-            <div class="card_data">
-              <div style="display: flex" class="data">
-                <div class="text">
-                  <label class="text_m">Main Title</label>
-                  <div class="cube text_s">
-                    <label class="side front">Access the list (Topic)</label>
-                    <label class="side top">Username-id</label>
-                  </div>
-                </div>
-              </div>
-              <span title="Acceder a la lista (Temas)">Access</span>
-            </div>
-          </div>
-    </div>
+      }
+  </div>
     
 }
 
