@@ -85,7 +85,11 @@ export class RutasComponent implements OnInit {
     }
     this.isPaused = !this.isPaused;
   }
-
+  handleImageError(event: Event): void {
+    const target = event.target as HTMLImageElement;
+    target.src = 'https://www.aytobadajoz.es/v20/assets/images/aytobadajoz_cover.jpg';
+  }
+  
   // Escuchar el cambio de diapositiva para cargar la ruta correspondiente
   onCarouselSlideChanged(event: any): void {
     const index = event.current;

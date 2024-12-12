@@ -9,32 +9,29 @@ section {
   align-items: center;
   justify-content: center;
   background-color: var(--col-dark);
-  border-radius: 30px;
+  border-radius: 40px; /* Incrementa el radio */
   margin-top: 25px;
-  box-shadow: 0 5px 8px rgba(32, 31, 31, 0.671);
+  box-shadow: 0 8px 12px rgba(32, 31, 31, 0.7); /* Ajusta la sombra */
   z-index: 6000;
 
   /* Centrando la barra */
   position: fixed;
-  bottom: 20px; /* Mantiene la barra a 20px desde el fondo de la pantalla */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Ajuste perfecto de centrado */
+  bottom: 30px; /* Mayor distancia desde el fondo */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .label {
-  padding: 8px 18px;
+  padding: 12px 24px; /* Incrementa el espaciado interno */
   transition: all 200ms;
   display: inline-block;
-}
-
-.label input[type="radio"] {
-  display: none;
 }
 
 .label > svg {
   transition: all 200ms;
   fill: var(--col-gray);
-  width: 14px;
+  width: 24px; /* Incrementa el tamaño del ícono */
+  height: 24px; /* Ajusta la altura */
 }
 
 .label:hover:not(:has(input:checked)) > svg {
@@ -46,11 +43,11 @@ section {
   content: "";
   display: block;
   width: 0%;
-  height: 2px;
+  height: 3px; /* Incrementa el grosor de la línea */
   border-radius: 5px;
   position: relative;
   left: 50%;
-  top: 20px;
+  top: 28px;
   background: var(--col-orange);
   transition: all 200ms;
 }
@@ -63,12 +60,12 @@ section {
 
 .label:has(input:checked) > svg {
   fill: var(--col-orange);
-  scale: 1.2;
-  margin-top: -5px;
+  scale: 1.4; /* Escala mayor para íconos seleccionados */
+  margin-top: -8px;
 }
 
 .label:has(input:checked)::before {
   width: 100%;
   left: 0;
-  top: 25px;
+  top: 35px;
 }

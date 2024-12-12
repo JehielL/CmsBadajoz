@@ -11,7 +11,7 @@
     </h1>
     
     <ngb-carousel >
-        @for (evento of eventos.reverse(); track evento.id) {
+        @for (evento of eventos; track evento.id) {
             <ng-template ngbSlide>
                 <div class="picsum-img-wrapper text-center">
                     @if (evento.imgEvento.startsWith('http')) {
