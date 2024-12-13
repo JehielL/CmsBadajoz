@@ -69,3 +69,36 @@ section {
   left: 0;
   top: 35px;
 }
+
+@media (max-width: 768px) {
+  section {
+    width: fit-content;
+    padding: 8px; /* Reduce el padding general */
+    border-radius: 30px; /* Reduce el radio del borde */
+    bottom: 20px; /* Ajusta la posición desde el fondo */
+  }
+
+  .label {
+    padding: 8px 16px; /* Reduce el espaciado interno */
+  }
+
+  .label > svg {
+    width: 18px; /* Reduce el tamaño del ícono */
+    height: 18px;
+  }
+
+  .label::before {
+    height: 2px; /* Reduce el grosor de la línea */
+    top: 25px; /* Ajusta la posición de la línea */
+  }
+
+  .label:has(input:checked) > svg {
+    scale: 1.2; /* Reduce la escala para íconos seleccionados */
+    margin-top: -6px;
+  }
+
+  .label:has(input:checked)::before {
+    top: 30px; /* Ajusta la posición de la línea seleccionada */
+  }
+}
+
