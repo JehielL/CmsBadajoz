@@ -19,7 +19,7 @@ ngb-carousel {
   border-radius: 30px;
   overflow: hidden;
   width: 90%;
-  height: 600px;  /* Tamaño fijo para las imágenes */
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,13 +98,13 @@ ngb-carousel {
   .ngb-carousel .carousel-control-prev,
   .ngb-carousel .carousel-control-next {
     position: absolute;
-    top: 30%; /* Subimos las flechas a la mitad de la imagen */
+    top: 30%;
     transform: translateY(-50%);
     width: auto;
   }
 
   .ngb-carousel .carousel-control-prev {
-    left: 5px; /* Ubica la flecha a la izquierda */
+    left: 5px;
   }
 
   .ngb-carousel .carousel-control-next {

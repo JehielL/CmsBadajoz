@@ -89,4 +89,9 @@ export class EventosbadajozComponent implements OnInit {
     const index = event.current;
     this.loadRuta(index);  // Cargar la ruta correspondiente al índice de la diapositiva
   }
+
+  handleImageError(event: Event): void {
+    const target = event.target as HTMLImageElement;
+    target.src = 'https://www.aytobadajoz.es/v20/assets/images/aytobadajoz_cover.jpg';
+  }
 }

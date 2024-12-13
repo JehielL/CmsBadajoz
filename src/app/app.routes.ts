@@ -17,7 +17,7 @@ import { TestTensorflowComponent } from './test-tensorflow/test-tensorflow.compo
 export const routes: Routes = [
     {
         path: '',
-        component: HomeSinLogComponent
+        component: TokyoHomeComponent
     },
 
     {

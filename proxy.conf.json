@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "http://desarrollosfutura.com:8444",
+    "target": "https://localhost:8444",
     "secure": false
   }
 }
