@@ -36,7 +36,7 @@
 }
 
 .fa-rotate:hover {
-    color: #008F4D;
+    color: #c51b1b;
     transform: scale(0.9);
     transition: transform 0.5s ease, color 0.5s ease;
     cursor: pointer;
@@ -112,7 +112,7 @@
 
 /* Cambia el tamaño del botón de envío al pasar el mouse */
 .message-input .button-send:hover {
-    background-color: #c65c32;
+    background-color: #c51b1b;
     color: #ffffff;
 }
 
@@ -176,7 +176,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid #008F4D;
+    border-bottom: 1px solid #c51b1b;
 }
 
 .card-header .img-avatar {
@@ -212,7 +212,7 @@
 /* Estilos para el área de entrada del mensaje */
 .message-input {
     padding: 5px;
-    border-top: 1px solid #008F4D;
+    border-top: 1px solid #c51b1b;
     display: flex;
     align-items: center;
 }
@@ -230,7 +230,7 @@
 
 /* Estilo del botón de enviar */
 .message-input .button-send {
-    background: linear-gradient(to right, #000000, #008F4D);
+    background: linear-gradient(to right, #000000, #c51b1b);
   border: none;
   transition: background-position 0.3s ease, transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   background-size: 200% auto;
@@ -247,7 +247,7 @@
 
 /* Cambia el tamaño de la caja de envío al pasar el mouse */
 .message-input .button-send:hover {
-    background-color: #c65c32;
+    background-color: #c51b1b;
     color: #ffffff;
 }
 
@@ -275,7 +275,7 @@
     }
 }
 .sent {
-    background-color: #aef5ba; /* Color de fondo para mensajes enviados */
+    background-color: #c95050; /* Color de fondo para mensajes enviados */
     text-align: right; /* Alineación a la derecha */
     padding: 10px; /* Espaciado interno para el mensaje */
     border-radius: 10px;
@@ -340,7 +340,7 @@
 
   50% {
     transform: scale(1.2);
-    background-color: #0e7309;
+    background-color: #c51b1b;
     box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
   }
 
