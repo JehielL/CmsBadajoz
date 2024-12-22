@@ -23,8 +23,8 @@
     align-items: center;    
     justify-content: center;
     margin: 10px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     padding: 20px;
     border: 3px solid rgba(253, 253, 253, 0.986);
     border-radius: 20px;
@@ -139,6 +139,12 @@
   font-size: 1em; /* Reducir tamaño de fuente */
 }
 
+.button-group{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .weather-widget {
     top: 800px !important;
@@ -150,3 +156,4 @@
     margin-bottom: 500px !important;
   }
 }
+

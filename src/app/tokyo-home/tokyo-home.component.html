@@ -13,18 +13,15 @@
       @if (weather) {
         <div class="weather-info">
           <div class="weather-icon">
-            <img [src]="isDayTime ? 'https://w7.pngwing.com/pngs/376/460/png-transparent-summer-sun-child-food-sun-thumbnail.png' : 'https://cdn-icons-png.flaticon.com/512/180/180700.png'" alt="Weather Icon">
+            <img [src]="isDayTime ? 'https://www.freeiconspng.com/thumbs/sun-icon/sun-icon-31.png' : 'https://cdn-icons-png.flaticon.com/512/180/180700.png'" alt="Weather Icon">
           </div>
           <div class="weather-details">
             <p class="weather-description">Badajoz</p>
-            <p class="weather-temperature">{{ weather.main.temp }}°C</p>
+            <p class="weather-temperature">{{ weather.main.temp | number:'1.0-0' }}°C</p>
+            <p class="time">{{ currentDate | date: 'HH:mm' : 'es-ES' }}</p>
           </div>
         </div>
-        <div class="date-time">
-          <p class="time">{{ currentDate | date: 'HH:mm' : 'es-ES' }}</p>
-        </div>
       }
-     
     </div>
     <!-- Logo -->
     <div class="image-fluid text-center mt-3">
@@ -40,34 +37,83 @@
     <!-- Cuadrícula de categorías -->
     <div class="text-center category-grid ">
 
-      <a routerLink="/poi" class="category">
+      <a class="category">
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEsUlEQVR4nO2aS4gdRRSGW6MSGaOi4gtFBd8B0YUgPsAHCBrfj3ETFRSMOoS4SCLoQocIShAlK6M7MclCQly4cCETlBnRhaAxojMZURei8YEzc2/X/582xpIzOZ0pevr27b6vtDIHCu6trjrnfPXuOh1FfRTv/bEAhkluBzAFILY0aXnD3vvjojqLc+5eAN+R9EVJy2jZqG7ivT+K5GYA/5ije0iuFZHLvfdDmpIkWSki6wB8FUC94r0/OqqLkHzZAITkmiLn9BnJp6zsPExUBxGRuwKIG8vW07IpjHPunuhIik5aANPWsmuq1if5tDXCtC4SlR0A8CGAbwE86r0/JupQRORuc+TL7HASkTsAjNmK1dTfIrIqLOO9XwZgr/XKA2Vsau/pPAOwO8qsINMAHukEiOQ7pmdtJv+lglVrU8axZyx/W5EtANeSnAh1HQYJhoX+3mdAy8qC2OrkReSysCfSOQNgfRzHZ2kCsCGdE2HPJEmy0spP5tkQkUtJ7goA9i8C0V7Q4ZUD9HA7IJIX6pAxPUMB3G7Tsz4HfKM9G0vzvPcrLK8Rlo3j+EwAWwEcsOdqa9R7f8IikEBZHtBUHpBz7hqSOwEcDBrkpMDZhuZpL2RBnHNnZ5323h9veS4AG9W5ZfkHALyhYEEj5oO0AZoEsNom9niQr5LY/ws6BSF5vun4ieQIyV+DYbRLRC7JGQ3FIEVAQfqd5IvNZvN0kh/ZmL8tABkzZzdk9QJ4Nju0RGRVjo0Jndyt/CsNkgM0ZYe+J3UoBAo3Z1ei1DGb7Bu1FzQpRNqD4WQn+WowhPaU2Rwrg7QT59z95sTXGUObyi6/WDhk3lzWbs9BdGKmkzJcglW01W1DbLbaEJMkucJ8+aPKPtZzEFO6zfSNdlD3NevRNyvW6wvIrabvt3D+tBNdsoMV7sojDqLvIukOr4tB2Xq6qlmd8ao2+wJiTg2nb35lXmP1JEDyZ/PjptqA2Cn2G5v069qVB/CCgX/Qib2+gaiIyO2m98+5ublTW5VrNptn6NzQI04cx1fVDkRFW9haemuBEzvM/vZO7bDfIHouAkC7hLgl+1x37fSsBeDc2oKoAHjO9P+oG+Z8ZhRFMzMzJ9vBUJ+NRF0IBwGi794kv7CWfytn45zo9gqIgwBR0fssPeObncf1YsLAYhG5qFv9HBSIGRsx53XO0Gw+1iPdfmAgZvDt4NS7o4d6/UBBbAf/VFP4Xv+fA+mXcAmkZsKlHqmZcKlHaiZc6pGaCZd6pGbC/22PoMsYYolLbw1VL496KM65+0KQ8UwMsSugNmGI/QCen52dPaUbAADXkfwk0Ptxq4BOZaCiwJBdNBw2bKGz1wGcVwVADsUQ3wsAfrGeXvBT350BPKhDITD4A8knioBa1Ps+rx6A60m+C+BvK3cQwPvOuauLABqNxmkAtgQxxNg++TixqGVLAVUBaBE83RK89s5fRIjInXp/HNgYsqDQnOn/S2/rwxhiWykaci2iv5XC2SrOuXM0SpXexPNQ+hzAQ/YlxHz42e7GdorIxVX0Z4EWtXyVoVfSxgq9J+bCXVeYPgNwQzf6s8bC5VRTT5drs7FcG8Y+Kdlb5QObfwFxDxNRIfHsbwAAAABJRU5ErkJggg=="
           alt="map-marker--v1">
         <p class="text-center">Puntos de Interés</p>
+
+        <div class="button-group">
+          <a routerLink="/poi-list">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </a>
+          <a routerLink="/poi">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-route"></i>
+            </button>
+          </a>
+        </div>
       </a>
 
-      <a routerLink="/rutas" class="category">
+      <a class="category">
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE0klEQVR4nNVaW8gVVRTe2b0oi6CkgkjCgiIMoqsPFWGQQRcoXzIUwad8MdACHyp7+JMKwh66QBewyIjqhyzI0m6G4otEV4gCQ/wl5D/Hmf19M5atWKc1P/sfz5wzM/+5fnBgZs/a67L32mvWrHWc6yNEZB7J3QC+0Gs3rvDeP0BS9Oe9v9+NK0h+lxlCcq8bRwBYEhjR+gG41Y0bAEy2MeQjN05IkuRKAMcB+MAIr2P6zI0LALxqyr8UGNK6BvCKGwdEUXQh/sc/JK8IXOtyAH8DSOI4XuBGHSQ3meLv233LELt+1+43uVGGiJxN8oi9N27UsWBHvvHeX2/XR5TWjSpIrjVFvwrGMkO+1nsAO+1+rRtFiMjJAH5TJZMkuScbD11LkSTJ3Xbo/xCRU9yoAcByU/AnETmpyBAAnwaRbLkbNZDcZwquzo3PMkTPCskpG9/nRgkkbzfFpkTkjE6GKETkVJJ/2rPb3KgAwHZzlSfyz8KolZuzweZsd6OANE2vBvAvgKjRaJyff56PWhmmp6fPA9DUucrDDRsk3zRFXyh4foJrBc+es115ww0T3vuLAaSWelzWjqbNYd+duZn3/lIAx5SH8nLDAskJU/TtDjTtotaMm5F8y2gm3DAgIucAmFYl4ji+roiuk2sp0jS9xs5YU0Tmu0EDwDrz7x2d6IqiVuhm2UsSwDo3SNh74IApeFcn2qKoFboZyTuM5oDydoMCgBW2gt+H6Ugd1wro9hjPh90goIoD2G9CV5RQsDBqFRiyv9vi9AQkl1Zxg25RKxwHcNzol7p+Qw93lYNZ1rWM93rj/ZnrJ+I4XmyCGiJybpk5ZaJWdi8i8zUMW0hf3Gv9Q8FbTalnK8zpGrVyY5uNfqvrB4J04phel51XxbUU3vtLuqU9c4ImhXUSvApRa2ZcZXRKRGvDUu6jdVLuKlGLNh58GhxV2T0yo7VCj9tufFx1blXXyqCyTOYG1wuIyGkkD9b9LK0StTJYc6hh8w6qDm6uILlqLoWCqlErGNffXpu7yvUgHfnBtvjBOjzqupYCwEMm++c5te6SJFlmjH7XAlwdHnWiVgYt4GktwIp+y1xdANhlijxal0edqBUCwCe2mLtcHfSq4DwX11KIyFkk/woL45VAcpsp8bSrCXXHulGLwTjJp4zHtqpGLNRGDQBq46aqAdbgeSaoJoql6BNh662sm0Wzm0cLSysCYEvVNpm6AIBHSH6pb+XAgF/0F+xMa3dIrqzisgBeNn5bSk1oNpsXAIitcbmoG733/ibtGWbptwmLALyuLepAkSU2FgV0mva8BuDmbm6WJMkia7DGqmMZyzeaoA+LaKIougjAYwB+zK20Cl2tpaKiufpMaYx2Vvua5FS+UBe6GckPbAE2djRCRE4neciIb2nzv5I7Sb6nqXwg/BCAF9M0vdZVhJ4Xkk8GFRmxVd+hL+B8auK9v8HoDovImYWMSa7JVjYQdpV+SGUGmjD9VphMkuTeXpRvlIfyAjCpvINFOkzy+Szjzu3imiJm8wD8mlVHbPu/DbfeDu76fraX4zheoDLaBIg9GkWzSKi6tk1bvPf3BQr7Tgd3UED7ADGjm+rcbtLOqgd3UJCCAAHg8xOINUrZOdis52IoGpeAnVktUKiu72QP/gOmLISoJd+hzgAAAABJRU5ErkJggg=="
           alt="gps-device">
         <p>Rutas</p>
+        <div class="button-group">
+          <a routerLink="/rutas-list">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </a>
+          <a routerLink="/rutas">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-route"></i>
+            </button>
+          </a>
+        </div>
       </a>
-      <a routerLink="/eventosbadajoz" class="category">
+      <a class="category">
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEE0lEQVR4nO1aS4hURxR9Rk3EfMSgaDAbA1kkKoSQXXThKCIEzSI6CzUGsshCnMQYUMhicGVCZqMbIQsH/KGDe1dCFHQjRjH+koFJZKK7EDtvXp1Tb1BvuHBrKDvd06/H7ul+Zi4U/epzT9WpqnvrVs0kSUEhuZHknyTF0qiWFdXvNP6EGHDoZKKzpCT4ExLA6+W7Hb98RLz3m0k+qLG8T6XqjlqdkuL4D3TMtWakIYkuIyIk7zdc2rYtfYvwWa/+/0RktJvcL5+ByMaqztpxII4WxZ8ykW4TzhAp24qwZCl57okkJRHOEOky4cyKTFFIfj5V3a5ZkbGxsSUAkGXZG0mZiQDYr5gA9iUlJ3LHiPwmIrNKSQTA6vjgAvBhUlIig4b5lxEZTMpGREReAZACeEJyg/6qzYvIq0m3EfHef+yc+xpAP8kBAD+SHAJwjuR1w7tg2Bctf93qh6y96vUrjuIlnSDinHuT5NXJAjoAO7UtgM8atLtBcnlHiKiIyMskz0aDuuS9/wjAmizL3hORudZurua1XOtJXo50zipOM/22xUbUrep5AeCxYZwRkfl12s4jecxWQe3nexF5odk+22rs+uqnBm44P6dpuiiu17yWG4m01iuhiLwIYBvJ0wB+B+AsjZA8BaBXROa0lYhKlmXv20Afp2m6uIrI4rBq2q5a1zn3ib4cFrhM3fPeb2orEZI9hnNN8yLyGsk+/bX6a1a/Lujo1gJwKDL8m977r/I8X6G2o0m/tUzrpuWGSPKg4QyYUYc/3IxafsDyB4MOgMNGICe5azKbEZHZJHdb27YSuWKDuhvN8MPoO5RfibZTINHTRD/rAhndZi0lUqlUFgJ4FA3a6UGnBmwHp4vqHmVZtjR6WdxVpA8ReQnAVhtvX7CZ4OZbQiTMrg30PMm34nrNW3nY30PBJnTLFCAxi+QJ0/lWdQDcsnxvy4gAOAKgQvKLyUJ2ndEQSNrW+LIIPskDNuh/8jxfpWW60oZzqmVESP5Q9Cao7Uj+bUTebdQewHYLPNUu1obyPM9XGrmRlhFpVjQa1v7iiJjkAe/9O1Xt1gDwRuTTuE51jUjWNURsy4mWA9ihZd77t6P7TH81RkQk7SSRkXhrWQB6MnIYRwEM2/dgLbuLttavHSOiBqr9Oef2xOUAdurLS0ToJ3XhtTAAfGPtjndyRXptoLeq3a9z7gMAfwD4RUQW1NI393vbJmNLx4joIaaHmfW7u7q+Uqm87pxbVk9fYy+biOGWHohTkRDFmludCCQbCcn1AMbVk/3nOlAwhG5bMjJ9k53yehexKHjc9L6r9y8cHSVDsxk9sdUj6WuMJv0GsDfYxLPeLqdjm90rQHS42ReXaRc1WvNmeq0dsWvumD29nlDv9JRhR/IvKuNCsBXj9SMAAAAASUVORK5CYII="
           alt="event-accepted">
         <p>Eventos</p>
+        <div class="button-group">
+          <a routerLink="/rutas-list">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </a>
+          <a routerLink="/eventosbadajoz">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </a>
+        </div>
       </a>
 
-      <a routerLink="/empresas" class="category p-1" style="padding: 50px;">
+      <a  class="category p-1" style="padding: 50px;">
         <img
           src="data:image/png;base64,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"
           alt="external-hospitality-professions-ddara-lineal-ddara">
-        <p class="text-center">Empresas Turísticas Prov. Badajoz</p>
+        <p class="text-center">Empresas Turísticas</p>
+        <div class="button-group">
+          <a routerLink="/rutas-list">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </a>
+          <a routerLink="/empresas">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </a>
+        </div>
       </a>
 
-      <a routerLink="/noticiasbadajoz" class="category">
+      <a class="category">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
           <g fill="#f7f7f7" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
@@ -80,6 +126,18 @@
           </g>
         </svg>
         <p>Noticias</p>
+        <div class="button-group">
+          <a routerLink="/rutas-list">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </a>
+          <a routerLink="/noticiasbadajoz">
+            <button class="btn btn-outline-light">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </a>
+        </div>
       </a>
 
 
