@@ -3,7 +3,7 @@ import { Multimedia } from '../interfaces/multimedia.model';
 import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import * as AOS from 'aos'; 
+import * as AOS from 'aos';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @Component({
@@ -15,16 +15,16 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 })
 export class PoiListComponent implements OnInit {
   activedLoader = true;
-  pois: Multimedia[] = []; 
-  displayedPois: Multimedia[] = []; 
+  pois: Multimedia[] = [];
+  displayedPois: Multimedia[] = [];
   authService: AuthenticationService | undefined;
-  currentPois: Multimedia | undefined; 
+  currentPois: Multimedia | undefined;
   searchTerm: string = '';
   maxResultados: number = 20;
   minResultados: number = 0;
   resultadosBusqueda: Multimedia[] = [];
   puedeMostrarMas: boolean = true;
-  itemsPorPagina: number = 6; 
+  itemsPorPagina: number = 6;
   isLoading: boolean = false;
 
   constructor(
@@ -32,7 +32,7 @@ export class PoiListComponent implements OnInit {
     private router: Router,
     private httpClient: HttpClient,
     authService: AuthenticationService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     console.log("Componente PoiList iniciado");
@@ -41,60 +41,67 @@ export class PoiListComponent implements OnInit {
       this.activedLoader = false;
     }, 1100);
 
-    AOS.init({
-      duration: 1500,
-      offset: 200,
-      once: true,
-    });
-
     window.scrollTo(0, 0);
 
-    const url = '/assets/response_poi.json'; 
+    const url = '/assets/response_poi.json';
 
     console.log('Realizando solicitud a la URL:', url);
 
     this.httpClient.get<Multimedia[]>(url).subscribe({
       next: pois => {
-        console.log('POIs recibidos:', pois);
-        this.pois = pois;
+        // Reducir los datos si contienen propiedades irrelevantes
+        this.pois = pois.map(poi => ({
+          ...poi,
+          name: poi.name,
+          identifier: poi.identifier,
+          image: poi.image, // Solo las propiedades necesarias
+        }));
         this.loadMoreItems();
       },
       error: err => {
         console.error('Error al obtener los POIs:', err);
-        console.error('Estado HTTP:', err.status);
-        console.error('Mensaje de error:', err.message);
       }
     });
+
   }
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    const scrollPos = window.scrollY + window.innerHeight;
-    const offsetHeight = document.documentElement.offsetHeight;
+    if (this.isLoading) return;
 
-    // Ajusta 50px de margen antes de llegar al final
-    if (scrollPos >= offsetHeight - 50 && !this.isLoading) {
-      this.loadMoreItems();
-    }
+    // Usar debounce para evitar llamadas frecuentes
+    clearTimeout(this.scrollTimeout);
+    this.scrollTimeout = setTimeout(() => {
+      const scrollPos = window.scrollY + window.innerHeight;
+      if (scrollPos >= document.documentElement.offsetHeight - 50) {
+        this.loadMoreItems();
+      }
+    }, 200);
   }
+  private scrollTimeout: any;
+
 
   loadMoreItems(): void {
     if (this.isLoading || this.displayedPois.length >= this.pois.length) return;
+
     this.isLoading = true;
 
-    const start = this.displayedPois.length;
-    const end = Math.min(start + this.itemsPorPagina, this.pois.length); // Asegura que no se exceda el límite
-    const nextItems = this.pois.slice(start, end);
-    this.displayedPois = [...this.displayedPois, ...nextItems];
+    // Usa un timer para simular retardo si necesitas demostrar la carga progresiva
+    setTimeout(() => {
+      const start = this.displayedPois.length;
+      const end = Math.min(start + this.itemsPorPagina, this.pois.length);
+      this.displayedPois = [...this.displayedPois, ...this.pois.slice(start, end)];
 
-    this.isLoading = false;
-    this.puedeMostrarMas = this.displayedPois.length < this.pois.length;
+      this.isLoading = false;
+      this.puedeMostrarMas = this.displayedPois.length < this.pois.length;
+    }, 500); // Simulación de retardo (opcional)
   }
+
 
   filtrarResultados(): void {
     const resultadosFiltrados = this.searchTerm
       ? this.pois.filter(poi =>
-          poi.name.toLowerCase().includes(this.searchTerm.toLowerCase()))
+        poi.name.toLowerCase().includes(this.searchTerm.toLowerCase()))
       : [];
     this.puedeMostrarMas = resultadosFiltrados.length > this.maxResultados;
     this.resultadosBusqueda = resultadosFiltrados.slice(0, this.maxResultados);
