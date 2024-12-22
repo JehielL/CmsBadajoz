@@ -1,21 +1,34 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common'; // Importa CommonModule
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, HttpClientModule], // Añade CommonModule aquí
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   isOnline: boolean = navigator.onLine; 
   private isComponentActive: boolean = true; 
+  private apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Badajoz,es&units=metric&appid=0e6ce57310874f46f331260d9dd56718`;
+  weather: any;
+  currentDate: Date = new Date();
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     window.addEventListener('online', this.updateOnlineStatus);
     window.addEventListener('offline', this.updateOnlineStatus);
 
     this.checkConnectionStatus();
+    this.getWeather();
+
+    setInterval(() => {
+      this.currentDate = new Date();
+    }, 1000);
   }
 
   ngOnDestroy(): void {
@@ -44,4 +57,18 @@ export class NavbarComponent implements OnInit, OnDestroy {
       setTimeout(this.checkConnectionStatus, 10000);
     }
   };
+
+  getWeather(): void {
+    this.http.get(this.apiUrl).subscribe({
+      next: data => {
+        this.weather = data;
+      },
+      error: err => {
+        console.error('Error al obtener el clima:', err);
+        if (err.status === 401) {
+          console.error('API Key inválida. Por favor verifica tu API Key.');
+        }
+      }
+    });
+  }
 }

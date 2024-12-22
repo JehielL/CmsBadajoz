@@ -86,3 +86,55 @@
   text-decoration: none !important; 
 }
 
+.weather-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe5d 0%, #fe15005b 100%);
+  border-radius: 30px; /* Reducir el radio de las esquinas */
+  padding: 10px; /* Reducir el padding */
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reducir la sombra */
+  position: absolute; /* Para posicionarlo en la esquina */
+  top: 530px; /* Espaciado desde la parte superior */
+  left: 30px; /* Espaciado desde la parte izquierda */
+  width: 160px; /* Establecer un ancho fijo */
+  z-index: 1000; /* Asegurar que esté encima de otros elementos */
+
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Reducir margen inferior */
+}
+
+.weather-icon img {
+  width: 40px; /* Reducir el tamaño del icono */
+  height: 40px;
+}
+
+.weather-details {
+  margin-left: 5px; /* Reducir margen izquierdo */
+}
+
+.weather-description {
+  font-size: 1em; /* Reducir tamaño de fuente */
+  margin: 0;
+}
+
+.weather-temperature {
+  font-size: 1.5em; /* Reducir tamaño de fuente */
+  font-weight: bold;
+  margin: 0;
+}
+
+.date-time {
+  text-align: center;
+}
+
+.date, .time {
+  margin: 0;
+  font-size: 1em; /* Reducir tamaño de fuente */
+}

@@ -5,27 +5,9 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     height: 100%;
-    background: linear-gradient(to right, #a72323, #b3abab), 
-    linear-gradient(to left, yellow, #c51a1a);
-background-size: 400% 400%; /* Aumenta el área del gradiente para que se desplace */
-    animation: gradientAnimation 10s ease infinite; /* Aplicar la animación */
+    background: #7e1b1b;
 }
 
-/* Definir la animación */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%; 
-    }
-    50% {
-        background-position: 100% 50%; 
-    }
-    100% {
-        background-position: 0% 50%; 
-    }
-}
-
-
-/* Centro el spinner */
 .center {
   display: flex;
   justify-content: center;

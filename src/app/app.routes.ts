@@ -13,6 +13,7 @@ import { userRoleGuard } from './services/user-role.guard';
 import { EventosbadajozComponent } from './eventosbadajoz/eventosbadajoz.component';
 import { EmpresasComponent } from './empresas/empresas.component';
 import { TestTensorflowComponent } from './test-tensorflow/test-tensorflow.component';
+import { PoiListComponent } from './poi-list/poi-list.component';
 
 export const routes: Routes = [
     {
@@ -76,5 +77,9 @@ export const routes: Routes = [
         path: 'reconocimientofacial',
         component: TestTensorflowComponent
     },
+    {
+        path: 'poi-list',
+        component: PoiListComponent
+    }
     
 ];

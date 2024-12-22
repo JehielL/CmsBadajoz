@@ -6,7 +6,26 @@
 </div>
 }@else{
 <div class="container-fluid ">
+  
+  
   <div data-aos="fade-right">
+    <div class="weather-widget">
+      @if (weather) {
+        <div class="weather-info">
+          <div class="weather-icon">
+            <img [src]="isDayTime ? 'https://w7.pngwing.com/pngs/376/460/png-transparent-summer-sun-child-food-sun-thumbnail.png' : 'https://cdn-icons-png.flaticon.com/512/180/180700.png'" alt="Weather Icon">
+          </div>
+          <div class="weather-details">
+            <p class="weather-description">Badajoz</p>
+            <p class="weather-temperature">{{ weather.main.temp }}°C</p>
+          </div>
+        </div>
+      }
+      <div class="date-time">
+        <p class="date">{{ currentDate | date: 'EEEE, d MMMM' : 'es-ES' }}</p>
+        <p class="time">{{ currentDate | date: 'HH:mm' : 'es-ES' }}</p>
+      </div>
+    </div>
     <!-- Logo -->
     <div class="image-fluid text-center mt-3">
       <img src="https://www.dip-badajoz.es/img/escudo_2016_ancho.svg" style="max-width: 400px;" alt="">
@@ -75,5 +94,6 @@
      
     </div>
   </div>
+  
 </div>
 }
