@@ -97,7 +97,7 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reducir la sombra */
   position: absolute; /* Para posicionarlo en la esquina */
-  top: 530px; /* Espaciado desde la parte superior */
+  top: 570px; /* Espaciado desde la parte superior */
   left: 30px; /* Espaciado desde la parte izquierda */
   width: 160px; /* Establecer un ancho fijo */
   z-index: 1000; /* Asegurar que esté encima de otros elementos */
@@ -137,4 +137,16 @@
 .date, .time {
   margin: 0;
   font-size: 1em; /* Reducir tamaño de fuente */
+}
+
+@media screen and (max-width: 768px) {
+  .weather-widget {
+    top: 800px !important;
+    left: 200px;
+    width: 140px;
+  }
+
+  .custom-cont {
+    margin-bottom: 500px !important;
+  }
 }

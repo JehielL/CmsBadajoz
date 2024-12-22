@@ -5,7 +5,7 @@
   </div>
 </div>
 }@else{
-<div class="container-fluid ">
+<div class="container-fluid custom-cont">
   
   
   <div data-aos="fade-right">
@@ -20,11 +20,11 @@
             <p class="weather-temperature">{{ weather.main.temp }}°C</p>
           </div>
         </div>
+        <div class="date-time">
+          <p class="time">{{ currentDate | date: 'HH:mm' : 'es-ES' }}</p>
+        </div>
       }
-      <div class="date-time">
-        <p class="date">{{ currentDate | date: 'EEEE, d MMMM' : 'es-ES' }}</p>
-        <p class="time">{{ currentDate | date: 'HH:mm' : 'es-ES' }}</p>
-      </div>
+     
     </div>
     <!-- Logo -->
     <div class="image-fluid text-center mt-3">
