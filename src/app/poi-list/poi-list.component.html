@@ -11,7 +11,7 @@
       <div class="search-container">
         <ul class="list-group">
           @for (poi of resultadosBusqueda; track pois) {
-            <li class="list-group-item">
+            <li class="list-group-item" (click)="verDetalle(poi.identifier.toString())">
               {{ poi.name }}
             </li>
           }

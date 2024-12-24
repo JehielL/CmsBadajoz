@@ -3,7 +3,6 @@ import { Multimedia } from '../interfaces/multimedia.model';
 import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import * as AOS from 'aos';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @Component({
@@ -94,7 +93,7 @@ export class PoiListComponent implements OnInit {
 
       this.isLoading = false;
       this.puedeMostrarMas = this.displayedPois.length < this.pois.length;
-    }, 500); // Simulación de retardo (opcional)
+    }, 500); 
   }
 
 
@@ -125,4 +124,11 @@ export class PoiListComponent implements OnInit {
   poiTrack(index: number, item: Multimedia) {
     return item.identifier; // O alguna otra propiedad única
   }
+
+  verDetalle(identifier: string): void {
+    console.log(`Redirigiendo al detalle del POI con identificador: ${identifier}`);
+    this.router.navigate(['/detalle-poi', identifier]);
+  }
+  
+  
 }
