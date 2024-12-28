@@ -17,6 +17,8 @@ import { PoiListComponent } from './poi-list/poi-list.component';
 import { PoiDetailComponent } from './poi-detail/poi-detail.component';
 import { RutasListComponent } from './rutas-list/rutas-list.component';
 import { RutaDetailComponent } from './ruta-detail/ruta-detail.component';
+import { EventosListComponent } from './eventos-list/eventos-list.component';
+import { EventosDetailComponent } from './eventos-detail/eventos-detail.component';
 
 export const routes: Routes = [
     {
@@ -95,6 +97,14 @@ export const routes: Routes = [
     {
         path: 'detalle-ruta/:id',
         component: RutaDetailComponent
+    },
+    {
+        path: 'eventos-list',
+        component: EventosListComponent
+    },
+    {
+        path: 'detalle-evento/:id',
+        component: EventosDetailComponent
     }
     
 ];

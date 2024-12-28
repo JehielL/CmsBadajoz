@@ -1,1 +1,50 @@
-<p>eventos-list works!</p>
+<div class="menu-container">
+    <h1 class="display-4 fst-italic text-center fixed-title">
+      <span class="custom-name text-white" style="font-weight: 600;">EVENTOS</span>
+    </h1>
+    
+    <div class="search">
+      <input type="search" class="form-control form-control-sm rounded custom-input" placeholder="Encuentra tu evento favorito"
+          aria-label="Buscar" aria-describedby="search-addon" 
+          (input)="buscar($any($event.target).value)">
+      @if (resultadosBusqueda.length > 0) {
+        <div class="search-container">
+          <ul class="list-group">
+            @for (evento of resultadosBusqueda; track eventos) {
+              <li class="list-group-item" (click)="verDetalle(evento.identifier.toString())">
+                {{ evento.name }}
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+    
+    <div class="row row-cols-1 row-cols-lg-3 mt-5 container-fluid" loading="lazy" >
+      @for (evento of displayedEvento; track eventos) {
+        @if (evento.image && (evento.image.startsWith('http') || evento.image.startsWith('https'))) {
+          <div class="col">
+            <div class="container">
+              <div class="card card-cover h-120 overflow-hidden text-bg-dark rounded-4 shadow-lg background-image" [style.background-image]="'url(' + evento.image + ')'" style="background-size: cover; background-position: center;" loading="lazy" (click)="verDetalle(evento.identifier.toString())">
+                <div class="d-flex flex-column h-120 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-1 mb-3 display-6 lh-1 fw-bold text-with-shadow text-left">{{evento.name}}</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto menu-badge">
+                      <a class="badge text-bg-secondary text-decoration-none">{{evento.addressLocality}}</a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <button class="btn btn-dark mb-2">
+                       
+                        <i class="fa-solid fa-magnifying-glass "></i>
+                        
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
