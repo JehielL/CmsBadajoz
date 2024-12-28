@@ -1,36 +1,39 @@
 .card-cover {
-    position: relative;
-    overflow: hidden;
-    transition: transform 1s ease;
-    margin-bottom: 10px; 
-    max-height: 250px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 1s ease;
+  margin-bottom: 10px;
+  max-height: 250px;
 }
+
 .card-img {
   position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
+
 .image-container {
-  height: 200px; 
+  height: 200px;
 }
 
 
 .horizontal-bars {
   width: 100%;
-  height: 1px; 
-  background-color: #000000; 
+  height: 1px;
+  background-color: #000000;
 
 }
+
 .fixed-title {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 10; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
   text-align: center;
 }
 
@@ -41,16 +44,16 @@
 
 
 
-  
 
-  .background-image{
-    view-timeline-name: --image;
-    view-timeline-axis: block;
 
-    animation-timeline: --image;
-    animation-name: show;
-    
-  }
+.background-image {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+}
 
 .background-image {
   display: flex;
@@ -60,93 +63,58 @@
 
 
 }
+
 .card-img {
   width: 100%;
-  height: auto; 
+  height: auto;
+  object-fit: cover;
 }
 
-  .container-fluid.custom {
-    position: relative;
-    z-index: 1;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    padding: 10px;
-  }
-  th, td {
-    padding-left: 1rem; 
-    padding-right: 1rem; 
-}
-.btn{
-    cursor:pointer;
-      position:relative;
-      padding:10px 20px;
-      align-self: center;
-      margin-left: 37%;
-      background:rgba(255, 255, 255, 0.452);
-      font-size:28px;
-      border-top-right-radius:10px;
-      border-bottom-left-radius:10px;
-      transition:all 1s;
-      &:after,&:before{
-        content:" ";
-        width:10px;
-        height:10px;
-        position:absolute;
-        border :0px solid #fff;
-        transition:all 1.5s;
-        }
-      &:after{
-        top:-1px;
-        left:-1px;
-        border-top:5px solid rgb(0, 0, 0);
-        border-left:5px solid rgb(0, 0, 0);
-      }
-      &:before{
-        bottom:-1px;
-        right:-1px;
-        border-bottom:5px solid black;
-        border-right:5px solid black;
-      }
-      &:hover{
-        border-top-right-radius:0px;
-        border-bottom-left-radius:0px;
-        background:rgba(0, 0, 0, 0.5);
-        color:rgb(255, 255, 255);
-        &:before,&:after{
-          
-          width:100%;
-          height:100%;
-          border-color:white;
-        }
-      }
-    }
-  
-
-
-  
-  
-
-  .custom-title{
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin: 20px;
-    font-family: Noto Sans, sans-serif; font-weight: 400; font-style: normal;
-  }
-  .text-with-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.971);
- 
+.container-fluid.custom {
+  position: relative;
+  z-index: 1;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 10px;
 }
 
-.container{
+th,
+td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+
+
+
+
+
+.custom-title {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 20px;
+  font-family: Noto Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-with-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.971);
+
+}
+
+.container {
   padding: 20px;
 }
 
-.search{
-  margin-left: 100px;
-  width: 30%;
+.search {
+  margin-left: 50px;
+  width: 35%;
   margin-top: 100px;
 }
+
 .search-container {
   position: absolute;
   left: 0;
@@ -157,9 +125,9 @@
   overflow-y: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 30%;
-  margin-left: 100px;
-  
- 
+  margin-left: 50px;
+
+
 }
 
 /* Estilo para los elementos de la lista de resultados */
@@ -182,9 +150,10 @@
   color: black;
   text-decoration: none;
 }
+
 .search-container input[type="search"] {
-  outline: none; 
-  text-decoration: none; 
+  outline: none;
+  text-decoration: none;
 }
 
 .list-group-item {
@@ -194,16 +163,31 @@
   text-decoration: none;
   transition: 0.4s;
 }
+
 .list-group-item:hover {
   background-color: #1f1e1d;
   color: white;
 }
+
 .list-group-item a:visited {
   color: #e78f0a;
 }
+
 ::ng-deep .search-container ::selection {
   background-color: transparent;
   color: inherit;
 }
 
 
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  .search {
+    margin-left: 30px;
+    width: 50%;
+  }
+
+}

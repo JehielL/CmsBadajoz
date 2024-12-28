@@ -25,16 +25,18 @@
       @if (poi.image && (poi.image.startsWith('http') || poi.image.startsWith('https'))) {
         <div class="col">
           <div class="container">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg background-image" [style.background-image]="'url(' + poi.image + ')'" style="background-size: cover; background-position: center;" loading="lazy" (click)="verDetalle(poi.identifier.toString())">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-with-shadow text-left">{{poi.name}}</h3>
+            <div class="card card-cover h-120 overflow-hidden text-bg-dark rounded-4 shadow-lg background-image" [style.background-image]="'url(' + poi.image + ')'" style="background-size: cover; background-position: center;" loading="lazy" (click)="verDetalle(poi.identifier.toString())">
+              <div class="d-flex flex-column h-120 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-1 mb-3 display-6 lh-1 fw-bold text-with-shadow text-left">{{poi.name}}</h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto menu-badge">
                     <a class="badge text-bg-secondary text-decoration-none">{{poi.addressLocality}}</a>
                   </li>
                   <li class="d-flex align-items-center">
-                    <button class="btn">
-                      <i class="bi bi-arrow-right ms-2">Ver</i>
+                    <button class="btn btn-dark mb-2">
+                     
+                      <i class="fa-solid fa-magnifying-glass "></i>
+                      
                     </button>
                   </li>
                 </ul>

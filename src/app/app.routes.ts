@@ -15,6 +15,7 @@ import { EmpresasComponent } from './empresas/empresas.component';
 import { TestTensorflowComponent } from './test-tensorflow/test-tensorflow.component';
 import { PoiListComponent } from './poi-list/poi-list.component';
 import { PoiDetailComponent } from './poi-detail/poi-detail.component';
+import { RutasListComponent } from './rutas-list/rutas-list.component';
 
 export const routes: Routes = [
     {
@@ -85,6 +86,10 @@ export const routes: Routes = [
     {
         path: 'detalle-poi/:id',
         component: PoiDetailComponent
+    },
+    {
+        path: 'rutas-list',
+        component: RutasListComponent
     }
     
 ];
