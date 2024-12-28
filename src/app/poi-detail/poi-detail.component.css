@@ -1,127 +1,95 @@
-/* Estilo global del carrusel */
-ngb-carousel {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+/* Estilos generales */
+.custom-img {
+  width: 550px; /* La imagen ocupa la mitad de la página */
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para resaltar la imagen */
+}
+
+.custom-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.custom-container {
+  margin-top: 80px;
+  color: white; /* Cambio de color de texto a blanco */
+}
+
+.fixed-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.585); /* Fondo rojo con opacidad */
+  color: white;
+  padding: 15px;
+  z-index: 10;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Grid para la disposición de la imagen y la información */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* La imagen y la información ocupan el mismo espacio */
+  gap: 10px; /* Espacio entre la imagen y la información */
+  align-items: flex-start; /* Alineación superior */
+  padding: 10px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white; /* Asegurar que el título sea blanco */
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: white; /* Texto en blanco */
+}
+
+.description {
+  padding-top: 20px;
+}
+
+#map-container {
+  position: relative;
+  width: 50%;
+  height: 150px; /* Ajustamos el tamaño del mapa a algo más pequeño */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr; /* En pantallas pequeñas, la imagen y la información se apilan */
   }
-  
-  /* Contenedor del carrusel */
-  .ngb-carousel .carousel-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    position: relative;
-  }
-  
-  /* Estilo del contenedor de la imagen */
-  .picsum-img-wrapper {
-    border-radius: 30px;
-    overflow: hidden;
-    width: 90%;
-    height: 600px;  /* Tamaño fijo para las imágenes */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Estilo para las imágenes dentro del carrusel */
-  .picsum-img-wrapper img {
-    width: 90%;          
-    height: 90%;         
-    object-fit: cover;    
-    border-radius: 30px;
-    margin-left: 15%;
-  }
-  
-  /* Efecto hover en las imágenes del carrusel */
-  .ngb-carousel .carousel-item img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Estilo del texto de la imagen */
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  /* Estilo del título en la leyenda */
-  .carousel-caption h3 {
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 .125rem .25rem rgba(255, 255, 255, 0.9);
-  }
-  
-  /* Estilo de los enlaces dentro del carrusel */
-  .ngb-carousel a {
-    display: block;
-    text-decoration: none;
-  }
-  
+
   .custom-img {
-    width: 35%; 
-    height: 500px; 
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin-left: 50px;
-  }
-  
-  .custom-img img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 30px;
-  }
-  .custom-container{
-    margin-top: 100px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .custom-img {
-      width: 80%; 
-      height: 300px; 
-      margin-left: 40px;
-    }
-    .custom-container {
-      padding: 30px;
-      margin-bottom: 50px;
-      margin-top: 70px;
-    }
-  
-    .ngb-carousel .carousel-control-prev,
-    .ngb-carousel .carousel-control-next {
-      position: absolute;
-      top: 30%; /* Subimos las flechas a la mitad de la imagen */
-      transform: translateY(-50%);
-      width: auto;
-    }
-  
-    .ngb-carousel .carousel-control-prev {
-      left: 5px;
-    }
-  
-    .ngb-carousel .carousel-control-next {
-      right: 5px; 
-    }
-  }
-  
-  
-  .fixed-title {
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 200px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 10; 
-    text-align: center;
   }
-  
-  
-  
+
+  .custom-container {
+    padding: 15px;
+  }
+}
