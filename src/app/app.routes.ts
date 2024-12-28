@@ -21,6 +21,8 @@ import { EventosListComponent } from './eventos-list/eventos-list.component';
 import { EventosDetailComponent } from './eventos-detail/eventos-detail.component';
 import { EmpresasListComponent } from './empresas-list/empresas-list.component';
 import { EmpresasDetailComponent } from './empresas-detail/empresas-detail.component';
+import { NoticiasListComponent } from './noticias-list/noticias-list.component';
+import { NoticiasDetailComponent } from './noticias-detail/noticias-detail.component';
 
 export const routes: Routes = [
     {
@@ -115,6 +117,14 @@ export const routes: Routes = [
     {
         path: 'detalle-empresa/:id',
         component: EmpresasDetailComponent
+    },
+    {
+        path: 'noticias-list',
+        component: NoticiasListComponent
+    },
+    {
+        path: 'detalle-noticia/:id',
+        component: NoticiasDetailComponent
     }
     
 ];
