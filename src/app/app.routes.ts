@@ -16,6 +16,7 @@ import { TestTensorflowComponent } from './test-tensorflow/test-tensorflow.compo
 import { PoiListComponent } from './poi-list/poi-list.component';
 import { PoiDetailComponent } from './poi-detail/poi-detail.component';
 import { RutasListComponent } from './rutas-list/rutas-list.component';
+import { RutaDetailComponent } from './ruta-detail/ruta-detail.component';
 
 export const routes: Routes = [
     {
@@ -90,6 +91,10 @@ export const routes: Routes = [
     {
         path: 'rutas-list',
         component: RutasListComponent
+    },
+    {
+        path: 'detalle-ruta/:id',
+        component: RutaDetailComponent
     }
     
 ];
