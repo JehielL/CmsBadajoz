@@ -14,6 +14,7 @@ import { EventosbadajozComponent } from './eventosbadajoz/eventosbadajoz.compone
 import { EmpresasComponent } from './empresas/empresas.component';
 import { TestTensorflowComponent } from './test-tensorflow/test-tensorflow.component';
 import { PoiListComponent } from './poi-list/poi-list.component';
+import { PoiDetailComponent } from './poi-detail/poi-detail.component';
 
 export const routes: Routes = [
     {
@@ -80,6 +81,10 @@ export const routes: Routes = [
     {
         path: 'poi-list',
         component: PoiListComponent
+    },
+    {
+        path: 'detalle-poi/:id',
+        component: PoiDetailComponent
     }
     
 ];

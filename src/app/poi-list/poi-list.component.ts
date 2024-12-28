@@ -79,7 +79,6 @@ export class PoiListComponent implements OnInit {
   }
   private scrollTimeout: any;
 
-
   loadMoreItems(): void {
     if (this.isLoading || this.displayedPois.length >= this.pois.length) return;
 
@@ -95,7 +94,6 @@ export class PoiListComponent implements OnInit {
       this.puedeMostrarMas = this.displayedPois.length < this.pois.length;
     }, 500); 
   }
-
 
   filtrarResultados(): void {
     const resultadosFiltrados = this.searchTerm
@@ -129,6 +127,4 @@ export class PoiListComponent implements OnInit {
     console.log(`Redirigiendo al detalle del POI con identificador: ${identifier}`);
     this.router.navigate(['/detalle-poi', identifier]);
   }
-  
-  
 }

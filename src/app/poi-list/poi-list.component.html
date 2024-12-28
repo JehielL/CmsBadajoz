@@ -20,12 +20,12 @@
     }
   </div>
   
-  <div class="row row-cols-1 row-cols-lg-3 mt-5 container-fluid" loading="lazy">
+  <div class="row row-cols-1 row-cols-lg-3 mt-5 container-fluid" loading="lazy" >
     @for (poi of displayedPois; track pois) {
       @if (poi.image && (poi.image.startsWith('http') || poi.image.startsWith('https'))) {
         <div class="col">
           <div class="container">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg background-image" [style.background-image]="'url(' + poi.image + ')'" style="background-size: cover; background-position: center;" loading="lazy">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg background-image" [style.background-image]="'url(' + poi.image + ')'" style="background-size: cover; background-position: center;" loading="lazy" (click)="verDetalle(poi.identifier.toString())">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-with-shadow text-left">{{poi.name}}</h3>
                 <ul class="d-flex list-unstyled mt-auto">
@@ -34,7 +34,7 @@
                   </li>
                   <li class="d-flex align-items-center">
                     <button class="btn">
-                      <i class="bi bi-arrow-right ms-2"></i>
+                      <i class="bi bi-arrow-right ms-2">Ver</i>
                     </button>
                   </li>
                 </ul>
