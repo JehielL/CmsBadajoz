@@ -12,27 +12,27 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class EventosDetailComponent implements OnInit {
 
-   
-    evento: EventosBadajoz | undefined;
-    
-      constructor(
-        private route: ActivatedRoute,
-        private http: HttpClient
-      ) {}
-    
-      ngOnInit(): void {
-        const identifier = this.route.snapshot.paramMap.get('id');
-    
-        if (identifier) {
-          const url = `/assets/response_evento.json`; // URL a tu JSON
-          this.http.get<EventosBadajoz[]>(url).subscribe({
-            next: eventos => {
-              this.evento = eventos.find(evento => evento.identifier.toString() === identifier);
-            },
-            error: err => {
-              console.error('Error al cargar los detalles de evento:', err);
-            }
-          });
+
+  evento: EventosBadajoz | undefined;
+
+  constructor(
+    private route: ActivatedRoute,
+    private http: HttpClient
+  ) { }
+
+  ngOnInit(): void {
+    const identifier = this.route.snapshot.paramMap.get('id');
+
+    if (identifier) {
+      const url = `/assets/response_evento.json`; // URL a tu JSON
+      this.http.get<EventosBadajoz[]>(url).subscribe({
+        next: eventos => {
+          this.evento = eventos.find(evento => evento.identifier.toString() === identifier);
+        },
+        error: err => {
+          console.error('Error al cargar los detalles de evento:', err);
         }
-      }
+      });
+    }
+  }
 }

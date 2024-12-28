@@ -19,6 +19,8 @@ import { RutasListComponent } from './rutas-list/rutas-list.component';
 import { RutaDetailComponent } from './ruta-detail/ruta-detail.component';
 import { EventosListComponent } from './eventos-list/eventos-list.component';
 import { EventosDetailComponent } from './eventos-detail/eventos-detail.component';
+import { EmpresasListComponent } from './empresas-list/empresas-list.component';
+import { EmpresasDetailComponent } from './empresas-detail/empresas-detail.component';
 
 export const routes: Routes = [
     {
@@ -105,6 +107,14 @@ export const routes: Routes = [
     {
         path: 'detalle-evento/:id',
         component: EventosDetailComponent
+    },
+    {
+        path: 'empresas-list',
+        component: EmpresasListComponent
+    },
+    {
+        path: 'detalle-empresa/:id',
+        component: EmpresasDetailComponent
     }
     
 ];
