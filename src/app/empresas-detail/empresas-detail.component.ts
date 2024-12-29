@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Empresa } from '../interfaces/empresas.model';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-empresas-detail',
@@ -12,7 +13,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class EmpresasDetailComponent {
 
-
+  private map: any;
+  private mapInitialized = false;
   
     empresa: Empresa | undefined;
   
@@ -36,4 +38,32 @@ export class EmpresasDetailComponent {
         });
       }
     }
+
+     ngAfterViewChecked(): void {
+        if (this.empresa && this.empresa.latitude && this.empresa.longitude && !this.mapInitialized) {
+          this.initMap(this.empresa.latitude, this.empresa.longitude);
+          this.mapInitialized = true;
+        }
+      }
+    
+      private initMap(latitude: number, longitude: number): void {
+        const mapContainer = document.getElementById('map');
+        if (!mapContainer) {
+          console.error('Contenedor de mapa no encontrado.');
+          return;
+        }
+    
+        // Inicializa el mapa en las coordenadas especificadas
+        this.map = L.map(mapContainer).setView([latitude, longitude], 15);
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 60,
+        }).addTo(this.map);
+    
+        // Agrega un marcador al mapa
+        if (this.empresa?.name) {
+          L.marker([latitude, longitude]).addTo(this.map)
+            .openPopup();
+        }
+      }
 }
