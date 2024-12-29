@@ -1,5 +1,5 @@
 <h1  class="display-4 fst-italic text-center fixed-title ">
-    <span class="custom-name text-white" style="font-weight: 600;">PUNTOS DE INTERES</span>
+    <span class="custom-name text-white" style="font-weight: 600;">EVENTOS EN BADAJOZ</span>
   </h1>
 
 @if (evento) {
@@ -12,9 +12,17 @@
         <div class="mb-3">
           <p class="btn btn-outline-light me-2">Localidad: {{evento.addressLocality}}</p>
           <p class="btn btn-outline-light me-2">Calle: {{evento.addressProvince}}</p>
+          <p class="btn btn-outline-light me-2">Comienzo de Evento🌟: {{ evento.startDate | date:'dd/MM/yyyy, h:mm a' }}
+          </p>
+          <p class="btn btn-outline-light me-2">Finalización de Evento🌟: {{ evento.endDate | date:'dd/MM/yyyy, h:mm a'
+            }}</p>
+
         </div>
         <div class="fw-bold container-fluid">
           <p class="text-white" [innerHTML]="evento.description"></p>
+        </div>
+        <div class="info-item" id="map-container">
+          <div id="map"></div>
         </div>
       </div>
     </div>
