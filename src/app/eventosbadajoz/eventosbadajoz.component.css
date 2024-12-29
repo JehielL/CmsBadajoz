@@ -124,3 +124,18 @@ ngb-carousel {
 }
 
 
+#map-container {
+  position: relative;
+  width: 50%;
+  height: 150px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}

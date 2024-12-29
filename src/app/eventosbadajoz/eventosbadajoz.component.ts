@@ -1,5 +1,5 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewChecked } from '@angular/core';
 import { NgbCarousel, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { EventosBadajoz } from '../interfaces/eventosbadajoz.model';
 import { AuthenticationService } from '../services/authentication.service';
@@ -7,21 +7,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 import * as AOS from 'aos';
 import { DatePipe } from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
-
-
-
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-eventosbadajoz',
   standalone: true,
   imports: [NgbCarouselModule, HttpClientModule, DatePipe],
   templateUrl: './eventosbadajoz.component.html',
-  styleUrl: './eventosbadajoz.component.css'
+  styleUrls: ['./eventosbadajoz.component.css']
 })
-export class EventosbadajozComponent implements OnInit {
+export class EventosbadajozComponent implements OnInit, AfterViewChecked {
 
   activedLoader = true;
   eventos: EventosBadajoz[] = [];
+  evento: EventosBadajoz | undefined;
+  private map: any;
+  private mapInitialized = false;
   currentEvento: EventosBadajoz | undefined;
   authService: AuthenticationService | undefined;
 
@@ -69,13 +70,15 @@ export class EventosbadajozComponent implements OnInit {
     });
   }
 
-
   isPaused = false;
   loadRuta(index: number): void {
     if (this.eventos[index]) {
       this.currentEvento = this.eventos[index];
+      this.evento = this.eventos[index];
+      this.mapInitialized = false; // Reinicia la bandera para permitir la inicialización del mapa
     }
   }
+
   togglePaused(): void {
     if (this.isPaused) {
       this.carousel.cycle();
@@ -93,5 +96,36 @@ export class EventosbadajozComponent implements OnInit {
   handleImageError(event: Event): void {
     const target = event.target as HTMLImageElement;
     target.src = 'https://www.aytobadajoz.es/v20/assets/images/aytobadajoz_cover.jpg';
+  }
+
+  ngAfterViewChecked(): void {
+    if (this.evento && this.evento.latitude && this.evento.longitude && !this.mapInitialized) {
+      this.initMap(this.evento.latitude, this.evento.longitude);
+      this.mapInitialized = true;
+    }
+  }
+
+  private initMap(latitude: number, longitude: number): void {
+    const mapContainer = document.getElementById('map');
+    if (!mapContainer) {
+      console.error('Contenedor de mapa no encontrado.');
+      return;
+    }
+
+    if (!this.map) {
+      this.map = L.map(mapContainer).setView([latitude, longitude], 15);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(this.map);
+    } else {
+      this.map.setView([latitude, longitude], 15);
+    }
+
+    L.marker([latitude, longitude])
+      .addTo(this.map)
+      .bindPopup(`<b>${this.evento?.name}</b><br>${this.evento?.description || ''}`)
+      .openPopup();
   }
 }
