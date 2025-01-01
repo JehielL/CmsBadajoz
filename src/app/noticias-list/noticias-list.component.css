@@ -195,10 +195,10 @@
   .text-overlay {
     position: relative;
     display: inline-block;
-    padding: 5px 10px; /* Ajusta el espacio alrededor del texto */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
-    color: white; /* Color del texto */
-    border-radius: 10px; /* Esquinas redondeadas opcionales */
+    padding: 5px 10px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    border-radius: 10px;
     margin-top: 200px;
 
 }

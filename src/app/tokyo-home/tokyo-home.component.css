@@ -148,7 +148,7 @@
 @media screen and (max-width: 768px) {
   .weather-widget {
     top: 800px !important;
-    left: 200px;
+    left: 250px;
     width: 140px;
   }
 
@@ -157,8 +157,15 @@
   }
 
   .category{
-    width: 180px;
-    height: 180px;
+    width: 165px;
+    height: 165px;
+  }
+  .img{
+    width: 50% !important;
+    height: 50% !important;
+  }
+  .text-center .p{
+    size: 10px !important;
   }
 }
 
