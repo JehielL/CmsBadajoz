@@ -31,29 +31,34 @@
 
     ngOnInit(): void {
       console.log("Componente Rutas iniciado");
-  
+    
       setTimeout(() => {
         this.activedLoader = false;
       }, 1100);
-  
+    
       AOS.init({
         duration: 1500,
         offset: 200,
         once: true,
       });
-  
+    
       window.scrollTo(0, 0);
-  
-      // Realizar la solicitud a la API sin necesidad de id
+    
       const url = '/assets/response_poi.json';  // URL de la API
-  
+    
       console.log('Realizando solicitud a la URL:', url);
-  
+    
       this.httpClient.get<Multimedia[]>(url).subscribe({
         next: pois => {
           console.log('Rutas recibidas:', pois);
-          this.pois = pois;
-          this.loadPoi(0);
+    
+          this.pois = pois.slice(1).filter(poi => poi.image && poi.image.trim() !== '');
+    
+          if (this.pois.length > 0) {
+            this.loadPoi(0); // Cargar el primer POI válido
+          } else {
+            console.warn('No hay POIs válidos para mostrar.');
+          }
         },
         error: err => {
           console.error('Error al obtener los eventos:', err);
@@ -62,6 +67,7 @@
         }
       });
     }
+    
     
 
     isPaused = false;
@@ -83,6 +89,6 @@
 
     onCarouselSlideChanged(event: any): void {
       const index = event.current;
-      this.loadPoi(index);  // Cargar la ruta correspondiente al índice de la diapositiva
+      this.loadPoi(index);
     }
   }
