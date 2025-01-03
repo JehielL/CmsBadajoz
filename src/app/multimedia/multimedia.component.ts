@@ -44,7 +44,7 @@
     
       window.scrollTo(0, 0);
     
-      const url = '/assets/response_poi.json';  // URL de la API
+      const url = '/assets/response_poi.json';  
     
       console.log('Realizando solicitud a la URL:', url);
     
@@ -55,7 +55,7 @@
           this.pois = pois.slice(1).filter(poi => poi.image && poi.image.trim() !== '');
     
           if (this.pois.length > 0) {
-            this.loadPoi(0); // Cargar el primer POI válido
+            this.loadPoi(0); 
           } else {
             console.warn('No hay POIs válidos para mostrar.');
           }
