@@ -9,20 +9,20 @@ section {
   align-items: center;
   justify-content: center;
   background-color: var(--col-dark);
-  border-radius: 40px; /* Incrementa el radio */
+  border-radius: 40px; 
   margin-top: 25px;
-  box-shadow: 0 8px 12px rgba(32, 31, 31, 0.7); /* Ajusta la sombra */
+  box-shadow: 0 8px 12px rgba(32, 31, 31, 0.7); 
   z-index: 6000;
 
   /* Centrando la barra */
   position: fixed;
-  bottom: 30px; /* Mayor distancia desde el fondo */
+  bottom: 30px; 
   left: 50%;
   transform: translateX(-50%);
 }
 
 .label {
-  padding: 12px 24px; /* Incrementa el espaciado interno */
+  padding: 12px 24px; 
   transition: all 200ms;
   display: inline-block;
 }
@@ -30,8 +30,8 @@ section {
 .label > svg {
   transition: all 200ms;
   fill: var(--col-gray);
-  width: 24px; /* Incrementa el tamaño del ícono */
-  height: 24px; /* Ajusta la altura */
+  width: 24px; 
+  height: 24px; 
 }
 
 .label:hover:not(:has(input:checked)) > svg {
@@ -43,7 +43,7 @@ section {
   content: "";
   display: block;
   width: 0%;
-  height: 3px; /* Incrementa el grosor de la línea */
+  height: 3px; 
   border-radius: 5px;
   position: relative;
   left: 50%;
@@ -60,7 +60,7 @@ section {
 
 .label:has(input:checked) > svg {
   fill: var(--col-orange);
-  scale: 1.4; /* Escala mayor para íconos seleccionados */
+  scale: 1.4;
   margin-top: -8px;
 }
 
@@ -73,32 +73,32 @@ section {
 @media (max-width: 768px) {
   section {
     width: fit-content;
-    padding: 8px; /* Reduce el padding general */
-    border-radius: 30px; /* Reduce el radio del borde */
-    bottom: 20px; /* Ajusta la posición desde el fondo */
+    padding: 8px;
+    border-radius: 30px;
+    bottom: 20px;
   }
 
   .label {
-    padding: 8px 16px; /* Reduce el espaciado interno */
+    padding: 8px 16px;
   }
 
   .label > svg {
-    width: 18px; /* Reduce el tamaño del ícono */
+    width: 18px;
     height: 18px;
   }
 
   .label::before {
-    height: 2px; /* Reduce el grosor de la línea */
-    top: 25px; /* Ajusta la posición de la línea */
+    height: 2px;
+    top: 25px;
   }
 
   .label:has(input:checked) > svg {
-    scale: 1.2; /* Reduce la escala para íconos seleccionados */
+    scale: 1.2;
     margin-top: -6px;
   }
 
   .label:has(input:checked)::before {
-    top: 30px; /* Ajusta la posición de la línea seleccionada */
+    top: 30px;
   }
 }
 
