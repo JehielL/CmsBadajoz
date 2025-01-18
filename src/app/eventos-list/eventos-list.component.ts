@@ -3,11 +3,14 @@ import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { EventosBadajoz } from '../interfaces/eventosbadajoz.model';
+import { LazyLoadDirective } from '../lazy-load.directive'; // Importa la directiva
+import { DatePipe } from '@angular/common';
+
 
 @Component({
   selector: 'app-eventos-list',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, LazyLoadDirective, DatePipe],
   templateUrl: './eventos-list.component.html',
   styleUrl: './eventos-list.component.css'
 })
@@ -24,8 +27,11 @@ export class EventosListComponent implements OnInit {
   minResultados: number = 0;
   resultadosBusqueda: EventosBadajoz[] = [];
   puedeMostrarMas: boolean = true;
-  itemsPorPagina: number = 6;
+  itemsPorPagina: number = 3;
   isLoading: boolean = false;
+
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-1024x1024.jpg'; // Ruta a una imagen de reemplazo
+
 
   constructor(
     private activatedRoute: ActivatedRoute,

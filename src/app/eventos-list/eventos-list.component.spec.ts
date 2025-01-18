@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EventosListComponent } from './eventos-list.component';
+import { LazyLoadDirective } from '../lazy-load.directive';
 
 describe('EventosListComponent', () => {
   let component: EventosListComponent;
@@ -8,7 +9,7 @@ describe('EventosListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EventosListComponent]
+      imports: [EventosListComponent, LazyLoadDirective]
     })
     .compileComponents();
 
