@@ -4,11 +4,12 @@ import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { LazyLoadDirective } from '../lazy-load.directive';
 
 @Component({
   selector: 'app-rutas-list',
   standalone: true,
-  imports: [HttpClientModule, ScrollingModule],
+  imports: [HttpClientModule, ScrollingModule, LazyLoadDirective],
   templateUrl: './rutas-list.component.html',
   styleUrl: './rutas-list.component.css'
 })
@@ -26,13 +27,13 @@ export class RutasListComponent implements OnInit {
   puedeMostrarMas: boolean = true;
   itemsPorPagina: number = 6;
   isLoading: boolean = false;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg';
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private httpClient: HttpClient,
     authService: AuthenticationService,
-    
   ) { }
 
   ngOnInit(): void {
@@ -52,38 +53,36 @@ export class RutasListComponent implements OnInit {
       next: rutas => {
         this.rutas = rutas.map(ruta => ({
           ...ruta,
-          name: ruta.name,
-          identifier: ruta.identifier,
-          image: ruta.image,
+          image: ruta.image || this.placeholderImage, // Imagen predeterminada si falta
+          addressLocality: ruta.addressLocality || 'Localidad desconocida' // Localidad predeterminada
         }));
         this.loadMoreItems();
       },
       error: err => {
-        console.error('Error al obtener los eventos:', err);
+        console.error('Error al obtener las rutas:', err);
       }
     });
   }
-    @HostListener('window:scroll', [])
-    onScroll(): void {
-      if (this.isLoading) return;
-  
-      // Usar debounce para evitar llamadas frecuentes
-      clearTimeout(this.scrollTimeout);
-      this.scrollTimeout = setTimeout(() => {
-        const scrollPos = window.scrollY + window.innerHeight;
-        if (scrollPos >= document.documentElement.offsetHeight - 50) {
-          this.loadMoreItems();
-        }
-      }, 200);
-    }
-    private scrollTimeout: any;
-  
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    if (this.isLoading) return;
+
+    clearTimeout(this.scrollTimeout);
+    this.scrollTimeout = setTimeout(() => {
+      const scrollPos = window.scrollY + window.innerHeight;
+      if (scrollPos >= document.documentElement.offsetHeight - 50) {
+        this.loadMoreItems();
+      }
+    }, 200);
+  }
+  private scrollTimeout: any;
+
   loadMoreItems(): void {
     if (this.isLoading || this.displayedRutas.length >= this.rutas.length) return;
 
     this.isLoading = true;
 
-    // Usa un timer para simular retardo si necesitas demostrar la carga progresiva
     setTimeout(() => {
       const start = this.displayedRutas.length;
       const end = Math.min(start + this.itemsPorPagina, this.rutas.length);
@@ -91,9 +90,8 @@ export class RutasListComponent implements OnInit {
 
       this.isLoading = false;
       this.puedeMostrarMas = this.displayedRutas.length < this.rutas.length;
-    }, 500); 
+    }, 500);
   }
-
 
   filtrarResultados(): void {
     const resultadosFiltrados = this.searchTerm
@@ -103,25 +101,28 @@ export class RutasListComponent implements OnInit {
     this.puedeMostrarMas = resultadosFiltrados.length > this.maxResultados;
     this.resultadosBusqueda = resultadosFiltrados.slice(0, this.maxResultados);
   }
+
   mostrarMas(): void {
     this.maxResultados += this.itemsPorPagina;
     this.filtrarResultados();
   }
+
   mostrarMenos(): void {
     this.maxResultados = Math.max(this.minResultados, this.maxResultados - this.itemsPorPagina);
     this.filtrarResultados();
   }
+
   buscar(termino: string): void {
     this.searchTerm = termino;
     this.filtrarResultados();
   }
 
   rutaTrack(index: number, item: Ruta) {
-      return item.identifier; // O alguna otra propiedad única
-    }
+    return item.identifier; // Propiedad única para seguimiento
+  }
 
-    verDetalle(identifier: string): void {
-      console.log(`Redirigiendo al detalle de ruta con identificador: ${identifier}`);
-      this.router.navigate(['/detalle-ruta', identifier]);
-    } 
+  verDetalle(identifier: string): void {
+    console.log(`Redirigiendo al detalle de ruta con identificador: ${identifier}`);
+    this.router.navigate(['/detalle-ruta', identifier]);
+  }
 }

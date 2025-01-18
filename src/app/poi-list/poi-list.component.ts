@@ -4,11 +4,13 @@ import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { LazyLoadDirective } from '../lazy-load.directive'; // Importa la directiva
+
 
 @Component({
   selector: 'app-poi-list',
   standalone: true,
-  imports: [HttpClientModule, ScrollingModule],
+  imports: [HttpClientModule, ScrollingModule, LazyLoadDirective],
   templateUrl: './poi-list.component.html',
   styleUrls: ['./poi-list.component.css']
 })
@@ -25,6 +27,8 @@ export class PoiListComponent implements OnInit {
   puedeMostrarMas: boolean = true;
   itemsPorPagina: number = 9;
   isLoading: boolean = false;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg'; // Ruta a una imagen de reemplazo
+
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -53,6 +57,8 @@ export class PoiListComponent implements OnInit {
           ...poi,
           name: poi.name,
           identifier: poi.identifier,
+          latitude: poi.latitude,
+          longitude: poi.longitude,
           image: poi.image, // Solo las propiedades necesarias
         }));
         this.loadMoreItems();

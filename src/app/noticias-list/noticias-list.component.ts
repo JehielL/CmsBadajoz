@@ -3,17 +3,20 @@ import { Noticia } from '../interfaces/noticia.model';
 import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LazyLoadDirective } from '../lazy-load.directive'; // Importa la directiva
+
 
 @Component({
   selector: 'app-noticias-list',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, LazyLoadDirective],
   templateUrl: './noticias-list.component.html',
   styleUrl: './noticias-list.component.css'
 })
 export class NoticiasListComponent implements OnInit {
 
 
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg'; // Ruta a una imagen de reemplazo
 
   activedLoader = true;
   noticias: Noticia[] = [];
@@ -25,7 +28,7 @@ export class NoticiasListComponent implements OnInit {
   minResultados: number = 0;
   resultadosBusqueda: Noticia[] = [];
   puedeMostrarMas: boolean = true;
-  itemsPorPagina: number = 6;
+  itemsPorPagina: number = 4;
   isLoading: boolean = false;
 
   constructor(

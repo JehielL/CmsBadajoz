@@ -3,11 +3,13 @@ import { Empresa } from '../interfaces/empresas.model';
 import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LazyLoadDirective } from '../lazy-load.directive'; // Importa la directiva
+
 
 @Component({
   selector: 'app-empresas-list',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, LazyLoadDirective],
   templateUrl: './empresas-list.component.html',
   styleUrl: './empresas-list.component.css'
 })
@@ -26,6 +28,8 @@ export class EmpresasListComponent implements OnInit {
   puedeMostrarMas: boolean = true;
   itemsPorPagina: number = 6;
   isLoading: boolean = false;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg'; // Ruta a una imagen de reemplazo
+
 
   constructor(
     private activatedRoute: ActivatedRoute,
