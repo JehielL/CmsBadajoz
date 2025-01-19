@@ -17,18 +17,16 @@ export class NoticiasComponent implements OnInit {
 
   noticias: Noticia[] = [];
   currentNoticia: Noticia | undefined;
-
-
   activedLoader = true;
 
   constructor(
-    private activedRoute : ActivatedRoute,
+    private activedRoute: ActivatedRoute,
     private router: Router,
-    private  httpClient: HttpClient,
+    private httpClient: HttpClient,
     authService: AuthenticationService
-  ){}
-  ngOnInit(): void {
+  ) {}
 
+  ngOnInit(): void {
     AOS.init({
       duration: 1500, 
       offset: 200,   
@@ -44,21 +42,20 @@ export class NoticiasComponent implements OnInit {
 
     this.httpClient.get<Noticia[]>(url).subscribe({
       next: noticias => {
-        
-        console.log('Noticias recibidas:', noticias);
-        this.noticias = noticias;
+        // Filtrar noticias con imágenes vacías o nulas
+        this.noticias = noticias.filter(noticia => noticia.image && noticia.image.trim() !== '');
+        console.log('Noticias válidas:', this.noticias);
+
+        // Cargar la primera noticia en el carrusel
         this.loadNoticia(0);
-      }, error: err => {
+      },
+      error: err => {
         console.error('Error al obtener las noticias:', err);
-        console.error('Estado HTTP:', err.status);
-        console.error('Mensaje de error:', err.message);
       }
-    })
-    
+    });
   }
 
   carruselIntervalo = 2000;
-
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
@@ -94,9 +91,9 @@ export class NoticiasComponent implements OnInit {
       this.currentNoticia = this.noticias[index];
     }
   }
+
   onCarouselSlideChanged(event: any): void {
     const index = event.current;
-    this.loadNoticia(index);  // Cargar la ruta correspondiente al índice de la diapositiva
+    this.loadNoticia(index); // Cargar la noticia correspondiente al índice de la diapositiva
   }
-
 }

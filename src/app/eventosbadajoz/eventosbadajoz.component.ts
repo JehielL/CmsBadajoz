@@ -95,7 +95,7 @@ export class EventosbadajozComponent implements OnInit, AfterViewChecked {
 
   handleImageError(event: Event): void {
     const target = event.target as HTMLImageElement;
-    target.src = 'https://www.aytobadajoz.es/v20/assets/images/aytobadajoz_cover.jpg';
+    target.src = '../assets/DIPUTACION-BADAJOZ-1024x1024.jpg';
   }
 
   ngAfterViewChecked(): void {

@@ -15,7 +15,7 @@
     <ng-template ngbSlide>
       <div class="row custom-container container-fluid">
         <div class="col-md-6 mb-3 mb-md-0 custom-img">
-          <img [src]="evento.image || 'https://www.aytobadajoz.es/v20/assets/images/aytobadajoz_cover.jpg'"
+          <img [src]="evento.image || 'assets/'" alt="{{evento.name}}" 
             (error)="handleImageError($event)" loading="lazy">
         </div>
         <div class="col-md-6">

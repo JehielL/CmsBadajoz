@@ -29,41 +29,30 @@ export class EmpresasComponent implements OnInit{
    
   }
   ngOnInit(): void {
-    console.log("Componente Rutas iniciado");
+    console.log("Componente Empresas iniciado");
   
     setTimeout(() => {
       this.activedLoader = false;
     }, 1100);
   
-    AOS.init({
-      duration: 1500,
-      offset: 200,
-      once: true,
-    });
-  
-    window.scrollTo(0, 0);
-  
-   
-    const url = '/assets/response_empresas.json';  
+    const url = '/assets/response_empresas.json';
   
     console.log('Realizando solicitud a la URL:', url);
   
     this.httpClient.get<Empresa[]>(url).subscribe({
       next: empresas => {
-        // Ordenar eventos por fecha en orden descendente
-        console.log('Eventos en el frontend:', this.empresas);
-        this.empresas = empresas;
-
+        this.empresas = empresas.filter(empresa => empresa.image && empresa.image.trim() !== '');
+        console.log('Empresas válidas:', this.empresas);
+  
         this.loadEmpresa(0);
-        
       },
       error: err => {
         console.error('Error al obtener las empresas:', err);
-        console.error('Estado HTTP:', err.status);
-        console.error('Mensaje de error:', err.message);
       }
     });
   }
+  
+  
   
   
   generateMapUrl(latitude: number, longitude: number): string {
