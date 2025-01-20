@@ -8,11 +8,12 @@ import * as AOS from 'aos';
 import { DatePipe } from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
 import * as L from 'leaflet';
+import { LazyLoadDirective } from '../lazy-load.directive'; 
 
 @Component({
   selector: 'app-eventosbadajoz',
   standalone: true,
-  imports: [NgbCarouselModule, HttpClientModule, DatePipe],
+  imports: [NgbCarouselModule, HttpClientModule, DatePipe, LazyLoadDirective],
   templateUrl: './eventosbadajoz.component.html',
   styleUrls: ['./eventosbadajoz.component.css']
 })
@@ -25,6 +26,7 @@ export class EventosbadajozComponent implements OnInit, AfterViewChecked {
   private mapInitialized = false;
   currentEvento: EventosBadajoz | undefined;
   authService: AuthenticationService | undefined;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-1024x1024.jpg';
 
   @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 

@@ -10,7 +10,7 @@
     @if (resultadosBusqueda.length > 0) {
     <div class="search-container">
       <ul class="list-group">
-        @for (poi of resultadosBusqueda; track pois) {
+        @for (poi of resultadosBusqueda; track poi.identifier) {
         <li class="list-group-item" (click)="verDetalle(poi.identifier.toString())">
           {{ poi.name }}
         </li>
@@ -21,13 +21,21 @@
   </div>
 
   <div class="row row-cols-1 row-cols-lg-3 g-3 mt-5 container-fluid custom" loading="lazy">
-    @for (poi of displayedPois; track pois) {
+    @for (poi of displayedPois; track poi.identifier) {
     @if (poi.image && (poi.image.startsWith('http') || poi.image.startsWith('https'))) {
     <div class="col">
       <div class="container">
         <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: #611919;">
           <div class="image-container">
-            <img [src]="poi.image || placeholderImage" alt="Punto de Interés">
+            <img 
+  appLazyLoad 
+  [imageUrl]="poi.image" 
+  [placeholderImage]="placeholderImage" 
+  alt="{{ poi.name }}">
+
+
+
+
           </div>
           <div class="d-flex flex-column p-4 text-white text-shadow-1">
             <h3 class="display-6 lh-1 fw-bold text-with-shadow text-left">

@@ -5,11 +5,12 @@ import { Noticia } from '../interfaces/noticia.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from '../services/authentication.service';
+import { LazyLoadDirective } from '../lazy-load.directive';
 
 @Component({
   selector: 'app-noticias',
   standalone: true,
-  imports: [NgbCarouselModule, HttpClientModule],
+  imports: [NgbCarouselModule, HttpClientModule, LazyLoadDirective],
   templateUrl: './noticias.component.html',
   styleUrl: './noticias.component.css'
 })
@@ -18,6 +19,7 @@ export class NoticiasComponent implements OnInit {
   noticias: Noticia[] = [];
   currentNoticia: Noticia | undefined;
   activedLoader = true;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg';
 
   constructor(
     private activedRoute: ActivatedRoute,

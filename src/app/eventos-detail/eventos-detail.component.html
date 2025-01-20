@@ -5,7 +5,8 @@
 @if (evento) {
     <div class="row container-fluid custom-container">
       <div class="col-md-6 mb-3 mb-md-0 custom-img">
-        <img [src]="evento.image" loading="lazy" alt="{{evento.name}}">
+        <img appLazyLoad [imageUrl]="evento.image || ''" [placeholderImage]="placeholderImage"
+        alt="{{ evento.name }}">
       </div>
       <div class="col-md-6">
         <h1 class="h2 text-light">{{evento.name}}</h1>

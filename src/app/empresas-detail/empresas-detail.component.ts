@@ -3,17 +3,19 @@ import { Empresa } from '../interfaces/empresas.model';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import * as L from 'leaflet';
+import { LazyLoadDirective } from '../lazy-load.directive';
 
 @Component({
   selector: 'app-empresas-detail',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, LazyLoadDirective],
   templateUrl: './empresas-detail.component.html',
   styleUrl: './empresas-detail.component.css'
 })
 export class EmpresasDetailComponent {
 
   private map: any;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg';
   private mapInitialized = false;
   
     empresa: Empresa | undefined;

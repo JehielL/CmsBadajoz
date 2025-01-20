@@ -4,43 +4,39 @@
     <div class="spinner1"></div>
   </div>
 </div>
-
 }@else{
-<h1  class="display-4 fst-italic text-center fixed-title ">
+<h1 class="display-4 fst-italic text-center fixed-title ">
   <span class="custom-name text-white" style="font-weight: 600;">PUNTOS DE INTERES</span>
 </h1>
+
 <ngb-carousel (slide)="onCarouselSlideChanged($event)">
-  @for (evento  of pois; track evento  ) {
-
-
-
-  <ng-template ngbSlide (slide)="onCarouselSlideChanged($event)">
+  @for (evento of pois; track evento.identifier) {
+  <ng-template ngbSlide>
     <div class="row container-fluid custom-container">
       <div class="col-md-6 mb-3 mb-md-0 custom-img">
-        <img [src]="evento.image" loading="lazy">
+
+        <div class="image-wrapper">
+          <img appLazyLoad [imageUrl]="evento.image" [placeholderImage]="placeholderImage"
+            alt="{{ evento.name }}">
+
+
+        </div>
+
       </div>
       <div class="col-md-6">
         <h1 class="h2 text-light">{{evento.name}}</h1>
         <div class="mb-3">
           <p class="btn btn-outline-light me-2">Localidad: {{evento.addressLocality}}</p>
           <p class="btn btn-outline-light me-2">Calle: {{evento.streetAddress}}</p>
-          <p href="tel:123456789" class="btn btn-outline-light me-2">Telefono📞: {{evento.telephone}}</p>
-
-
+          <p class="btn btn-outline-light me-2">Teléfono📞: {{evento.telephone}}</p>
         </div>
 
         <div class="fw-bold container-fluid">
           <p class="text-white" [innerHTML]="evento.description"></p>
         </div>
-
       </div>
-
-
     </div>
   </ng-template>
-
-
-
   }
 </ngb-carousel>
 }

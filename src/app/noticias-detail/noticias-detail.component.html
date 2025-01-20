@@ -5,7 +5,11 @@
 @if (noticia) {
     <div class="row container-fluid custom-container">
       <div class="col-md-6 mb-3 mb-md-0 custom-img">
-        <img [src]="noticia.image" loading="lazy" alt="{{noticia.name}}">
+        <img 
+              appLazyLoad 
+              [imageUrl]="noticia.image" 
+              [placeholderImage]="placeholderImage" 
+              alt="{{ noticia.name }}">
       </div>
       <div class="col-md-6">
         <h1 class="h2 text-light">{{noticia.name}}</h1>

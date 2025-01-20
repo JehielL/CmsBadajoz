@@ -5,6 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { LazyLoadDirective } from '../lazy-load.directive';
+import { CacheService } from '../services/cache.service';
+
 
 @Component({
   selector: 'app-rutas-list',
@@ -33,6 +35,7 @@ export class RutasListComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private httpClient: HttpClient,
+    private cacheService: CacheService,
     authService: AuthenticationService,
   ) { }
 

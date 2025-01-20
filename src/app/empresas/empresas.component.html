@@ -1,38 +1,37 @@
-@if (activedLoader){
-    <div class="center">
-        <div class="spinner">
-          <div class="spinner1"></div>
-        </div>
-      </div>
-      
-}@else{
-  <h1  class="display-4 fst-italic text-center fixed-title">
-	  <span class="custom-name text-white" style="font-weight: 600;">COMERCIO LOCAL</span>
+@if (activedLoader) {
+	<div class="center">
+	  <div class="spinner">
+		<div class="spinner1"></div>
+	  </div>
+	</div>
+  } @else {
+	<h1 class="display-4 fst-italic text-center fixed-title">
+	  <span class="custom-name text-white" style="font-weight: 600;">EMPRESAS BADAJOZ</span>
 	</h1>
   
-	<!-- Solo un ngb-carousel para todas las rutas -->
 	<ngb-carousel (slide)="onCarouselSlideChanged($event)">
-		@for (empresa of empresas; track empresa) {
-		  <ng-template ngbSlide>
-			<div class="row custom-container container-fluid">
-			  <div class="col-md-6 mb-3 mb-md-0 custom-img">
-				<img [src]="empresa.image" loading="lazy" alt="{{empresa.name}}">
+	  @for (empresa of empresas; track empresa.identifier) {
+		<ng-template ngbSlide>
+		  <div class="row custom-container container-fluid">
+			<div class="col-md-6 mb-3 mb-md-0 custom-img">
+			  <img appLazyLoad [imageUrl]="empresa.image || ''" [placeholderImage]="placeholderImage" 
+				   alt="{{ empresa.name }}">
+			</div>
+			<div class="col-md-6">
+			  <h1 class="h2 text-light">{{ empresa.name }}</h1>
+			  <div class="mb-3">
+				<p class="btn btn-outline-light me-2">Provincia: {{ empresa.addressRegion }}</p>
+				<p class="btn btn-outline-light me-2">Localidad: {{ empresa.streetAddress }}</p>
+				<p class="btn btn-outline-light me-2">Idioma: {{ empresa.availableLanguage }}</p>
+				
 			  </div>
-			  <div class="col-md-6">
-				<h1 class="h2 text-light">{{empresa.name}}</h1>
-				<div class="mb-3">
-				  <p class="btn btn-outline-light me-2">Provincia: {{empresa.addressRegion}}</p>
-				  <p class="btn btn-outline-light me-2">Localidad: {{empresa.addressLocality}}</p>
-				  <p class="btn btn-outline-light me-2">Idioma: {{empresa.availableLanguage}}</p>
-				  <p class="btn btn-outline-light me-2">Email📞🌟: {{empresa.email}}</p>
-				</div>
-				<div class="fw-bold container-fluid">
-				  <p class="text-white" [innerHTML]="empresa.description"></p>
-				</div>
+			  <div class="fw-bold container-fluid">
+				<p class="text-white" [innerHTML]="empresa.description"></p>
 			  </div>
 			</div>
-		  </ng-template>
-		}
-	  </ngb-carousel>
-	  
-}
+		  </div>
+		</ng-template>
+	  }
+	</ngb-carousel>
+  }
+  

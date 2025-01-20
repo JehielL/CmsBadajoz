@@ -6,11 +6,14 @@
   import { Multimedia } from '../interfaces/multimedia.model';
   import { AuthenticationService } from '../services/authentication.service';
   import { ActivatedRoute, Router } from '@angular/router';
+  import { LazyLoadDirective } from '../lazy-load.directive'; 
+
+  
 
   @Component({
     selector: 'app-multimedia',
     standalone: true,
-    imports: [NgbCarouselModule, FormsModule, HttpClientModule],
+    imports: [NgbCarouselModule, FormsModule, HttpClientModule, LazyLoadDirective],
     templateUrl: './multimedia.component.html',
     styleUrl: './multimedia.component.css'
   })
@@ -19,6 +22,7 @@
     pois: Multimedia[] = []; // Datos obtenidos de la API
     authService: AuthenticationService | undefined;
     currentPois: Multimedia | undefined; // El POI que se está mostrando actualmente en el carrusel
+    placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-1024x1024.jpg';
 
     @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 
@@ -36,12 +40,7 @@
         this.activedLoader = false;
       }, 1100);
     
-      AOS.init({
-        duration: 1500,
-        offset: 200,
-        once: true,
-      });
-    
+      
       window.scrollTo(0, 0);
     
       const url = '/assets/response_poi.json';  

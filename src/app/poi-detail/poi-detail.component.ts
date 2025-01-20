@@ -3,17 +3,20 @@ import { Multimedia } from '../interfaces/multimedia.model';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import * as L from 'leaflet';
+import { LazyLoadDirective } from '../lazy-load.directive'; 
 
 @Component({
   selector: 'app-poi-detail',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, LazyLoadDirective],
   templateUrl: './poi-detail.component.html',
   styleUrls: ['./poi-detail.component.css']
 })
 export class PoiDetailComponent implements OnInit, AfterViewChecked {
   poi: Multimedia | undefined;
   private map: any;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg'; // Ruta a una imagen de reemplazo
+
   private mapInitialized = false;
 
   constructor(

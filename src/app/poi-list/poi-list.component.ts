@@ -4,7 +4,9 @@ import { AuthenticationService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { LazyLoadDirective } from '../lazy-load.directive'; // Importa la directiva
+import { LazyLoadDirective } from '../lazy-load.directive'; 
+import { CacheService } from '../services/cache.service';
+
 
 
 @Component({
@@ -25,7 +27,7 @@ export class PoiListComponent implements OnInit {
   minResultados: number = 0;
   resultadosBusqueda: Multimedia[] = [];
   puedeMostrarMas: boolean = true;
-  itemsPorPagina: number = 9;
+  itemsPorPagina: number = 6;
   isLoading: boolean = false;
   placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg'; // Ruta a una imagen de reemplazo
 
@@ -34,6 +36,7 @@ export class PoiListComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private httpClient: HttpClient,
+    private cacheService: CacheService,
     authService: AuthenticationService
   ) { }
 
@@ -52,17 +55,17 @@ export class PoiListComponent implements OnInit {
 
     this.httpClient.get<Multimedia[]>(url).subscribe({
       next: pois => {
-        // Reducir los datos si contienen propiedades irrelevantes
         this.pois = pois.map(poi => ({
           ...poi,
           name: poi.name,
           identifier: poi.identifier,
           latitude: poi.latitude,
           longitude: poi.longitude,
-          image: poi.image, // Solo las propiedades necesarias
+          image: poi.image && poi.image.trim() !== '' ? poi.image : this.placeholderImage, 
         }));
         this.loadMoreItems();
-      },
+      }
+      ,
       error: err => {
         console.error('Error al obtener los POIs:', err);
       }
@@ -88,19 +91,26 @@ export class PoiListComponent implements OnInit {
 
   loadMoreItems(): void {
     if (this.isLoading || this.displayedPois.length >= this.pois.length) return;
-
+  
     this.isLoading = true;
-
-    // Usa un timer para simular retardo si necesitas demostrar la carga progresiva
+  
     setTimeout(() => {
       const start = this.displayedPois.length;
       const end = Math.min(start + this.itemsPorPagina, this.pois.length);
-      this.displayedPois = [...this.displayedPois, ...this.pois.slice(start, end)];
-
+  
+      this.displayedPois = [
+        ...this.displayedPois,
+        ...this.pois.slice(start, end).map(poi => ({
+          ...poi,
+          image: poi.image || this.placeholderImage // Asigna el placeholder si no hay imagen
+        }))
+      ];
+  
       this.isLoading = false;
       this.puedeMostrarMas = this.displayedPois.length < this.pois.length;
-    }, 500); 
+    }, 500);
   }
+  
 
 
   filtrarResultados(): void {

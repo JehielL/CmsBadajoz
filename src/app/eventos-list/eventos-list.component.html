@@ -22,33 +22,35 @@
 
   <div class="row row-cols-1 row-cols-lg-3 g-3 mt-5 container-fluid custom">
     @for (evento of displayedEvento; track eventos) {
-      <div class="col">
-        <div class="container">
-          <div class="card card-cover h-50 overflow-hidden rounded-4 shadow-lg" style="background-color: #611919;">
-            <div class="image-container" [appLazyLoad]="evento.image || placeholderImage"
-              style="background-size: cover; background-position: center;">
-            </div>
-            <div class="d-flex flex-column p-3 text-white text-shadow-1">
-              <h3 class="display-6 lh-1 fw-bold text-with-shadow text-left">
-                {{ evento.name }}
-              </h3>
-              <div class="mt-auto">
-                <p class="card-info">
-                  <i class="fa-solid fa-calendar-days"></i> {{ evento.startDate | date:'dd/MM/yyyy' }}
-                </p>
-                <p class="card-info">
-                  <i class="fa-solid fa-location-dot"></i> {{ evento.addressLocality }}
-                </p>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-outline-light w-50" (click)="verDetalle(evento.identifier.toString())">
-                    Ver más
-                  </button>
-                </div>
+    <div class="col">
+      <div class="container">
+        <div class="card card-cover h-50 overflow-hidden rounded-4 shadow-lg" style="background-color: #611919;">
+          <div class="image-container">
+            <img appLazyLoad [imageUrl]="evento.image ?? placeholderImage" [placeholderImage]="placeholderImage"
+              alt="{{ evento.name }}">
+
+          </div>
+          <div class="d-flex flex-column p-3 text-white text-shadow-1">
+            <h3 class="display-6 lh-1 fw-bold text-with-shadow text-left">
+              {{ evento.name }}
+            </h3>
+            <div class="mt-auto">
+              <p class="card-info">
+                <i class="fa-solid fa-calendar-days"></i> {{ evento.startDate | date:'dd/MM/yyyy' }}
+              </p>
+              <p class="card-info">
+                <i class="fa-solid fa-location-dot"></i> {{ evento.addressLocality }}
+              </p>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-outline-light w-50" (click)="verDetalle(evento.identifier.toString())">
+                  Ver más
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     }
   </div>
 </div>

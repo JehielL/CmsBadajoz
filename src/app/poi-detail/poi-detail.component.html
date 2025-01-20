@@ -6,13 +6,15 @@
 <div class="container-fluid custom-container">
   <div class="info-grid">
     <!-- Columna para la imagen -->
+  
     <div class="custom-img">
-      <img [src]="poi.image" loading="lazy" alt="{{poi.name}}">
+      <img appLazyLoad [imageUrl]="poi.image" [placeholderImage]="placeholderImage"
+        alt="{{ poi.name }}">
+
+
     </div>
 
-    <!-- Columna para la información -->
     <div class="info-column">
-      <!-- Nombre del POI -->
       <div class="info-item">
         <h2>{{poi.name}}</h2>
       </div>

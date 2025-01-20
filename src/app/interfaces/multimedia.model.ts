@@ -10,7 +10,7 @@ export interface Multimedia {
   name: string;
   latitude: number;
   longitude: number;
-  image?: string; 
+  image: string; 
   extras: {
     status: boolean[];
     changed: string[];

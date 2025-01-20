@@ -1,16 +1,17 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import * as AOS from 'aos';
 import { NgbCarouselModule, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { Ruta } from '../interfaces/ruta.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from '../services/authentication.service';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { LazyLoadDirective } from '../lazy-load.directive';
+
 
 @Component({
   selector: 'app-rutas',
   standalone: true,
-  imports: [NgbCarouselModule, HttpClientModule],
+  imports: [NgbCarouselModule, HttpClientModule, LazyLoadDirective],
   templateUrl: './rutas.component.html',
   styleUrls: ['./rutas.component.css']
 })
@@ -19,6 +20,8 @@ export class RutasComponent implements OnInit {
   rutas: Ruta[] = [];  // Almacena todas las rutas que recibes del JSON
   currentRuta: Ruta | undefined;  // La ruta que se está mostrando actualmente en el carrusel
   authService: AuthenticationService | undefined;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg';
+
 
   @ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 
@@ -37,12 +40,7 @@ export class RutasComponent implements OnInit {
       this.activedLoader = false;
     }, 1100);
 
-    AOS.init({
-      duration: 1500,
-      offset: 200,
-      once: true,
-    });
-
+  
     window.scrollTo(0, 0);
 
     // Realizar la solicitud a la API usando el proxy

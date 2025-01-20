@@ -7,6 +7,7 @@ import { LazyLoadDirective } from '../lazy-load.directive'; // Importa la direct
 import { DatePipe } from '@angular/common';
 
 
+
 @Component({
   selector: 'app-eventos-list',
   standalone: true,

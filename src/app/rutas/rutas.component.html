@@ -16,9 +16,10 @@
 			<div class="row custom-container container-fluid">
 			  <div class="col-md-6 mb-3 mb-md-0 custom-img">
 				<img 
-				  [src]="ruta.image || 'https://www.aytobadajoz.es/v20/assets/images/aytobadajoz_cover.jpg'" 
-				  (error)="handleImageError($event)" 
-				  loading="lazy">
+				appLazyLoad 
+				[imageUrl]="ruta.image" 
+				[placeholderImage]="placeholderImage"
+				alt="{{ ruta.name }}">
 			  </div>
 			  
 			  <div class="col-md-6">

@@ -2,17 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { Ruta } from '../interfaces/ruta.model';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LazyLoadDirective } from '../lazy-load.directive'; 
+
 
 @Component({
   selector: 'app-ruta-detail',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, LazyLoadDirective],
   templateUrl: './ruta-detail.component.html',
   styleUrl: './ruta-detail.component.css'
 })
 export class RutaDetailComponent implements OnInit {
   
   ruta: Ruta | undefined;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-DESTINO.jpg';
+
   
     constructor(
       private route: ActivatedRoute,

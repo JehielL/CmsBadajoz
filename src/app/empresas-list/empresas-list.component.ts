@@ -40,27 +40,29 @@ export class EmpresasListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log("Componente RutasList iniciado");
-
+    console.log("Componente EmpresasList iniciado");
+  
     setTimeout(() => {
       this.activedLoader = false;
     }, 1100);
-
+  
     window.scrollTo(0, 0);
-
+  
     const url = '/assets/response_empresas.json';
-
+  
     console.log('Realizando solicitud a la URL:', url);
-
+  
     this.httpClient.get<Empresa[]>(url).subscribe({
       next: empresas => {
-        this.empresas = empresas.map(evento => ({
-          ...evento,
-          name: evento.name,
-          identifier: evento.identifier,
-          image: evento.image,
-        }));
-
+        this.empresas = empresas
+          .filter(empresa => empresa.image && empresa.image.trim() !== '') // Ignora imágenes vacías
+          .map(empresa => ({
+            ...empresa,
+            name: empresa.name,
+            identifier: empresa.identifier,
+            image: empresa.image,
+          }));
+  
         this.loadMoreItems();
       },
       error: err => {
@@ -68,6 +70,7 @@ export class EmpresasListComponent implements OnInit {
       }
     });
   }
+  
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (this.isLoading) return;

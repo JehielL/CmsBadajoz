@@ -4,11 +4,12 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import * as L from 'leaflet';
 import { DatePipe } from '@angular/common';
+import { LazyLoadDirective } from '../lazy-load.directive';
 
 @Component({
   selector: 'app-eventos-detail',
   standalone: true,
-  imports: [HttpClientModule, DatePipe],
+  imports: [HttpClientModule, DatePipe, LazyLoadDirective],
   templateUrl: './eventos-detail.component.html',
   styleUrl: './eventos-detail.component.css'
 })
@@ -17,6 +18,7 @@ export class EventosDetailComponent implements OnInit {
   private map: any;
   private mapInitialized = false;
   evento: EventosBadajoz | undefined;
+  placeholderImage: string = '/assets/DIPUTACION-BADAJOZ-1024x1024.jpg';
 
   constructor(
     private route: ActivatedRoute,
