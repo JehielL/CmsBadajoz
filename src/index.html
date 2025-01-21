@@ -14,8 +14,84 @@
 </head>
 <body>
   <app-root></app-root>
+  
+  <div id="connect-image">
+  
+  <!-- Carga de roslibjs y script de conexión -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/1.1.0/roslib.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('%c[ROS] Intentando conectar...', 'color: cyan; font-weight: bold;');
+        
+        if (typeof ROSLIB === 'undefined') {
+            console.error('%c[ROS] roslibjs no se ha cargado correctamente.', 'color: red;');
+            return;
+        }
+
+        var ros = new ROSLIB.Ros({
+            url: 'ws://192.168.4.101:9090'
+        });
+
+        ros.on('connection', function () {
+            console.log('%c[ROS] Conectado al servidor WebSocket', 'color: green; font-weight: bold;');
+            var imgElement = document.getElementById("connect-image");
+            if (imgElement) {
+                imgElement.src = "images/correcto.png";
+            }
+        });
+
+        ros.on('error', function (error) {
+            console.error('%c[ROS] Error de conexión:', 'color: red; font-weight: bold;', error);
+        });
+
+        ros.on('close', function () {
+            console.warn('%c[ROS] Conexión cerrada.', 'color: orange; font-weight: bold;');
+        });
+
+        var tts_msg = new ROSLIB.Topic({
+            ros: ros,
+            name: '/text2speech',
+            messageType: 'std_msgs/String'
+        });
+
+        tts_msg.subscribe(function (message) {
+            console.log('%c[ROS] Mensaje recibido en /text2speech:', 'color: purple; font-weight: bold;', message.data);
+            speakText(message.data);
+        });
+
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                var msg = new SpeechSynthesisUtterance(text);
+                msg.lang = 'es-ES';
+                msg.rate = 1.0;
+                msg.pitch = 1.1;
+
+                var voices = speechSynthesis.getVoices();
+                var selectedVoice = voices.find(voice => voice.name.includes("Spanish (Latin America)+Pedro"));
+
+                if (selectedVoice) {
+                    msg.voice = selectedVoice;
+                    console.log('%c[ROS] Usando la voz:', 'color: blue; font-weight: bold;', selectedVoice.name);
+                } else {
+                    console.warn('%c[ROS] No se encontró la voz Spanish (Latin America)+Pedro, usando predeterminada.', 'color: orange;');
+                }
+
+                msg.onstart = () => console.log('%c[ROS] Reproduciendo mensaje:', 'color: purple; font-weight: bold;', text);
+                msg.onend = () => console.log('%c[ROS] Síntesis de voz completada.', 'color: green; font-weight: bold;');
+                msg.onerror = (e) => console.error('%c[ROS] Error en síntesis de voz:', 'color: red;', e);
+
+                speechSynthesis.speak(msg);
+            } else {
+                console.error('%c[ROS] La síntesis de voz no es compatible con este navegador.', 'color: red;');
+            }
+        }
+
+        speechSynthesis.onvoiceschanged = function () {
+            listVoices();
+            speakText("Probando voz por defecto");
+        };
+    });
+  </script>
 </body>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-crossorigin=""></script>
 </html>

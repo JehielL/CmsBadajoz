@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="artyom.window.min.js"></script>
+    <script src="nipplejs.min.js"></script>
+    <style type="text/css">
+        body,
+        html {
+            height: auto;
+            width: auto;
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+        }
+
+        #connect-item {
+            float: right;
+            background-color: inherit;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+
+        #img {
+            background-color: inherit;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+
+        .move {
+            text-align: center;
+        }
+
+        .move1 {
+            margin-top: 60px;
+            height: 80px;
+        }
+
+        .move2 {
+            height: 80px;
+        }
+
+        .move3 {
+            margin-bottom: 40px;
+            height: 80px;
+        }
+
+        #joystick-container {
+            /* display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 150px;
+            height: 150px;
+            margin:  auto;
+            position: relative;
+            background: rgba(200, 200, 200, 0.2);
+            border-radius: 10px; */
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            position: relative;
+            background: #f0f0f0;
+            border-radius: 50%;
+
+        }
+
+        #mano {
+            background-color: inherit;
+            border-radius: 5px;
+            border: none;
+            position: relative;
+            bottom: 15%;
+        }
+
+        #b1,
+        #b2,
+        #b3,
+        #b4 {
+            background-color: inherit;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .eyes {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #str1 {
+            background-color: rgb(95, 25, 112);
+            color: white;
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        #str2 {
+            background-color: rgb(95, 25, 112);
+            color: white;
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        #str3 {
+            background-color: rgb(95, 25, 112);
+            color: white;
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .asistance {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .field {
+            text-align: center;
+
+        }
+
+        #opciones {
+            background-color: inherit;
+            margin-left: 20px;
+            border-radius: 50%;
+            border: none;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        #add {
+            float: left;
+            width: 60px;
+            height: 60px;
+            background-color: inherit;
+            border: none;
+        }
+
+        #teclado {
+            background-color: rgb(95, 25, 112);
+            color: white;
+            font-size: 24px;
+            width: 180px;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        #menu {
+            float: right;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: inherit;
+            border: none;
+        }
+
+        #microfono,
+        #telefono {
+            filter: invert(0.7);
+        }
+
+        .input {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .remove {
+            float: right;
+            width: 20px;
+            height: 30px;
+            border: none;
+            background-color: red;
+        }
+
+        .textBox {
+            float: left;
+            flex: 1;
+            background-color: #f1f1f1;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(61, 61, 61);
+            display: flex;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+        .sidenav .closebtn:hover {
+            color: white;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: #c9c8c8;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavPhrase()">&times;</a>
+
+    </div>
+
+    <div id="pointsNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+    <div class="container">
+        <div class="begin">
+            <button id="img"></button>
+            <button id="connect-item"><img src="images/Spinner-1.4s-200px.gif" id="connect-image" width="40"
+                    height="40"></button>
+        </div>
+
+        <div id="joystick-container"></div>
+
+        <!-- <div class="move">
+            <div class="move1">
+                <button id="b1" ontouchstart='startMove(moveUp)' ontouchend='stopMove()' ontouchcancel='stopMove()'
+                    ontouchleave='stopMove()'
+                    style="background-image: url(images/Flecha_up.png); background-size: cover; width: 75px; height: 75px;"></button>
+            </div>
+            <div class="move2">
+                <button id="b2" ontouchstart='startMove(moveLeft)' ontouchend='stopMove()' ontouchcancel='stopMove()'
+                    ontouchleave='stopMove()'
+                    style="background-image: url(images/Flecha_left.png); background-size: cover; width: 75px; height: 75px;"></button>
+                <button id="mano"><img src="images\boton stop.png" width="52" height="52"></button>
+                <button id="b3" ontouchstart='startMove(moveRight)' ontouchend='stopMove()' ontouchcancel='stopMove()'
+                    ontouchleave='stopMove()'
+                    style="background-image: url(images/Flecha_right.png); background-size: cover; width: 75px; height: 75px;"></button>
+            </div>
+            <div class="move3">
+                <button id="b4" ontouchstart='startMove(moveDown)' ontouchend='stopMove()' ontouchcancel='stopMove()'
+                    ontouchleave='stopMove()'
+                    style="background-image: url(images/Flecha_down.png); background-size: cover; width: 75px; height: 75px;"></button>
+            </div>
+
+        </div> -->
+
+        <div class="eyes">
+            <button id="str1" onclick='showArray()'>Random<br>Eyes</button>
+            <button id="str2" onclick='eye("fa")'>Normal<br>Eyes</button>
+            <button id="str3" onclick='eye("fd")'>Heart<br>Eyes</button>
+        </div>
+
+        <div class="asistance">
+            <!--<button id="opciones"><img id="telefono" src="images/telefono.PNG" width="45" height="45"></button>-->
+            <button id="opciones"><img id="points" src="images/PointMap.png" width="50" height="50"></button>
+            <button id="opciones"><img id="phrases" src="images/Phrases.png" width="50" height="50"></button>
+        </div>
+        <div class="input" id="call" style="visibility: hidden;">
+            <form action="" id="callForm" name="callForm">
+                <input id="canal" type="text" placeholder="canal" required>
+                <input type="button" name="call" value="Call" onclick="startBasicCall()" />
+                <input type="button" name="leave" value="Leave" onclick="leaveBasicCall()" />
+            </form>
+        </div>
+        <div class="input" id="phrasesinput" style="visibility: hidden;">
+            <form method="post" id="phrasesForm" name="phrasesForm">
+                <input type="text" name="phrase" value="" id="phrase">
+                <input type="button" name="add" value="Add" onclick="sConsole('add_phrase.php')" />
+            </form>
+        </div>
+        <div class="footer" id="main">
+            <button id="add"><img style="border-radius:50%;" src="images/faceRobotADD_Gris.png" width="52"
+                    height="47"></button>
+            <button class="enviar" id="teclado" onclick="aparecer()">Keyboard</button>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="eventemitter2.min.js"></script>
+    <script type="text/javascript" src="roslib.min.js"></script>
+
+    <!-- <script src="./AgoraRTC-N-4.2.1.js"></script>-->
+    <!--<script src="videollamada.js"></script>-->
+
+    <script type="text/javascript">
+
+        document.getElementById("points").addEventListener("click", openNav);
+        document.getElementById("phrases").addEventListener("click", openNavPhrase);
+
+
+        // Connecting to ROS
+        // -----------------
+
+        var ros = new ROSLIB.Ros({
+            url: 'ws://192.168.4.101:9090'
+        });
+
+        ros.on('connection', function () {
+            document.getElementById("connect-image").src = "images/correcto.png";
+            getPoints();
+            console.log('Connected to websocket server.');
+        });
+
+        ros.on('error', function (error) {
+            document.getElementById("connect-image").src = "images/error.png";
+            console.log('Error connecting to websocket server: ', error);
+        });
+
+        ros.on('close', function () {
+            document.getElementById("connect-image").src = "images/error.png";
+            console.log('Connection to websocket server closed.');
+        });
+
+
+        // Publish move robot
+        // ------------------
+        var move_msg = new ROSLIB.Topic({
+            ros: ros,
+            name: '/ard_cmd_vel',
+            messageType: 'geometry_msgs/Point'
+        });
+
+
+        //Variable para el  intervalo de movimiento
+
+        let moving = false; //flag para saber si el robot se esta moviendo
+        let moveFunction = null; //Funcion de movimiento activa
+        let moveInterval = null; //Intervalo de movimiento
+
+        var isRunning = false;
+
+        function moveUp() {
+            if (!isRunning) {
+                var v1 = new ROSLIB.Vector3({ x: 0.22, y: 0.0, z: 0.0 });
+                move_msg.publish(v1);
+                setTimeout(function () { isRunning = false; }, 300);
+                isRunning = true;
+            }
+        }
+        function moveDown() {
+            if (!isRunning) {
+                var v1 = new ROSLIB.Vector3({ x: -0.22, y: 0.0, z: 0.0 });
+                move_msg.publish(v1);
+                setTimeout(function () { isRunning = false; }, 300);
+                isRunning = true;
+            }
+        }
+
+        function moveLeft() {
+            if (!isRunning) {
+                var v1 = new ROSLIB.Vector3({ x: 0.0, y: 0.0, z: -0.7 });
+                move_msg.publish(v1);
+                setTimeout(function () { isRunning = false; }, 100);
+                isRunning = true;
+            }
+        }
+
+        function moveRight() {
+            if (!isRunning) {
+                var v1 = new ROSLIB.Vector3({ x: 0.0, y: 0.0, z: 0.7 });
+                move_msg.publish(v1);
+                setTimeout(function () { isRunning = false; }, 300);
+                isRunning = true;
+            }
+        }
+
+        const joystick = nipplejs.create({
+            zone: document.getElementById('joystick-container'),
+            mode: 'static', // Modo estático
+            position: { top: '50%', left: '50%' }, // Fija el joystick al centro del contenedor
+            color: 'blue'
+        });
+
+
+        // Movement logic with joystick
+        joystick.on("move", (evt, data) => {
+            if (data && data.angle && data.distance > 49) {
+                const angle = data.angle.degree;
+
+                // Detect only the movement in the range of vertical and horizontal position
+                if ((angle >= 0 && angle < 22.5) || (angle >= 337.5 && angle <= 360)) {
+                    moveRight();
+                } else if (angle >= 67.5 && angle < 112.5) {
+                    moveUp();
+                } else if (angle >= 157.5 && angle < 202.5) {
+                    moveLeft();
+                } else if (angle >= 247.5 && angle < 292.5) {
+                    moveDown();
+                }
+            }
+        });
+
+        joystick.on("end", () => {
+            stop(); //Stop the movement when release the joystick
+        });
+
+
+        function getPoints() {
+
+            var pointsTopic = new ROSLIB.Topic({
+                ros: ros,
+                name: 'tokyo_points_persistent',
+                messageType: 'tokyo_nav/PoseList'
+            });
+
+            pointsTopic.subscribe(function (message) {
+                appendPoints(message);
+            });
+        }
+
+
+        function stop() {
+            var v1 = new ROSLIB.Vector3({ x: 0.0, y: 0.0, z: 0.0 });
+            move_msg.publish(v1);
+        }
+
+        // Publish move robot
+        // ------------------
+        var array_string = new ROSLIB.Topic({
+            ros: ros,
+            name: '/tokyo_eyes',
+            messageType: 'std_msgs/String'
+        });
+
+        var index = 0;
+        var array = ["fa", "fb", "fc", "fd"];
+        function showArray() {
+            if (index == array.length) index = 0;
+
+            var str = new ROSLIB.Message({ 'data': array[index] });
+            array_string.publish(str);
+            index++;
+        }
+
+        function eye(text) {
+            var msg2 = new ROSLIB.Message({ 'data': text });
+            array_string.publish(msg2);
+        }
+
+        //Creamos la request
+        var xmlhttp = new XMLHttpRequest();
+
+        function sendToServer(url = 'read_phrase.php', phrase) {
+            xmlhttp.open("POST", url, true);
+            xmlhttp.send(phrase);
+        }
+
+        function sConsole(url) {
+            var phrase = document.getElementById("phrase").value;
+            sendToServer(url, phrase);
+        }
+
+        function openNav() {
+            document.getElementById("pointsNav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("pointsNav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function openNavPhrase() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNavPhrase() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function appendPoints(message) {
+            pointsNav = document.getElementById("pointsNav");
+            pointsNav.textContent = '';
+
+            var closeButton = document.createElement("div");
+            closeButton.setAttribute("class", "closebtn");
+
+            closeButton.onclick = function () {
+                closeNav();
+            };
+            closeButton.innerHTML = "x";
+            document.getElementById("pointsNav").appendChild(closeButton);
+            var move_msg = new ROSLIB.Topic({
+                ros: ros,
+                name: '/move_base_simple/goal',
+                messageType: 'geometry_msgs/PoseStamped'
+            });
+
+            for (var i = 0; i < message.poseList.length; i++) {
+                var node = document.createElement("a");
+                var boxes = document.createElement("div");
+                var button = document.createElement("button");
+
+                // Publish move robot
+                // ------------------
+
+                function sendPose(pose) {
+                    return function () {
+                        var msg = new ROSLIB.Message(pose);
+                        move_msg.publish(msg);
+                    }
+                }
+
+                node.setAttribute("class", "aDiv")
+                button.setAttribute("class", "remove")
+                boxes.setAttribute("class", "textBox")
+
+                boxes.innerHTML += message.poseList[i].name.data;
+                button.textContent = "x";
+
+                node.appendChild(boxes)
+                node.appendChild(button)
+                pointsNav.appendChild(node);
+                boxes.addEventListener('click', sendPose(message.poseList[i].pose), false);
+
+                button.onclick = function () {
+                    var parent = this.parentNode;
+
+                    var phrase = parent.innerText;
+                    sendToServer('remove_phrase.php', phrase);
+
+                    parent.parentNode.removeChild(parent);
+                };
+            }
+
+        }
+
+        function appendData() {
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    if (this.responseText != "") {
+                        json = JSON.parse(this.responseText);
+
+                        for (var i = 0; i < json.length; i++) {
+                            var node = document.createElement("a");
+                            var boxes = document.createElement("div");
+                            var button = document.createElement("button");
+
+                            // Publish move robot
+                            // ------------------
+                            var tts_msg = new ROSLIB.Topic({
+                                ros: ros,
+                                name: '/text2speech',
+                                messageType: 'std_msgs/String'
+                            });
+                            function askTokyoSpeak(text) {
+                                var msg = new ROSLIB.Message({ 'data': text });
+                                tts_msg.publish(msg);
+                            }
+
+                            node.setAttribute("class", "aDiv")
+                            button.setAttribute("class", "remove")
+                            boxes.setAttribute("class", "textBox")
+
+                            boxes.innerHTML += json[i].frase;
+
+                            node.appendChild(boxes)
+                            node.appendChild(button)
+                            document.getElementById("mySidenav").appendChild(node);
+
+                            boxes.addEventListener('click', function () {
+                                var phrase = this.innerHTML;
+                                askTokyoSpeak(phrase);
+                            });
+
+                            button.onclick = function () {
+                                var parent = this.parentNode;
+
+                                var phrase = parent.innerText;
+                                sendToServer('remove_phrase.php', phrase);
+
+                                parent.parentNode.removeChild(parent);
+                            };
+                        }
+                    }
+                }
+            };
+
+            sendToServer();
+        }
+
+        appendData();
+
+        const artyom = new Artyom();
+
+        var recognition = new webkitSpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = "es-ES";
+        recognition.onresult = function (event) {
+            var interim_transcript = '';
+            for (var i = event.resultIndex; i < event.results.length; ++i) {
+                if (event.results[i].isFinal) {
+                    final_transcript += event.results[i][0].transcript;
+                } else {
+                    interim_transcript += event.results[i][0].transcript;
+                }
+            }
+
+            console.log(interim_transcript, final_transcript);
+        };
+
+        var settings = {
+            continuous: true, // No pares nunca porque tengo conexi�n https
+            onResult: function (text) {
+                // text = the recognized text
+                console.log(text);
+            },
+            onStart: function () {
+                console.log("Start to speak");
+            },
+            onEnd: function () {
+                console.log("Stopped");
+            }
+        };
+
+        var UserDictation = artyom.newDictation(settings);
+
+        var buttonMicro = document.getElementById("microfono");
+
+        //buttonMicro.addEventListener("click", startRecognition);
+
+        function aparecer() {
+            if (document.getElementById("phrasesinput").style.visibility == 'visible')
+                document.getElementById("phrasesinput").style.visibility = 'hidden';
+            else
+                document.getElementById("phrasesinput").style.visibility = 'visible';
+        }
+
+        function startRecognition() {
+            UserDictation.start();
+            buttonMicro.removeEventListener('click', startRecognition);
+            buttonMicro.addEventListener('click', stopRecognition);
+        }
+
+        function stopRecognition() {
+            UserDictation.stop();
+            buttonMicro.removeEventListener('click', stopRecognition);
+            buttonMicro.addEventListener('click', startRecognition);
+        }
+    </script>
+
+</body>
+
+</html>
