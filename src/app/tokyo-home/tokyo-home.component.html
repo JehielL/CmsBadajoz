@@ -8,9 +8,10 @@
 <div class="container-fluid custom-cont">
   
   
-  <div data-aos="fade-right">
+  <div>
     <div class="weather-widget">
       @if (weather) {
+        
         <div class="weather-info">
           <div class="weather-icon">
             <img [src]="isDayTime ? 'https://www.freeiconspng.com/thumbs/sun-icon/sun-icon-31.png' : 'https://cdn-icons-png.flaticon.com/512/180/180700.png'" alt="Weather Icon">
@@ -20,6 +21,9 @@
             <p class="weather-temperature">{{ weather.main.temp | number:'1.0-0' }}°C</p>
             <p class="time">{{ currentDate | date: 'HH:mm' : 'es-ES' }}</p>
           </div>
+          
+          
+          
         </div>
       }
     </div>
@@ -33,10 +37,21 @@
       <span class="custom-name" style="font-weight: 600;">Provincia de Badajoz, Destino Turístico en Red</span>
 
     </h1>
-
+    <div class="volume-container">
+      <i class="fa-solid fa-volume-low"></i>
+      <input 
+        type="range" 
+        id="volumeRange" 
+        min="0" 
+        max="100" 
+        [(ngModel)]="volume"
+      />
+    </div>
+    
     <!-- Cuadrícula de categorías -->
     <div class="text-center category-grid ">
-
+      
+      
       <a class="category">
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEsUlEQVR4nO2aS4gdRRSGW6MSGaOi4gtFBd8B0YUgPsAHCBrfj3ETFRSMOoS4SCLoQocIShAlK6M7MclCQly4cCETlBnRhaAxojMZURei8YEzc2/X/582xpIzOZ0pevr27b6vtDIHCu6trjrnfPXuOh1FfRTv/bEAhkluBzAFILY0aXnD3vvjojqLc+5eAN+R9EVJy2jZqG7ivT+K5GYA/5ije0iuFZHLvfdDmpIkWSki6wB8FUC94r0/OqqLkHzZAITkmiLn9BnJp6zsPExUBxGRuwKIG8vW07IpjHPunuhIik5aANPWsmuq1if5tDXCtC4SlR0A8CGAbwE86r0/JupQRORuc+TL7HASkTsAjNmK1dTfIrIqLOO9XwZgr/XKA2Vsau/pPAOwO8qsINMAHukEiOQ7pmdtJv+lglVrU8axZyx/W5EtANeSnAh1HQYJhoX+3mdAy8qC2OrkReSysCfSOQNgfRzHZ2kCsCGdE2HPJEmy0spP5tkQkUtJ7goA9i8C0V7Q4ZUD9HA7IJIX6pAxPUMB3G7Tsz4HfKM9G0vzvPcrLK8Rlo3j+EwAWwEcsOdqa9R7f8IikEBZHtBUHpBz7hqSOwEcDBrkpMDZhuZpL2RBnHNnZ5323h9veS4AG9W5ZfkHALyhYEEj5oO0AZoEsNom9niQr5LY/ws6BSF5vun4ieQIyV+DYbRLRC7JGQ3FIEVAQfqd5IvNZvN0kh/ZmL8tABkzZzdk9QJ4Nju0RGRVjo0Jndyt/CsNkgM0ZYe+J3UoBAo3Z1ei1DGb7Bu1FzQpRNqD4WQn+WowhPaU2Rwrg7QT59z95sTXGUObyi6/WDhk3lzWbs9BdGKmkzJcglW01W1DbLbaEJMkucJ8+aPKPtZzEFO6zfSNdlD3NevRNyvW6wvIrabvt3D+tBNdsoMV7sojDqLvIukOr4tB2Xq6qlmd8ao2+wJiTg2nb35lXmP1JEDyZ/PjptqA2Cn2G5v069qVB/CCgX/Qib2+gaiIyO2m98+5ublTW5VrNptn6NzQI04cx1fVDkRFW9haemuBEzvM/vZO7bDfIHouAkC7hLgl+1x37fSsBeDc2oKoAHjO9P+oG+Z8ZhRFMzMzJ9vBUJ+NRF0IBwGi794kv7CWfytn45zo9gqIgwBR0fssPeObncf1YsLAYhG5qFv9HBSIGRsx53XO0Gw+1iPdfmAgZvDt4NS7o4d6/UBBbAf/VFP4Xv+fA+mXcAmkZsKlHqmZcKlHaiZc6pGaCZd6pGbC/22PoMsYYolLbw1VL496KM65+0KQ8UwMsSugNmGI/QCen52dPaUbAADXkfwk0Ptxq4BOZaCiwJBdNBw2bKGz1wGcVwVADsUQ3wsAfrGeXvBT350BPKhDITD4A8knioBa1Ps+rx6A60m+C+BvK3cQwPvOuauLABqNxmkAtgQxxNg++TixqGVLAVUBaBE83RK89s5fRIjInXp/HNgYsqDQnOn/S2/rwxhiWykaci2iv5XC2SrOuXM0SpXexPNQ+hzAQ/YlxHz42e7GdorIxVX0Z4EWtXyVoVfSxgq9J+bCXVeYPgNwQzf6s8bC5VRTT5drs7FcG8Y+Kdlb5QObfwFxDxNRIfHsbwAAAABJRU5ErkJggg=="

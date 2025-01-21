@@ -5,5 +5,11 @@ project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/
 include ':capacitor-community-http'
 project(':capacitor-community-http').projectDir = new File('../node_modules/@capacitor-community/http/android')
 
+include ':capacitor-community-volume-buttons'
+project(':capacitor-community-volume-buttons').projectDir = new File('../node_modules/@capacitor-community/volume-buttons/android')
+
 include ':capacitor-preferences'
 project(':capacitor-preferences').projectDir = new File('../node_modules/@capacitor/preferences/android')
+
+include ':capacitor-volume-buttons'
+project(':capacitor-volume-buttons').projectDir = new File('../node_modules/capacitor-volume-buttons/android')

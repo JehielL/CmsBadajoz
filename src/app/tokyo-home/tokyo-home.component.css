@@ -169,3 +169,67 @@
   }
 }
 
+
+
+/* Contenedor del control de volumen */
+.volume-container {
+  position: fixed;
+  left: 20px; 
+  top: 40%; 
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 75px; 
+  z-index: 1000;
+}
+
+/* Estilos del input range */
+#volumeRange {
+  --slider-width: 150px; 
+  --slider-height: 10px; 
+  --slider-bg: rgb(82, 82, 82);
+  --slider-border-radius: 5px;
+  --level-color: #fff;
+  --level-transition-duration: 0.1s;
+
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--slider-width);
+  height: var(--slider-height);
+  background: var(--slider-bg);
+  border-radius: var(--slider-border-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transform: rotate(-90deg); 
+}
+
+#volumeRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+  box-shadow: -150px 0 0 150px var(--level-color);
+}
+
+#volumeRange::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: -150px 0 0 150px var(--level-color);
+}
+
+/* Estilo del ícono de volumen */
+.fa-volume-low {
+  font-size: 30px; /* Ajustar tamaño */
+  color: var(--slider-bg);
+  margin-left: 10px; /* Espaciado respecto al slider */
+}
+
+/* Ocultar en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .volume-container {
+    display: none;
+  }
+}
+
