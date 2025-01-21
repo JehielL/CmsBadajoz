@@ -6,7 +6,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule, DatePipe, registerLocaleData } from '@angular/common'; 
 import localeEs from '@angular/common/locales/es'; 
 import { FormsModule } from '@angular/forms';
-import { VolumeButtons, VolumeButtonsResult } from '@capacitor-community/volume-buttons';
 import { Capacitor } from '@capacitor/core';
 
 @Component({
@@ -28,8 +27,6 @@ export class TokyoHomeComponent implements OnInit {
   currentDate: Date = new Date();
   isDayTime: boolean | undefined;
   activedLoader = true;
-  audioElement: HTMLAudioElement = new Audio();
-  volume: number = 50;  // Inicializa el volumen en 50% (solo visual)
 
   constructor(
     private authService: AuthenticationService,
@@ -56,9 +53,7 @@ export class TokyoHomeComponent implements OnInit {
 
   ngOnInit(): void {
    
-    console.log('Iniciando observación de volumen...');
-    this.watchDeviceVolume();
-    
+
     console.log('Obteniendo información del clima...');
     this.getWeather();
 
@@ -73,32 +68,6 @@ export class TokyoHomeComponent implements OnInit {
     }, 1100); 
     window.scrollTo(0, 0); 
   }
-
-  /**
-   * Observa los cambios en los botones de volumen del dispositivo.
-   */
-  async watchDeviceVolume() {
-    try {
-      await VolumeButtons.watchVolume({}, (result: VolumeButtonsResult | null) => {
-        console.log('Evento de volumen detectado:', result);
-  
-        if (result && result.direction) {
-          if (result.direction === 'up') {
-            this.volume = Math.min(this.volume + 5, 100);
-          } else if (result.direction === 'down') {
-            this.volume = Math.max(this.volume - 5, 0);
-          }
-          console.log(`Cambio de volumen detectado: ${this.volume}%`);
-        } else {
-          console.warn('El resultado del evento es null o no tiene la propiedad esperada:', result);
-        }
-      });
-    } catch (error) {
-      console.error('Error al observar los cambios de volumen:', error);
-    }
-  }
-  
-  
 
   getWeather(): void {
     this.http.get(this.apiUrl).subscribe({

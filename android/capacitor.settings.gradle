@@ -10,6 +10,3 @@ project(':capacitor-community-volume-buttons').projectDir = new File('../node_mo
 
 include ':capacitor-preferences'
 project(':capacitor-preferences').projectDir = new File('../node_modules/@capacitor/preferences/android')
-
-include ':capacitor-volume-buttons'
-project(':capacitor-volume-buttons').projectDir = new File('../node_modules/capacitor-volume-buttons/android')
