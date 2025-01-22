@@ -15,7 +15,7 @@
 <body>
   <app-root></app-root>
   
-  <div id="connect-image">
+  <div id="connect-image"></div>
   
   <!-- Carga de roslibjs y script de conexión -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/1.1.0/roslib.min.js"></script>
@@ -91,6 +91,13 @@
             listVoices();
             speakText("Probando voz por defecto");
         };
+
+        // Mantener la pantalla encendida en dispositivos Android
+        if ('wakeLock' in navigator) {
+            navigator.wakeLock.request('screen')
+                .then(() => console.log('%c[Android] Pantalla siempre activa.', 'color: green; font-weight: bold;'))
+                .catch(err => console.error('%c[Android] Error al mantener pantalla activa:', 'color: red;', err));
+        }
     });
   </script>
 </body>
