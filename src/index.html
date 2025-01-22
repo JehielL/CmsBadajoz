@@ -15,8 +15,14 @@
 <body>
   <app-root></app-root>
   
-  <div id="connect-image"></div>
+  <img id="connect-image" src="images/desconectado.png">
   
+  <h2>Test de voces</h2>
+  <button onclick="listVoices()">Listar voces</button>
+  <select id="voiceSelect"></select>
+  <input type="text" id="textToSpeak" placeholder="Introduce texto" value="Hola, prueba de voz">
+  <button onclick="speakSelectedVoice()">Probar voz</button>
+
   <!-- Carga de roslibjs y script de conexión -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/1.1.0/roslib.min.js"></script>
 
@@ -64,17 +70,19 @@
             if ('speechSynthesis' in window) {
                 var msg = new SpeechSynthesisUtterance(text);
                 msg.lang = 'es-ES';
-                msg.rate = 1.0;
-                msg.pitch = 1.1;
+                msg.rate = 1.0;  // Velocidad más pausada
+                msg.pitch = 2.0; // Tono más agudo
 
+                // Obtener la voz seleccionada desde el select
+                var selectedVoiceName = document.getElementById('voiceSelect').value;
                 var voices = speechSynthesis.getVoices();
-                var selectedVoice = voices.find(voice => voice.name.includes("Spanish (Latin America)+Pedro"));
+                var selectedVoice = voices.find(voice => voice.name === selectedVoiceName);
 
                 if (selectedVoice) {
                     msg.voice = selectedVoice;
                     console.log('%c[ROS] Usando la voz:', 'color: blue; font-weight: bold;', selectedVoice.name);
                 } else {
-                    console.warn('%c[ROS] No se encontró la voz Spanish (Latin America)+Pedro, usando predeterminada.', 'color: orange;');
+                    console.warn('%c[ROS] No se encontró la voz seleccionada, usando predeterminada.', 'color: orange;');
                 }
 
                 msg.onstart = () => console.log('%c[ROS] Reproduciendo mensaje:', 'color: purple; font-weight: bold;', text);
@@ -87,18 +95,43 @@
             }
         }
 
-        speechSynthesis.onvoiceschanged = function () {
-            listVoices();
-            speakText("Probando voz por defecto");
+        // Función para listar voces disponibles
+        window.listVoices = function () {
+            setTimeout(() => {
+                var voices = speechSynthesis.getVoices();
+                var voiceSelect = document.getElementById('voiceSelect');
+                voiceSelect.innerHTML = ''; // Limpiar el select
+
+                if (voices.length === 0) {
+                    console.warn('%c[ROS] No se encontraron voces, intenta nuevamente.', 'color: orange;');
+                    return;
+                }
+
+                voices.forEach(voice => {
+                    var option = document.createElement('option');
+                    option.value = voice.name;
+                    option.textContent = `${voice.name} (${voice.lang})`;
+                    voiceSelect.appendChild(option);
+                });
+
+                console.log('%c[ROS] Voces disponibles:', 'color: teal;', voices);
+            }, 500);
         };
 
-        // Mantener la pantalla encendida en dispositivos Android
-        if ('wakeLock' in navigator) {
-            navigator.wakeLock.request('screen')
-                .then(() => console.log('%c[Android] Pantalla siempre activa.', 'color: green; font-weight: bold;'))
-                .catch(err => console.error('%c[Android] Error al mantener pantalla activa:', 'color: red;', err));
-        }
+        // Probar la voz seleccionada desde el menú
+        window.speakSelectedVoice = function () {
+            var text = document.getElementById('textToSpeak').value;
+            speakText(text);
+        };
+
+        // Asegurar que se ejecute después de cargar las voces
+        speechSynthesis.onvoiceschanged = window.listVoices;
     });
   </script>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
 </body>
 </html>
